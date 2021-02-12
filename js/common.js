@@ -1,5 +1,3 @@
-
-
 var score=0;
 var tabuleiro= [0];
 var pause=false;
@@ -49,7 +47,7 @@ function repetidaImagem(){
 function sorteiaImagem(){
 
     if(pause==false){
-        $('#picture').css('background-image','url(imagens/'+0+'.jpg)');
+        $('#picture').css('background-image','url(images/'+0+'.jpg)');
         setTimeout('sorteiaImagem()',100);
 
     }
@@ -57,7 +55,7 @@ function sorteiaImagem(){
         id=(nivel-1)*100+1+parseInt(Math.random()*nImagens[nivel-1]);
 
         //   alert(id);
-        $('#picture').css('background-image','url(imagens/'+id+'.jpg)');
+        $('#picture').css('background-image','url(images/'+id+'.jpg)');
     }
 
     pause=!pause;
