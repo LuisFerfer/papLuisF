@@ -69,31 +69,6 @@ function playGame(state){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function swap(number){
     $('#banner').load('treino/html'+number+'.html');
 }
