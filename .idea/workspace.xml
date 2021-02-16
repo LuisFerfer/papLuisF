@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="0b07899b-cd9b-4962-bca1-1cf939c6a436" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treino/html2.html" beforeDir="false" afterPath="$PROJECT_DIR$/treino/html2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treino/html1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treino/html2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +77,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="" />
+      <changelist id="0b07899b-cd9b-4962-bca1-1cf939c6a436" name="Default Changelist" comment="" />
       <created>1613096897531</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613096897531</updated>
       <workItem from="1613096899099" duration="2221000" />
+      <workItem from="1613503295253" duration="1274000" />
     </task>
     <servers />
   </component>
@@ -61,5 +100,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
