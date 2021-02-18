@@ -5,6 +5,8 @@ var nImagens=[37,20];
 var nMaxImagens=[20,35];
 var nivel=1;
 var id;
+var palavra=[49];
+var j = 0;
 function novaImagem(){
     if(!tabuleiro.includes(id)){
         score++;
@@ -44,17 +46,24 @@ function repetidaImagem(){
     }
     sorteiaImagem();
 }
-function sorteiaPalavra(){
 
-    pause=!pause;
-}
-function playGame(state){
-    score=0;
-    tabuleiro=[];
-    $('#scorePts').html(score);
-    $('#nivelNum').html(nivel);
-    sorteiaImagem();
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

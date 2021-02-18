@@ -3,13 +3,7 @@
 <script src="js/common.js"></script>
 <script>
 
-    $('document').ready(function(){
-        playGame(true);
-        var el = document.getElementById("novo");
-        var el2 = document.getElementById("velho");
-        el.addEventListener("click", novaImagem, false);
-        el2.addEventListener("click", repetidaImagem, false);
-    })
+
 </script>
 
 <div class="score" style="color: #FFFFFF">
@@ -20,9 +14,9 @@
 
 <!--*************PALAVRA**********-->
 <?php
-$txt=file_get_contents("C:\wamp64\www\pap2021\palavras.txt");
+$txt=file_get_contents("D:\wamp\www\papLuis\palavras.txt");
 $i=0;
-$handle = @fopen("C:\wamp64\www\pap2021\palavras.txt", "r");
+$handle = @fopen("D:\wamp\www\papLuis\palavras.txt", "r");
 if ($handle) {
     while (($buffer = fgets($handle, 4096)) !== false) {
         $arr[$i++]=$buffer;
@@ -59,14 +53,33 @@ if ($handle) {
 
     }
 
-    function troca(){
-        document.getElementById("palavra").innerHTML=geraPalavra();
-    }
+    function troca(k) {
+        j = j + 1;
+        palavra[j] = geraPalavra();
 
+        document.getElementById("palavra").innerHTML = palavra[j];
+        if (k = 0) {
+            for (l = 0; l >= j; l++) {
+                if (palavra[j] = palavra[l]) {
+                    document.getElementById("scorePts").innerHTML = "perdeste";
+                } else return(0);
+            }
+        }
+        else if (k = 1)
+            {
+                for (l = 0; l <= j; l++) {
+                    if (palavra[j] != palavra[l]) {
+                        document.getElementById("scorePts").innerHTML = "perdeste";
+                    } else return(0);
+                }
+
+            }
+
+    }
 </script>
 
 <body >
-<h1> <span id="palavra">Ferrovia</span></h1>
+<h1> <span id="palavra" style="color:navajowhite">Ferrovia</span></h1>
 
 
 </body>
@@ -74,29 +87,8 @@ if ($handle) {
 <!--******************************-->
 
 <div style="padding-top: 60px">
-    <a  class="button big" onclick="troca()" id="novo">NOVO</a>
-    <a  class="button big" onclick="troca()" id="velho">VISTO</a>
+    <a  class="button big" onclick="troca(0)" id="novo">NOVO</a>
+    <a  class="button big" onclick="troca(1)" id="velho">VISTO</a>
 </div>
 
 
-<div class="modal fade" id="mensagem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">JOGO do AFONSO</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body text-center " id="corpoMensagem">
-                PARABÉNS!<br>
-                Acertaste em <span style="font-weight: bold" id="msgPts" class="text-xl-center"></span> imagens.
-                <div id="novoNivel"></div>
-
-            </div>
-            <div class="modal-footer">
-                <button onclick="playGame()" type="button" class=" float-right btn btn-success" data-dismiss="modal">Jogar</button>
-            </div>
-        </div>
-    </div>
-</div>
