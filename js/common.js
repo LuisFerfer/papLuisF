@@ -46,18 +46,6 @@ function repetidaImagem(){
 }
 function sorteiaPalavra(){
 
-    if(pause==false){
-        $('#picture').css('background-image','url(images/'+0+'.jpg)');
-        setTimeout('sorteiaImagem()',100);
-
-    }
-    else{
-        id=(nivel-1)*100+1+parseInt(Math.random()*nImagens[nivel-1]);
-
-        //   alert(id);
-        $('#picture').css('background-image','url(images/'+id+'.jpg)');
-    }
-
     pause=!pause;
 }
 function playGame(state){
@@ -72,46 +60,8 @@ function playGame(state){
 
 
 
-
-
-
-
-
-function readTextFile("C:\wamp64\www\pap2021\images\palavras.txt")
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function swap(number){
-    $('#banner').load('html'+number+'.html');
+    $('#banner').load('html'+number+'.php');
 }
 
 function atualiza(fator) {

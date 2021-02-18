@@ -8,5 +8,5 @@
 
 <p>Tem 1 vida, se falhar 1 vez, acaba.</p>
 <ul class="actions">
-    <a  class="button big" onclick="atualiza(1)">Começar</a>
+    <a  class="button big" onclick="atualiza(1)" >Começar</a>
 </ul>
