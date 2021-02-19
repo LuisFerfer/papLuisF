@@ -8,10 +8,10 @@ var id;
 var palavra=[49];
 var j = 0;
 function novaImagem(){
-    if(!tabuleiro.includes(id)){
+    if(!tabuleiro.includes(id)){ // se dizes que é nova e não existe na lista de palavras que saíram
         score++;
         $('#scorePts').html(score);
-        tabuleiro.push(id);
+        tabuleiro.push(id);  // adiciona à lista e deixa de ser nova
     }
     else{
         if(score>nMaxImagens[nivel-1]){
@@ -28,7 +28,7 @@ function novaImagem(){
     sorteiaImagem();
 }
 function repetidaImagem(){
-    if(tabuleiro.includes(id)){
+    if(tabuleiro.includes(id)){ // ele diz que é repetida e ela existe na lista de palavras saídas
         score++;
         $('#scorePts').html(score);
     }
