@@ -1,0 +1,156 @@
+Index: html2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css\" integrity=\"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2\" crossorigin=\"anonymous\">\r\n<script src=\"js/jquery.min.js\"></script>\r\n<script src=\"js/common.js\"></script>\r\n<script>\r\n\r\n\r\n</script>\r\n\r\n<div class=\"score\" style=\"color: #FFFFFF\">\r\n    <span style=\"font-size: 40px\">Pontos:&nbsp;</span><span id=\"scorePts\" class=\"ml-1 display-4\">0</span>\r\n   <!-- <span style=\"padding-left: 50px; font-size: 40px\" >Nível:&nbsp;</span><span id=\"nivelNum\" class=\"ml-1 display-4\">1</span>-->\r\n</div>\r\n<!-- <h1 style=\"color: navajowhite\" ><br>vaca2<p><br></p></h1> -->\r\n\r\n<!--*************PALAVRA**********-->\r\n<?php\r\n$txt=file_get_contents(\"..\\papLuis\\palavras.txt\");\r\n$i=0;\r\n$handle = @fopen(\"..\\papLuis\\palavras.txt\", \"r\");\r\nif ($handle) {\r\n    while (($buffer = fgets($handle, 4096)) !== false) {\r\n        $arr[$i++]=$buffer;\r\n    }\r\n    if (!feof($handle)) {\r\n        echo \"Error: unexpected fgets() fail\\n\";\r\n    }\r\n    fclose($handle);\r\n}\r\n\r\n\r\n?>\r\n\r\n<script>\r\n    var nPalavras=<?php echo $i?>;\r\n    var palavras=[<?php\r\n        $j=1;\r\n        foreach ($arr as $palavra){\r\n\r\n\r\n            if($j<$i)\r\n                echo \"'\".substr($palavra,0,strlen($palavra)-2).\"',\"; // retira o \\n das palavras\r\n            else\r\n                echo \"'$palavra'\"; // a �ltima palavra n�o tem o \\n\r\n            $j++;\r\n        }\r\n        ?>];\r\n\r\n\r\n    function geraPalavra(){\r\n\r\n        n=(Math.floor(Math.random()*nPalavras));\r\n        return(palavras[n]);\r\n\r\n    }\r\n\r\n    function troca(k) {\r\n        j = j + 1;\r\n        palavra[j] = geraPalavra();\r\n\r\n        document.getElementById(\"palavra\").innerHTML = palavra[j];\r\n        if (k = 0) {\r\n            for (l = 0; l >= j; l++) {\r\n                if (palavra[j] = palavra[l]) {\r\n                    document.getElementById(\"scorePts\").innerHTML = \"perdeste\";\r\n                } else return(0);\r\n            }\r\n        }\r\n        else if (k = 1)\r\n            {\r\n                for (l = 0; l <= j; l++) {\r\n                    if (palavra[j] != palavra[l]) {\r\n                        document.getElementById(\"scorePts\").innerHTML = \"perdeste\";\r\n                    } else return(0);\r\n                }\r\n\r\n            }\r\n\r\n    }\r\n</script>\r\n\r\n<body >\r\n<h1> <span id=\"palavra\" style=\"color:navajowhite\">Ferrovia</span></h1>\r\n\r\n\r\n</body>\r\n\r\n<!--******************************-->\r\n\r\n<div style=\"padding-top: 60px\">\r\n    <a  class=\"button big\" onclick=\"troca(0)\" id=\"novo\">NOVO</a>\r\n    <a  class=\"button big\" onclick=\"troca(1)\" id=\"velho\">VISTO</a>\r\n</div>\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/html2.php b/html2.php
+--- a/html2.php	(revision f6629dda15ac961758e7569b8ff3e56fa5e8fcf3)
++++ b/html2.php	(date 1613689122654)
+@@ -88,6 +88,9 @@
+ 
+ <div style="padding-top: 60px">
+     <a  class="button big" onclick="troca(0)" id="novo">NOVO</a>
++
++
++
+     <a  class="button big" onclick="troca(1)" id="velho">VISTO</a>
+ </div>
+ 
+Index: js/common.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>var score=0;\r\nvar tabuleiro= [0];\r\nvar pause=false;\r\nvar nImagens=[37,20];\r\nvar nMaxImagens=[20,35];\r\nvar nivel=1;\r\nvar id;\r\nvar palavra=[49];\r\nvar j = 0;\r\nfunction novaImagem(){\r\n    if(!tabuleiro.includes(id)){\r\n        score++;\r\n        $('#scorePts').html(score);\r\n        tabuleiro.push(id);\r\n    }\r\n    else{\r\n        if(score>nMaxImagens[nivel-1]){\r\n            nivel++;\r\n            $('#novoNivel').html(\"Mudou de nÃ\u00ADvel!\");\r\n        }\r\n        else{\r\n            $('#novoNivel').html(\"Tente outra vez...\");\r\n        }\r\n        $('#msgPts').html(score);\r\n        $('#mensagem').modal('toggle');\r\n    }\r\n\r\n    sorteiaImagem();\r\n}\r\nfunction repetidaImagem(){\r\n    if(tabuleiro.includes(id)){\r\n        score++;\r\n        $('#scorePts').html(score);\r\n    }\r\n    else{\r\n        if(score>nMaxImagens[nivel-1]){\r\n            nivel++;\r\n            $('#novoNivel').html(\"Mudou de nÃ\u00ADvel!\");\r\n            score=0;\r\n        }\r\n        else{\r\n            $('#novoNivel').html(\"Tente outra vez...\");\r\n        }\r\n        $('#msgPts').html(score);\r\n        $('#mensagem').modal('toggle');\r\n    }\r\n    sorteiaImagem();\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nfunction swap(number){\r\n    $('#banner').load('html'+number+'.php');\r\n}\r\n\r\nfunction atualiza(fator) {\r\n\r\n    stage+=fator;\r\n    swap(stage);\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/js/common.js b/js/common.js
+--- a/js/common.js	(revision f6629dda15ac961758e7569b8ff3e56fa5e8fcf3)
++++ b/js/common.js	(date 1613691151737)
+@@ -1,66 +1,10 @@
+ var score=0;
+ var tabuleiro= [0];
+ var pause=false;
+-var nImagens=[37,20];
+-var nMaxImagens=[20,35];
+-var nivel=1;
++
+ var id;
+ var palavra=[49];
+ var j = 0;
+-function novaImagem(){
+-    if(!tabuleiro.includes(id)){
+-        score++;
+-        $('#scorePts').html(score);
+-        tabuleiro.push(id);
+-    }
+-    else{
+-        if(score>nMaxImagens[nivel-1]){
+-            nivel++;
+-            $('#novoNivel').html("Mudou de nÃ­vel!");
+-        }
+-        else{
+-            $('#novoNivel').html("Tente outra vez...");
+-        }
+-        $('#msgPts').html(score);
+-        $('#mensagem').modal('toggle');
+-    }
+-
+-    sorteiaImagem();
+-}
+-function repetidaImagem(){
+-    if(tabuleiro.includes(id)){
+-        score++;
+-        $('#scorePts').html(score);
+-    }
+-    else{
+-        if(score>nMaxImagens[nivel-1]){
+-            nivel++;
+-            $('#novoNivel').html("Mudou de nÃ­vel!");
+-            score=0;
+-        }
+-        else{
+-            $('#novoNivel').html("Tente outra vez...");
+-        }
+-        $('#msgPts').html(score);
+-        $('#mensagem').modal('toggle');
+-    }
+-    sorteiaImagem();
+-}
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+ 
+ 
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"43269a28-5368-490b-8364-5b705b4a43d3\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/html2.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/html2.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/js/common.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/js/common.js\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1oMWN3JEAaAxiAWDEen0XGsCOEt\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"43269a28-5368-490b-8364-5b705b4a43d3\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1613096897531</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1613096897531</updated>\r\n      <workItem from=\"1613096899099\" duration=\"2221000\" />\r\n      <workItem from=\"1613514765726\" duration=\"9000\" />\r\n      <workItem from=\"1613610677844\" duration=\"654000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"raiva pura\">\r\n      <created>1613609504022</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1613609504022</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"raiva pura\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"raiva pura\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f6629dda15ac961758e7569b8ff3e56fa5e8fcf3)
++++ b/.idea/workspace.xml	(date 1613932444098)
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="">
++    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="TA QUASE">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+@@ -46,7 +46,11 @@
+       <updated>1613096897531</updated>
+       <workItem from="1613096899099" duration="2221000" />
+       <workItem from="1613514765726" duration="9000" />
+-      <workItem from="1613610677844" duration="654000" />
++      <workItem from="1613610677844" duration="750000" />
++      <workItem from="1613648990518" duration="678000" />
++      <workItem from="1613662973550" duration="2015000" />
++      <workItem from="1613688987685" duration="1004000" />
++      <workItem from="1613931585863" duration="634000" />
+     </task>
+     <task id="LOCAL-00001" summary="raiva pura">
+       <created>1613609504022</created>
+@@ -55,7 +59,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1613609504022</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="TA QUASE">
++      <created>1613616143783</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1613616143783</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -75,6 +86,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="raiva pura" />
+-    <option name="LAST_COMMIT_MESSAGE" value="raiva pura" />
++    <MESSAGE value="TA QUASE" />
++    <option name="LAST_COMMIT_MESSAGE" value="TA QUASE" />
+   </component>
+ </project>
+\ No newline at end of file
