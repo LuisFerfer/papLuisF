@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b07899b-cd9b-4962-bca1-1cf939c6a436" name="Default Changelist" comment="">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html1.php" beforeDir="false" afterPath="$PROJECT_DIR$/html1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
     </list>
@@ -19,7 +18,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1oMWN3JEAaAxiAWDEen0XGsCOEt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,13 +41,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0b07899b-cd9b-4962-bca1-1cf939c6a436" name="Default Changelist" comment="" />
+      <changelist id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="" />
       <created>1613096897531</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613096897531</updated>
       <workItem from="1613096899099" duration="2221000" />
       <workItem from="1613503295253" duration="1274000" />
+      <workItem from="1613949181186" duration="2252000" />
     </task>
     <servers />
   </component>

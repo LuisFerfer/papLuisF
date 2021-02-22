@@ -14,9 +14,9 @@
 
 <!--*************PALAVRA**********-->
 <?php
-$txt=file_get_contents("D:\wamp\www\papLuis\palavras.txt");
+$txt=file_get_contents("..\papLuis\palavras.txt");
 $i=0;
-$handle = @fopen("D:\wamp\www\papLuis\palavras.txt", "r");
+$handle = @fopen("..\papLuis\palavras.txt", "r");
 if ($handle) {
     while (($buffer = fgets($handle, 4096)) !== false) {
         $arr[$i++]=$buffer;
