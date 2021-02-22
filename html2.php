@@ -53,29 +53,7 @@ if ($handle) {
 
     }
 
-    function troca(k) {
-        j = j + 1;
-        palavra[j] = geraPalavra();
 
-        document.getElementById("palavra").innerHTML = palavra[j];
-        if (k = 0) {
-            for (l = 0; l >= j; l++) {
-                if (palavra[j] = palavra[l]) {
-                    document.getElementById("scorePts").innerHTML = "perdeste";
-                } else return(0);
-            }
-        }
-        else if (k = 1)
-            {
-                for (l = 0; l <= j; l++) {
-                    if (palavra[j] != palavra[l]) {
-                        document.getElementById("scorePts").innerHTML = "perdeste";
-                    } else return(0);
-                }
-
-            }
-
-    }
 </script>
 
 <body >

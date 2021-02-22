@@ -21,7 +21,7 @@ function novaPalavra(){
 
     }
 
-    sorteiaPalavra();
+    geraPalavra();
 }
 function repetidaPalavra(){
     if(tabuleiro.includes(id)){ // ele diz que é repetida e ela existe na lista de palavras saídas
@@ -40,30 +40,20 @@ function repetidaPalavra(){
         $('#msgPts').html(score);
         $('#mensagem').modal('toggle');
     }
-    sorteiaPalavra();
+    geraPalavra();
 }
 
 
+function geraPalavra(){
 
+    n=(Math.floor(Math.random()*nPalavras));
+    return(sorteiaPalavra(n));
 
+}
 
+function sorteiaPalavra(){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 function swap(number){
     $('#banner').load('html'+number+'.php');
@@ -75,9 +65,3 @@ function atualiza(fator) {
     swap(stage);
 
 }
-
-
-
-
-
-
