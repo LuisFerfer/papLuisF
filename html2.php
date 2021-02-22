@@ -87,8 +87,8 @@ if ($handle) {
 <!--******************************-->
 
 <div style="padding-top: 60px">
-    <a  class="button big" onclick="troca(0)" id="novo">NOVO</a>
-    <a  class="button big" onclick="troca(1)" id="velho">VISTO</a>
+    <a  class="button big" onclick="novaPalavra();" id="novo">NOVO</a>
+    <a  class="button big" onclick="repetidaPalavra();" id="velho">VISTO</a>
 </div>
 
 
