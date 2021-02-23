@@ -46,13 +46,15 @@ if ($handle) {
         ?>];
 
 
-    function geraPalavra(){
+    function geraPalavra(n){
 
         n=(Math.floor(Math.random()*nPalavras));
         return(palavras[n]);
 
     }
-
+    function sorteiaPalavra(){
+        document.getElementById("palavra").innerHTML=geraPalavra();
+    }
 
 </script>
 

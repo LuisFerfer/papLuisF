@@ -19,7 +19,7 @@ function novaPalavra(){
         }
 
     }
-
+    sorteiaPalavra();
     geraPalavra();
 }
 function repetidaPalavra(){
@@ -33,25 +33,21 @@ function repetidaPalavra(){
             $('#scorePts').html("PERDESTE");
 
         }
-        else{
-            $('#novoNivel').html("Tente outra vez...");
-        }
-        $('#msgPts').html(score);
-        $('#mensagem').modal('toggle');
     }
+    sorteiaPalavra();
     geraPalavra();
 }
 
 
-function geraPalavra(n){
-
+function geraPalavra(){
+var n;
     n=(Math.floor(Math.random()*nPalavras));
     return(sorteiaPalavra(n));
 
 }
 
 function sorteiaPalavra(){
-
+        document.getElementById("palavra").innerHTML=geraPalavra();
 }
 
 function swap(number){

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="ugh..">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="where is palavra">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
@@ -49,7 +49,8 @@
       <workItem from="1613096899099" duration="2221000" />
       <workItem from="1613503295253" duration="1274000" />
       <workItem from="1613949181186" duration="2252000" />
-      <workItem from="1614075058477" duration="789000" />
+      <workItem from="1614075058477" duration="4549000" />
+      <workItem from="1614100259321" duration="1800000" />
     </task>
     <task id="LOCAL-00001" summary="ugh..">
       <created>1614045568058</created>
@@ -58,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614045568058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="where is palavra">
+      <created>1614075892039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614075892040</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +86,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ugh.." />
-    <option name="LAST_COMMIT_MESSAGE" value="ugh.." />
+    <MESSAGE value="where is palavra" />
+    <option name="LAST_COMMIT_MESSAGE" value="where is palavra" />
   </component>
 </project>
