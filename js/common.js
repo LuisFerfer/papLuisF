@@ -27,6 +27,7 @@ function repetidaPalavra(){
     if(tabuleiro.includes(id)){ // ele diz que é repetida e ela existe na lista de palavras saídas
         score++;
         $('#scorePts').html(score);
+
     }
     else{
         if(score>nMaxPalavras[nivel-1]){
@@ -44,7 +45,7 @@ function repetidaPalavra(){
 }
 
 
-function geraPalavra(){
+function geraPalavra(n){
 
     n=(Math.floor(Math.random()*nPalavras));
     return(sorteiaPalavra(n));
