@@ -14,8 +14,7 @@ function novaPalavra(){
         tabuleiro.push(id);  // adiciona à lista e deixa de ser nova
     }
     else{
-        if(score>nMaxPalavras[nivel-1]){
-            nivel++;
+        if(tabuleiro.includes(id)){
             $('#scorePts').html("PERDESTE");
         }
 
@@ -30,10 +29,9 @@ function repetidaPalavra(){
 
     }
     else{
-        if(score>nMaxPalavras[nivel-1]){
-            nivel++;
-            $('#novoNivel').html("Mudou de nÃ­vel!");
-            score=0;
+        if(!tabuleiro.includes(id)){
+            $('#scorePts').html("PERDESTE");
+
         }
         else{
             $('#novoNivel').html("Tente outra vez...");
