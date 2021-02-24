@@ -14,9 +14,8 @@
 
 <!--*************PALAVRA**********-->
 <?php
-$txt=file_get_contents("..\papLuis\palavras.txt");
-$i=0;
-$handle = @fopen("..\papLuis\palavras.txt", "r");
+$i=0    ;
+$handle = @fopen("palavras.txt", "r");
 if ($handle) {
     while (($buffer = fgets($handle, 4096)) !== false) {
         $arr[$i++]=$buffer;
@@ -31,7 +30,7 @@ if ($handle) {
 ?>
 
 <script>
-    var nPalavras=<?php echo $i?>;
+    var nPalavras=<?php echo $i-45?>;
     var palavras=[<?php
         $j=1;
         foreach ($arr as $palavra){
@@ -46,14 +45,14 @@ if ($handle) {
         ?>];
 
 
-    function geraPalavra(n){
+    function geraPalavra(nPalavras){
 
         n=(Math.floor(Math.random()*nPalavras));
         return(palavras[n]);
 
     }
-    function sorteiaPalavra(){
-        document.getElementById("palavra").innerHTML=geraPalavra();
+    function sorteiaPalavra(n){
+        document.getElementById("palavra").innerHTML=geraPalavra(n);
     }
 
 </script>
@@ -67,8 +66,10 @@ if ($handle) {
 <!--******************************-->
 
 <div style="padding-top: 60px">
-    <a  class="button big" onclick="novaPalavra();" id="novo">NOVO</a>
-    <a  class="button big" onclick="repetidaPalavra();" id="velho">VISTO</a>
+    <a  class="button big" onclick="novaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas)" id="novo">NOVO</a>
+    <a  class="button big" onclick="repetidaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas);" id="velho">VISTO</a>
 </div>
+
+<div id="debug"></div>
 
 
