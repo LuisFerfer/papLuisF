@@ -7,8 +7,9 @@
 </script>
 
 <div class="score" style="color: #FFFFFF">
-    <span style="font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
-   <!-- <span style="padding-left: 50px; font-size: 40px" >Nível:&nbsp;</span><span id="nivelNum" class="ml-1 display-4">1</span>-->
+    <span style="font-size: 40px" >Vidas:&nbsp;</span><span id="livestext" class="ml-1 display-4">3</span>
+    <span style="padding-left:10px; font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
+
 </div>
 <!-- <h1 style="color: navajowhite" ><br>vaca2<p><br></p></h1> -->
 
@@ -30,7 +31,7 @@ if ($handle) {
 ?>
 
 <script>
-    var nPalavras=<?php echo $i-100?>;
+    var nPalavras=<?php echo $i?>;
     var palavras=[<?php
         $j=1;
         foreach ($arr as $palavra){
@@ -39,26 +40,26 @@ if ($handle) {
             if($j<$i)
                 echo "'".substr($palavra,0,strlen($palavra)-2)."',"; // retira o \n das palavras
             else
-                echo "'$palavra'"; // a �ltima palavra n�o tem o \n
+                echo "'$palavra'"; // a ?ltima palavra n?o tem o \n
             $j++;
         }
         ?>];
 
 
-    function geraPalavra(nPalavras){
+    function geraPalavrainf(nPalavras){
 
         n=(Math.floor(Math.random()*nPalavras));
         return(palavras[n]);
 
     }
-    function sorteiaPalavra(n){
-        document.getElementById("palavra").innerHTML=geraPalavra(n);
+    function sorteiaPalavrainf(n){
+        document.getElementById("palavra").innerHTML=geraPalavrainf(n);
     }
 
 </script>
 
 <body >
-<h1> <span id="palavra" style="color:navajowhite">cassete</span></h1>
+<h1> <span id="palavra" style="color:navajowhite">estrela</span></h1>
 
 
 </body>
@@ -66,10 +67,8 @@ if ($handle) {
 <!--******************************-->
 
 <div style="padding-top: 60px">
-    <a  class="button big" onclick="novaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas)" id="novo">NOVO</a>
-    <a  class="button big" onclick="repetidaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas);" id="velho">VISTO</a>
+    <a  class="button big" onclick="novaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);debug(palavrasSaidas)" id="novo">NOVO</a>
+    <a  class="button big" onclick="repetidaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);debug(palavrasSaidas);" id="velho">VISTO</a>
 </div>
 
 <div id="debug"></div>
-
-

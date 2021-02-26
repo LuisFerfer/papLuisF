@@ -25,6 +25,12 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-xlarge.css" />
     </noscript>
+    <script>
+        var stage=1;
+        $('document').ready(function (){
+            swapinf(stage);
+        });
+    </script>
 </head>
 <body class="landing">
 
@@ -43,17 +49,10 @@
 
 <!-- Banner -->
 <section id="bannerinf">
-    <h2>Modo Infinito</h2>
-    <p>Pode utilizar este modo para bater recordes pessoais ou de amigos.</p>
-    <p>Mesma forma de utilização do modo normal mas com 3 vidas.</p>
-    <p>Treine o seu cérebro.</p>
-    <p>ESTE MODO NUNCA ACABA</p>
-    <ul class="actions">
-        <li>
-            <a class="button big">Começar</a>
-        </li>
-    </ul>
+
+
 </section>
+
 
 <!-- One -->
 <section id="one" class="wrapper style1 special">

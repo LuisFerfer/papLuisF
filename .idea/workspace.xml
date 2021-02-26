@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="where is palavra">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="ok ja funciona, so falta pontuaçao">
+      <change afterPath="$PROJECT_DIR$/infinito1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infinito2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numeros1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numeros2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_02_2021_00_01_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_02_2021_00_01__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/generic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinito.html" beforeDir="false" afterPath="$PROJECT_DIR$/infinito.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeros.html" beforeDir="false" afterPath="$PROJECT_DIR$/numeros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palavras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/palavras.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +32,7 @@
   <component name="ProjectId" id="1oMWN3JEAaAxiAWDEen0XGsCOEt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,6 +64,12 @@
       <workItem from="1613949181186" duration="2252000" />
       <workItem from="1614075058477" duration="4549000" />
       <workItem from="1614100259321" duration="1800000" />
+      <workItem from="1614118130456" duration="301000" />
+      <workItem from="1614158406397" duration="640000" />
+      <workItem from="1614206273083" duration="901000" />
+      <workItem from="1614258132258" duration="4733000" />
+      <workItem from="1614289491743" duration="599000" />
+      <workItem from="1614304818886" duration="5542000" />
     </task>
     <task id="LOCAL-00001" summary="ugh..">
       <created>1614045568058</created>
@@ -66,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614075892040</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ok ja funciona, so falta pontuaçao">
+      <created>1614118401174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614118401175</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ugh.." />
     <MESSAGE value="where is palavra" />
-    <option name="LAST_COMMIT_MESSAGE" value="where is palavra" />
+    <MESSAGE value="ok ja funciona, so falta pontuaçao" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok ja funciona, so falta pontuaçao" />
   </component>
 </project>
