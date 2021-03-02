@@ -86,10 +86,28 @@ function sorteiaPalavrainf(){
     document.getElementById("palavra").innerHTML=geraPalavrainf();
 }
 
+                                //kikkkik
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
+async function demo() {
+    console.log('Taking a break...');
+    await sleep(2000);
+    console.log('Two seconds later, showing sleep in a loop...');
 
+    // Sleep in loop
+    for (let i = 0; i < 5; i++) {
+        if (i === 3)
+            await sleep(2000);
+        console.log(i);
+    }
+}
 
+demo();
+
+//kokokoko
 
 function swapinf(number){
     $('#bannerinf').load('infinito'+number+'.php');
@@ -102,7 +120,7 @@ function atualizainf(fator) {
 }
 
 
-function novaPalavrainf(palavra){
+async function novaPalavrainf(palavra){
     if(!palavrasSaidas.includes(palavra)){ // se dizes que é nova e não existe na lista de palavras que saíram
         score++;
         $('#scorePts').html(score);
@@ -111,42 +129,37 @@ function novaPalavrainf(palavra){
     else{
         if(palavrasSaidas.includes(palavra)) {
             lives--;
-            $('#livestxt').html(lives);
-        }
-        else {
+            $('#livestext').html(lives);
             if(lives==0){
+                $('#livestext').html(lives);
+                await sleep(100);
                 alert("PERDESTE");
                 setTimeout(atualizainf(-1),3000);
 
 
             }
-
-
         }
-
     }
 
 }
-function repetidaPalavrainf(palavra){
+async function repetidaPalavrainf(palavra){
     if(palavrasSaidas.includes(palavra)){ // ele diz que é repetida e ela existe na lista de palavras saídas
         score++;
         $('#scorePts').html(score);
 
     }
     else{
-        if(palavrasSaidas.includes(palavra)) {
+        if(!palavrasSaidas.includes(palavra)) {
             lives--;
-            $('#livestxt').html(lives);
-        }
-        else {
+            $('#livestext').html(lives);
             if(lives==0){
+                $('#livestext').html(lives);
+                await sleep(100);
                 alert("PERDESTE");
                 setTimeout(atualizainf(-1),3000);
 
 
             }
-
-
         }
 
     }
@@ -169,9 +182,42 @@ function atualizanum(fator) {
     swapnum(stage);
 }
 
+function geraNumero(){
+    var n="";
+    n+=(Math.floor(Math.random()*10));
+    return(n);
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            // duelo //
+
+
+function swapduelo(number){
+    $('#bannerdue').load('duelo'+number+'.php');
+}
+
+function atualizaduelo(fator) {
+
+    stage+=fator;
+    swapduelo(stage);
+}
 
 
 

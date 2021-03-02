@@ -25,6 +25,12 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-xlarge.css" />
     </noscript>
+    <script>
+        var stage=1;
+        $('document').ready(function (){
+            swapduelo(stage);
+        });
+    </script>
 </head>
 <body class="landing">
 
@@ -44,16 +50,7 @@
 
 <!-- Banner -->
 <section id="bannerdue">
-    <h2>Modo Duelo</h2>
-    <p>Modo Jogador VS Jogador</p>
-    <p>Será um jogo de turnos de 5 palavras</p>
-    <p>É mais dificil do que parece, BOA SORTE!</p>
 
-    <ul class="actions">
-        <li>
-            <a class="button big">Começar</a>
-        </li>
-    </ul>
 </section>
 
 <!-- One
