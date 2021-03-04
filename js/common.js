@@ -131,6 +131,7 @@ async function novaPalavrainf(palavra){
             lives--;
             $('#livestext').html(lives);
             if(lives==0){
+                return(score);
                 $('#livestext').html(lives);
                 await sleep(100);
                 alert("PERDESTE");
@@ -153,6 +154,7 @@ async function repetidaPalavrainf(palavra){
             lives--;
             $('#livestext').html(lives);
             if(lives==0){
+                return(score);
                 $('#livestext').html(lives);
                 await sleep(100);
                 alert("PERDESTE");
@@ -224,6 +226,8 @@ function atualizaduelo(fator) {
 
 
 
+                                            // SCOREBOARD? //
+function scoreboard(ultimo){
 
-
+}
 

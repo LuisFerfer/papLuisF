@@ -59,7 +59,7 @@ if ($handle) {
 </script>
 
 <body >
-<h1> <span id="palavra" style="color:navajowhite">estrela</span></h1>
+<h1> <span id="palavra" style="color:navajowhite">23</span></h1>
 
 
 </body>

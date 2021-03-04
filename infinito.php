@@ -53,7 +53,6 @@
 
 </section>
 
-
 <!-- One -->
 <section id="one" class="wrapper style1 special">
     <div class="container">
@@ -74,23 +73,23 @@
                     <tbody>
                     <tr>
                         <td>1</td>
-                        <td>??</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>??</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>??</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>??</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>??</td>
+                        <td>0</td>
                     </tr>
                     </tbody>
 
