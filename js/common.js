@@ -227,7 +227,5 @@ function atualizaduelo(fator) {
 
 
                                             // SCOREBOARD? //
-function scoreboard(ultimo){
 
-}
 
