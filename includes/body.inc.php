@@ -1,4 +1,5 @@
 <?php
+$con = mysqli_connect("localhost", "root", "", "pap2021vermo");
 function top(){
 
 
