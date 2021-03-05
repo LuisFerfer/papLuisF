@@ -15,7 +15,7 @@
 <!--*************PALAVRA**********-->
 <?php
 $i=0    ;
-$handle = @fopen("palavras.txt", "r");
+$handle = @fopen("palavras.txt", "r"); // numa versão posterior vem da Base de dados
 if ($handle) {
     while (($buffer = fgets($handle, 4096)) !== false) {
         $arr[$i++]=$buffer;
