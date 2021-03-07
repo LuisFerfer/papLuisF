@@ -52,7 +52,7 @@
                         <h3>Modo Infinito</a></h3>
                         <div>
                             <div class="courses-image">
-                                <img src="images/infinito.png" alt="">
+                                <img src="images/infinito.png" >
                             </div>
                         </div>
                         <br><p></p>
