@@ -1,5 +1,8 @@
 <?php
 $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
+$sql="select * from utilizadores";
+$result=mysqli_query($con,$sql);
+$dados=mysqli_fetch_array($result);
 function top(){
 ?>
     <!DOCTYPE html>
@@ -52,15 +55,18 @@ function top(){
 
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content" action="/action_page.php">
+        <?php  echo "<form class='modal-content' action='/adicionaNovoUtilizador.php?id= ".$dados['utilizadorId']." ?>>";
             <div class="container">
                 <h1>Sign Up</h1>
                 <hr>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Username" name="utilizadorNome" required>
+
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" placeholder="Enter Email" name="utilizadorEmail" required>
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="utilizadorPassword" required>
 
                 <label for="psw-repeat"><b>Repeat Password</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
