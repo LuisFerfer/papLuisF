@@ -1431,13 +1431,15 @@ button:hover {
 	z-index: 1; /* Sit on top */
 	left: 0;
 	top: 0;
-	width: 50px; /* Full width */
-	height: 50px; /* Full height */
+	width: 70%; !important;
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	padding-top: 5px;
 }
+
+
+
 
 /* Modal Content/Box */
 .modal-content {

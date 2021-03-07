@@ -1,16 +1,6 @@
 <?php
 $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
 function top(){
-
-
-
-
-
-
-
-
-
-
 ?>
     <!DOCTYPE html>
     <!--
@@ -42,6 +32,7 @@ function top(){
 
         <!--teste-->
     </head>
+
     <body class="landing">
     <!-- Header -->
     <header id="header">
@@ -52,10 +43,94 @@ function top(){
                 <li><a href="generic.php">Outros Modos de Jogo</a></li>
                 <!--<li><a href="elements.html">Elements</a></li>-->
                 <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button></a></li>
+                <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Log In</button></a></li>
 
             </ul>
         </nav>
     </header>
+
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Log In</h1>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label>
+                    <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
 <?php }
 function bottom(){
 
@@ -81,14 +156,11 @@ function bottom(){
         </div>
 
     </footer>
+
+
+
+
     </body>
-
-
-
-
-
-
-
     </html>
 <?php }
 ?>
