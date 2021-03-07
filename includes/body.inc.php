@@ -3,6 +3,9 @@ $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
 $sql="select * from utilizadores";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
+
+
+
 function top(){
 ?>
     <!DOCTYPE html>
@@ -55,7 +58,16 @@ function top(){
 
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <?php  echo "<form class='modal-content' action='../adicionaNovoUtilizador.php?id='>                         ";  ?>
+        <?php
+        $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
+        $sql="select * from utilizadores";
+        $result=mysqli_query($con,$sql);
+        $dados=mysqli_fetch_array($result);
+
+
+        echo "<form class='modal-content' action=\"../adicionaNovoUtilizador.php?id=".$dados['utilizadorId']." \">  ";
+        ?>
+
             <div class="container">
                 <h1>Sign Up</h1>
                 <hr>
