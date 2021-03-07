@@ -51,6 +51,7 @@ function top(){
                 <li><a href="index.php">Home</a></li>
                 <li><a href="generic.php">Outros Modos de Jogo</a></li>
                 <!--<li><a href="elements.html">Elements</a></li>-->
+                <li><a class="button special">Log In</a></li>
                 <li><a class="button special">Sign Up</a></li>
             </ul>
         </nav>
