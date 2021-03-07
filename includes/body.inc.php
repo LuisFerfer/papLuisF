@@ -55,7 +55,7 @@ function top(){
 
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <?php  echo "<form class='modal-content' action='/adicionaNovoUtilizador.php?id= ".$dados['utilizadorId']." ?>>";
+        <?php  echo "<form class='modal-content' action='../adicionaNovoUtilizador.php?id='>                         ";  ?>
             <div class="container">
                 <h1>Sign Up</h1>
                 <hr>
@@ -101,7 +101,7 @@ function top(){
 
     <div id="id02" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content" action="/action_page.php">
+        <form class="modal-content" action="/ConfirmaUtilizador.php">
             <div class="container">
                 <h1>Log In</h1>
                 <hr>
