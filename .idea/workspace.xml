@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="ok ja funciona, so falta pontuaçao">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_02_2021_18_34__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_02_2021_18_34__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +17,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1oMWN3JEAaAxiAWDEen0XGsCOEt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,41 +44,8 @@
       <option name="presentableId" value="Default" />
       <updated>1613096897531</updated>
       <workItem from="1613096899099" duration="2221000" />
-      <workItem from="1613503295253" duration="1274000" />
-      <workItem from="1613949181186" duration="2252000" />
-      <workItem from="1614075058477" duration="4549000" />
-      <workItem from="1614100259321" duration="1800000" />
-      <workItem from="1614118130456" duration="301000" />
-      <workItem from="1614158406397" duration="640000" />
-      <workItem from="1614206273083" duration="901000" />
-      <workItem from="1614258132258" duration="4733000" />
-      <workItem from="1614289491743" duration="599000" />
-      <workItem from="1614304818886" duration="5542000" />
-      <workItem from="1614852603157" duration="31000" />
-      <workItem from="1614948120897" duration="827000" />
+      <workItem from="1613425128463" duration="949000" />
     </task>
-    <task id="LOCAL-00001" summary="ugh..">
-      <created>1614045568058</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1614045568058</updated>
-    </task>
-    <task id="LOCAL-00002" summary="where is palavra">
-      <created>1614075892039</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1614075892040</updated>
-    </task>
-    <task id="LOCAL-00003" summary="ok ja funciona, so falta pontuaçao">
-      <created>1614118401174</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1614118401175</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,11 +62,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="ugh.." />
-    <MESSAGE value="where is palavra" />
-    <MESSAGE value="ok ja funciona, so falta pontuaçao" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok ja funciona, so falta pontuaçao" />
   </component>
 </project>
