@@ -40,38 +40,14 @@
             </ul>
         </nav>
     </header></footer>
-<!-- PERFIL  -->
-
-<section class="section-background">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <div class="courses-thumb courses-thumb-secondary">
-
-                    <div class="courses-detail">
-                        <br>
-                        <h3>Modo Infinito</a></h3>
-                        <div>
-                            <div class="courses-image">
-
-                                <img src="images/infinito.png" >
-                            </div>
-                        </div>
-                        <br><p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
-
-
-
-
-
-<!-- PERFIL  -->
+<ul class="actions">
+    <a  class="button big" href="dicionario.php" >Dicionario</a>
+</ul>
+<ul class="actions">
+    <a  class="button big" onclick="atualiza(1)" >Começar</a>
+</ul>
 
 
 
