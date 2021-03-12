@@ -8,11 +8,11 @@ $con = mysqli_connect("localhost", "root", "","pap2021vermo");
     <input type="text" style="width: 300px" name="dicionarioNome"><hr>
 
     <label style="color:white; font-size: 15px" class="badge badge-dark">Nivel: </label>
-    <textarea type="text" cols="100" rows="10" name="dicionarioNivel"></textarea><hr>
+    <input type="text" style="width:  300px" name="dicionarioNivel"><hr>
 
     <label style="color:white; font-size: 15px" class="badge badge-dark">Ficheiro:</label>
-    <input type="file" accept="image/*" name="dicionarioFicheiroURl" onchange="preview_image(event)" style="color: darkgray">
-    <img id="output_image"/><hr>
+    <input type="file" name="dicionarioFicheiroURl"  style="color: darkgray">
+    <hr>
 
     <label style="color:white; font-size: 15px" class="badge badge-dark">Lingua:</label>
     <select name="dicionarioLinguaId">

@@ -41,12 +41,14 @@
         </nav>
     </header></footer>
 
-
+<ul class="actions">
+    <a  class="button big" href="lingua.php" >Lingua</a>
+</ul>
 <ul class="actions">
     <a  class="button big" href="dicionario.php" >Dicionario</a>
 </ul>
 <ul class="actions">
-    <a  class="button big" onclick="atualiza(1)" >Começar</a>
+    <a  class="button big" href="index.php" >Começar</a>
 </ul>
 
 
