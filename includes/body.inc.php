@@ -28,8 +28,8 @@ function top(){
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
         <script src="js/common.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+-->
         <noscript>
             <link rel="stylesheet" href="css/skel.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -39,7 +39,7 @@ function top(){
         <!--teste-->
     </head>
 
-    <body class="landing">
+    <body class="landing" id="teste001">
     <!-- Header -->
     <header id="header">
         <h1><a href="index.php"><img src="images/vermo"></a></h1>
@@ -48,8 +48,8 @@ function top(){
                 <li><a href="index.php">Home</a></li>
                 <li><a href="generic.php">Outros Modos de Jogo</a></li>
                 <!--<li><a href="elements.html">Elements</a></li>-->
-                <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button></a></li>
-                <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Log In</button></a></li>
+                <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
+                <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
 
             </ul>
         </nav>
@@ -57,7 +57,9 @@ function top(){
 
 
     <div id="id01" class="modal">
+       <!--
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        -->
         <?php
         $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
         $sql="select * from utilizadores";
@@ -70,18 +72,17 @@ function top(){
 
             <div class="container">
                 <h1>Sign Up</h1>
-                <hr>
                 <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter Username" name="utilizadorNome" required>
+                <input type="text" placeholder="Enter Username" name="utilizadorNome" required style="width: auto;">
 
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="utilizadorEmail" required>
+                <input type="text" placeholder="Enter Email" name="utilizadorEmail" required style="width: auto;">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="utilizadorPassword" required>
+                <input type="password" placeholder="Enter Password" name="utilizadorPassword" required style="width: auto;">
 
                 <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required style="width: auto;">
 
                 <label>
                     <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
@@ -91,37 +92,43 @@ function top(){
 
                 <div class="clearfix">
                     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn">Sign Up</button>
+                    <button type="submit" class="signupbtn" style="width: auto;">Sign Up</button>
                 </div>
             </div>
         </form>
     </div>
-
+<!--
     <script>
         // Get the modal
         var modal = document.getElementById('id01');
-
+        var modal2 = document.getElementById('teste002');
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
-            if (event.target == modal) {
+            if (event.target == modal2) {
+                alert('entrou')
                 modal.style.display = "none";
+                document.getElementById('teste001').style.overflow='visible';
+                modal.style.display = "none";
+            }else {
+
+                alert('N entrou')
             }
         }
     </script>
-
+-->
 
 
     <div id="id02" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <span onclick="documentgetElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content" action="/ConfirmaUtilizador.php">
             <div class="container">
                 <h1>Log In</h1>
-                <hr>
+
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" placeholder="Enter Email" name="email" required  style="width: auto;">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw" required  style="width: auto;">
                 <label>
                     <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
                 </label>
@@ -129,8 +136,8 @@ function top(){
                 <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
                 <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn">Sign Up</button>
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn"  style="width: auto;">Sign Up</button>
                 </div>
             </div>
         </form>
@@ -138,12 +145,16 @@ function top(){
 
     <script>
         // Get the modal
-        var modal = document.getElementById('id02');
-
+        var modal1 = document.getElementById('id01');
+        var modal2 = document.getElementById('id02');
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+                document.getElementById('teste001').style.overflow='visible';
+            } else if (event.target == modal2){
+                modal2.style.display = "none";
+                document.getElementById('teste001').style.overflow='visible';
             }
         }
     </script>

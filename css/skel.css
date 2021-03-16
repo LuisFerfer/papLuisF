@@ -16,7 +16,7 @@
 		margin-left: auto;
 		margin-right: auto;
 
-		/* width: (containers) */
+		/* width: (containers)*/
 		width: 1200px;
 	}
 
@@ -28,7 +28,7 @@
 
 				/* max-width: (containers * 1.25) */
 				max-width: 1500px;
-
+				/*max-width: 50%;
 				/* min-width: (containers) */
 				min-width: 1200px;
 			}

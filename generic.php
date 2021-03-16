@@ -60,10 +60,10 @@
 					<div class="courses-thumb courses-thumb-secondary">
 
 						<div class="courses-detail">
-							<h3><a href="infinito.php">Modo Infinito</a></h3>
+							<h3><a href="infinito/infinito.php">Modo Infinito</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
-									<a href="infinito.php"><img src="images/infinito.png" alt=""></a>
+									<a href="infinito/infinito.php"><img src="images/infinito.png" alt=""></a>
 								</div>
 							</div>
 							<br><p></p>
@@ -77,10 +77,10 @@
 					<div class="courses-thumb courses-thumb-secondary">
 
 						<div class="courses-detail">
-							<h3><a href="duelo.php">Modo Duelo</a></h3>
+							<h3><a href="duelo/duelo.php">Modo Duelo</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
-									<a href="duelo.php"><img src="images/duelo.png" alt=""></a>
+									<a href="duelo/duelo.php"><img src="images/duelo.png" alt=""></a>
 								</div>
 							</div>
 							<br><p></p>
@@ -93,10 +93,10 @@
 					<div class="courses-thumb courses-thumb-secondary">
 
 						<div class="courses-detail">
-							<h3><a href="numeros.php">Modo Números</a></h3>
+							<h3><a href="numeros/numeros.php">Modo Números</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
-									<a href="numeros.php" ><img src="images/numb.png" alt=""></a>
+									<a href="numeros/numeros.php" ><img src="images/numb.png" alt=""></a>
 								</div>
 							</div>
 							<br><p></p>

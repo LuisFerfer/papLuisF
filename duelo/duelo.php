@@ -1,19 +1,21 @@
-<?php include_once ("includes/body.inc.php");
+<?php include_once("../includes/body.inc.php");
 top();
 ?>
     <script>
         var stage=1;
         $('document').ready(function (){
-            swapnum(stage);
+            swapduelo(stage);
         });
     </script>
 
 
+
+
+
 <!-- Banner -->
-<section id="bannernum">
+<section id="bannerdue">
 
 </section>
-
 
 <!-- Two -->
 <section id="two" class="wrapper style2 special">

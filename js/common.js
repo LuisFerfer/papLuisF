@@ -20,7 +20,7 @@ function sorteiaPalavra(){
 }
 
 function swap(number){
-    $('#banner').load('html'+number+'.php');
+    $('#banner').load('index/html'+number+'.php');
 }
 
 function atualiza(fator) {
@@ -110,7 +110,7 @@ demo();
 //kokokoko
 
 function swapinf(number){
-    $('#bannerinf').load('infinito'+number+'.php');
+    $('#bannerinf').load('infinito/infinito'+number+'.php');
 }
 
 function atualizainf(fator) {
@@ -175,7 +175,7 @@ async function repetidaPalavrainf(palavra){
 
 
 function swapnum(number){
-    $('#bannernum').load('numeros'+number+'.php');
+    $('#bannernum').load('numeros/numeros'+number+'.php');
 }
 
 function atualizanum(fator) {
@@ -212,7 +212,7 @@ function geraNumero(){
 
 
 function swapduelo(number){
-    $('#bannerdue').load('duelo'+number+'.php');
+    $('#bannerdue').load('duelo/duelo'+number+'.php');
 }
 
 function atualizaduelo(fator) {
