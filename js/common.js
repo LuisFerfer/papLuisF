@@ -171,7 +171,7 @@ async function repetidaPalavrainf(palavra){
 
 
 function swapnum(number){
-    $('#bannernum').load('numeros/numeros'+number+'.php');
+    $('#bannernum').load('numeros'+number+'.php');
 }
 
 function atualizanum(fator) {
@@ -208,7 +208,7 @@ function geraNumero(){
 
 
 function swapduelo(number){
-    $('#bannerdue').load('duelo/duelo'+number+'.php');
+    $('#bannerdue').load('duelo'+number+'.php');
 }
 
 function atualizaduelo(fator) {
