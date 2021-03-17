@@ -42,10 +42,10 @@
     </header></footer>
 
 <ul class="actions">
-    <a  class="button big" href="cruds/lingua.php" >Lingua</a>
+    <a  class="button big" href="lingua.php" >Lingua</a>
 </ul>
 <ul class="actions">
-    <a  class="button big" href="cruds/dicionario.php" >Dicionario</a>
+    <a  class="button big" href="dicionario.php" >Dicionario</a>
 </ul>
 <ul class="actions">
     <a  class="button big" href="index.php" >Começar</a>
