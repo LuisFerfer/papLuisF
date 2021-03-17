@@ -1,11 +1,7 @@
 var score=0;
 var palavrasSaidas=[]; // array de palavras/strings
-var pause=false;
-var nMaxPalavras=[20,35];
 var lives=3;
 var id;
-var palavra=[49];
-var j = 0;
 
                                             //    treino    //
 function geraPalavra(){
@@ -110,7 +106,7 @@ demo();
 //kokokoko
 
 function swapinf(number){
-    $('#bannerinf').load('infinito/infinito'+number+'.php');
+    $('#bannerinf').load('infinito'+number+'.php');
 }
 
 function atualizainf(fator) {

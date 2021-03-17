@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="Guilherme-Log In">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="update diario">
+      <change afterPath="$PROJECT_DIR$/includes/bodybase.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados/modeloVermo_v1.0.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloVermo_v1.0.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados/modeloVermo_v1.0.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloVermo_v1.0.mwb.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +19,21 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1oMWN3JEAaAxiAWDEen0XGsCOEt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,14 +42,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PAPGuilherme-Simao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/includes" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\papLuis\includes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\papLuis" />
+      <recent name="C:\wamp64\www\papLuis\numeros" />
+      <recent name="C:\wamp64\www\papLuis\duelo" />
+      <recent name="C:\wamp64\www\papLuis\infinito" />
+      <recent name="C:\wamp64\www\papLuis\index" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,6 +77,18 @@
       <workItem from="1613425128463" duration="949000" />
       <workItem from="1615139973134" duration="650000" />
       <workItem from="1615141212254" duration="1124000" />
+      <workItem from="1615160311827" duration="1033000" />
+      <workItem from="1615311561950" duration="1031000" />
+      <workItem from="1615367643434" duration="3041000" />
+      <workItem from="1615393956005" duration="2779000" />
+      <workItem from="1615453498838" duration="2529000" />
+      <workItem from="1615456649436" duration="985000" />
+      <workItem from="1615539753151" duration="706000" />
+      <workItem from="1615653347024" duration="11291000" />
+      <workItem from="1615832633584" duration="1595000" />
+      <workItem from="1615888334942" duration="716000" />
+      <workItem from="1615915097833" duration="5221000" />
+      <workItem from="1615973533094" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -55,14 +97,28 @@
       <option name="project" value="LOCAL" />
       <updated>1615135865357</updated>
     </task>
-    <task id="LOCAL-00002" summary="Guilherme-Form action">
-      <created>1615144093317</created>
+    <task id="LOCAL-00002" summary="nao adiciona?">
+      <created>1615453816299</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1615144093317</updated>
+      <updated>1615453816299</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1615539854631</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615539854631</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update diario">
+      <created>1615888436336</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615888436336</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,7 +138,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Guilherme-Log In" />
-    <MESSAGE value="Guilherme-Form action" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guilherme-Form action" />
+    <MESSAGE value="nao adiciona?" />
+    <MESSAGE value="update" />
+    <MESSAGE value="update diario" />
+    <option name="LAST_COMMIT_MESSAGE" value="update diario" />
   </component>
 </project>
