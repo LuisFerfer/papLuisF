@@ -8,7 +8,7 @@
 
 <div class="score" style="color: #FFFFFF">
     <span style="font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
-   <!-- <span style="padding-left: 50px; font-size: 40px" >Nível:&nbsp;</span><span id="nivelNum" class="ml-1 display-4">1</span>-->
+    <!-- <span style="padding-left: 50px; font-size: 40px" >Nível:&nbsp;</span><span id="nivelNum" class="ml-1 display-4">1</span>-->
 </div>
 <!-- <h1 style="color: navajowhite" ><br>vaca2<p><br></p></h1> -->
 
@@ -66,10 +66,8 @@ if ($handle) {
 <!--******************************-->
 
 <div style="padding-top: 60px">
-    <a  class="button big" onclick="novaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas);" id="novo">NOVO</a>
+    <a  class="button big" onclick="novaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas)" id="novo">NOVO</a>
     <a  class="button big" onclick="repetidaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas);" id="velho">VISTO</a>
 </div>
 
 <div id="debug"></div>
-
-
