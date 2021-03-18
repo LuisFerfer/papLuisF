@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
     Transit by TEMPLATED
@@ -42,33 +43,12 @@
 <h3>Dicionario</h3>
 <h3>Linguas</h3>
 -->
-<table class="table-striped" style=" color: #FFFFFF; font-weight: bold; font-size: 20px; width: 100%; height: 100%; margin-left: 20px; margin-bottom: 30px; margin-right: 20px">
-
-    <tr>
-        <td colspan="3" style="margin-bottom: 30px">
-            <a href="../Adiciona/AdicionaJogo.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Adicionar</button></a>
-        </td>
-    </tr>
-    <tr>
-        <th>Id</th>
-        <th>Nome</th>
-        <th>Nivel</th>
-        <th>Lingua ID</th>
-        <th>URL txt</th>
-        <th colspan="2">Opções</th>
-    </tr>
-
-    <tr >
-    <tr>
-        <td> Dicionario ID </td>
-        <td> Nome Dicionario </td>
-        <td> Dicionario Nivel </td>
-        <td> Lingua ID </td>
-        <td> Ficheiro URL </td>
-    </tr>
-
-
-    </tr>
+<table>
+<tr>
+    <td colspan="3" style="margin-bottom: 30px">
+        <a href="dicionario.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Dicionário</button></a>
+    </td>
+</tr>
 </table>
 
 
