@@ -43,10 +43,17 @@
 <h3>Dicionario</h3>
 <h3>Linguas</h3>
 -->
+<h1 align="center">Backoffice</h1>
 <table>
 <tr>
     <td colspan="3" style="margin-bottom: 30px">
         <a href="dicionario.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Dicionário</button></a>
+    </td>
+
+</tr>
+<tr>
+    <td colspan="3" style="margin-bottom: 30px">
+        <a href="lingua.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Lingua</button></a>
     </td>
 </tr>
 </table>

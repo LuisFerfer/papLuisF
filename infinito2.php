@@ -67,8 +67,8 @@ if ($handle) {
 <!--******************************-->
 
 <div style="padding-top: 60px">
-    <a  class="button big" onclick="novaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);debug(palavrasSaidas)" id="novo">NOVO</a>
-    <a  class="button big" onclick="repetidaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);debug(palavrasSaidas);" id="velho">VISTO</a>
+    <a  class="button big" onclick="novaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);" id="novo">NOVO</a>
+    <a  class="button big" onclick="repetidaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);" id="velho">VISTO</a>
 </div>
 
 <div id="debug"></div>

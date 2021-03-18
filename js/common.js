@@ -127,9 +127,9 @@ async function novaPalavrainf(palavra){
             lives--;
             $('#livestext').html(lives);
             if(lives==0){
-                return(score);
-                $('#livestext').html(lives);
-                await sleep(100);
+
+              $('#livestext').html(lives);
+              await sleep(100);
                 alert("PERDESTE");
                 setTimeout(atualizainf(-1),3000);
 
@@ -150,11 +150,11 @@ async function repetidaPalavrainf(palavra){
             lives--;
             $('#livestext').html(lives);
             if(lives==0){
-                return(score);
+
                 $('#livestext').html(lives);
                 await sleep(100);
                 alert("PERDESTE");
-                setTimeout(atualizainf(-1),3000);
+              setTimeout(atualizainf(-1),3000);
 
 
             }

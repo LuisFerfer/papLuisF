@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="update diario 2">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="update diario 3">
+      <change afterPath="$PROJECT_DIR$/admin/adicionaDicionario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaDicionario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/editaDicionario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/eliminaDicionario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_02_2021_18_34__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_02_2021_18_34__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/dicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dicionario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinito2.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +61,11 @@
       <recent name="C:\wamp64\www\papLuis\includes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\papLuis\admin" />
       <recent name="C:\wamp64\www\papLuis" />
       <recent name="C:\wamp64\www\papLuis\numeros" />
       <recent name="C:\wamp64\www\papLuis\duelo" />
       <recent name="C:\wamp64\www\papLuis\infinito" />
-      <recent name="C:\wamp64\www\papLuis\index" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,7 +93,6 @@
       <workItem from="1615915097833" duration="5221000" />
       <workItem from="1615973533094" duration="1151000" />
       <workItem from="1616005717722" duration="6839000" />
-      <workItem from="1616026884747" duration="1326000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
