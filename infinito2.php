@@ -11,7 +11,7 @@
     <span style="padding-left:10px; font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
 
 </div>
-<!-- <h1 style="color: navajowhite" ><br>vaca2<p><br></p></h1> -->
+
 
 <!--*************PALAVRA**********-->
 <?php

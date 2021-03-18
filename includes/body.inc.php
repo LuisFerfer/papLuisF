@@ -24,16 +24,16 @@ function top(){
         <!--[if lte IE 8]>
         <script src="js/html5shiv.js"></script><![endif]-->
         <script src="js/jquery.min.js"></script>
-        <script src="../js/skel.min.js"></script>
-        <script src="../js/skel-layers.min.js"></script>
-        <script src="../js/init.js"></script>
-        <script src="../js/common.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/common.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
         <noscript>
-            <link rel="stylesheet" href="../css/skel.css" />
-            <link rel="stylesheet" href="../css/style.css" />
-            <link rel="stylesheet" href="../css/style-xlarge.css" />
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-xlarge.css" />
         </noscript>
 
         <!--teste-->
@@ -42,11 +42,11 @@ function top(){
     <body class="landing" id="teste001">
     <!-- Header -->
     <header id="header">
-        <h1><a href="../index.php"><img src="../images/vermo"></a></h1>
+        <h1><a href="index.php"><img src="images/vermo"></a></h1>
         <nav id="nav">
             <ul>
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="../generic.php">Outros Modos de Jogo</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="generic.php">Outros Modos de Jogo</a></li>
                 <!--<li><a href="elements.html">Elements</a></li>-->
                 <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
                 <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
@@ -67,7 +67,7 @@ function top(){
         $dados=mysqli_fetch_array($result);
 
 
-        echo "<form class='modal-content' action=\"../adicionaNovoUtilizador.php?id=".$dados['utilizadorId']." \">  ";
+        echo "<form class='modal-content' action=\"admin/adicionaNovoUtilizador.php?id=".$dados['utilizadorId']." \">  ";
         ?>
 
             <div class="container">
@@ -120,7 +120,7 @@ function top(){
 
     <div id="id02" class="modal">
         <span onclick="documentgetElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content" action="/ConfirmaUtilizador.php">
+        <form class="modal-content" action="admin/ConfirmaUtilizador.php">
             <div class="container">
                 <h1>Log In</h1>
 

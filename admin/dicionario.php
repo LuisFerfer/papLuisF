@@ -3,6 +3,7 @@ $con = mysqli_connect("localhost", "root", "","pap2021vermo");
 
 
 ?>
+
 <form action="confirmaDicionario.php" method="post" enctype="multipart/form-data">
     <label style="color:white; font-size: 15px" class="badge badge-dark">Nome: </label>
     <input type="text" style="width: 300px" name="dicionarioNome"><hr>
@@ -28,9 +29,11 @@ $con = mysqli_connect("localhost", "root", "","pap2021vermo");
 
 
         ?>
+
     </select>
 
     <input type="Submit" class="btn btn-danger" value="Adiciona"><br>
+
 
 </form>
 

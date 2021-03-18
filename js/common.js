@@ -16,7 +16,7 @@ function sorteiaPalavra(){
 }
 
 function swap(number){
-    $('#banner').load('index/html'+number+'.php');
+    $('#banner').load('html'+number+'.php');
 }
 
 function atualiza(fator) {
