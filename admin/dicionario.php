@@ -60,7 +60,7 @@ $result2=mysqli_query($con,$sql2);
         <td> <?php echo $dadosDicionario["dicionarioNivel"]?> </td>
         <td> <?php echo $dadosDicionario["dicionarioLinguaId"]?> </td>
         <td> <?php echo $dadosDicionario["dicionarioFicheiroURL"]?> </td>
-        <td><a href="editaDicionario.php"> Editar </a></td>
+        <td><a href="editaDicionario.php?id=<?php $dadosDicionario['dicionarioId']?>">Editar </a></td>
         <td><a href="#" onclick="confirmaElimina(<?php echo $dadosDicionario['dicionarioId'] ?>)"><button type='button' class='btn btn-danger'>Eliminar</button></a></td>;
     </tr>
 <?php } ?>

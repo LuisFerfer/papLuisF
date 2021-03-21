@@ -2,7 +2,6 @@
 $con=mysqli_connect("localhost","root","","pap2021vermo");
 $nome=addslashes($_POST['nomeDicionario']);
 $id=intval($_POST['id']);
-//$imagem=$_FILES['logoEmpresa']['name'];
 $ficheiro=time().".txt";
 $novoNome="../".$ficheiro;
 
@@ -14,5 +13,6 @@ if($ficheiro!=''){
 
 $sql.=" where dicionarioId=".$id;
 mysqli_query($con,$sql);
-header("location:../admin/dicionario.php");
+//header("location:../admin/dicionario.php");
+mysqli_error($con);
 ?>
