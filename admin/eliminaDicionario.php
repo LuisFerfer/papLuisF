@@ -6,5 +6,4 @@ mysqli_query($con,$sql);
 header("location:../admin/dicionario.php");
 
 
-
 ?>

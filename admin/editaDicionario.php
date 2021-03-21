@@ -1,9 +1,9 @@
 <?php
 $id=intval($_GET['dicionarioId']);
 $con=mysqli_connect("localhost","root","","pap2021vermo");
-$sql="select * from dicionarios where dicionarioId=".$id;
-$result=mysqli_query($con,$sql);
-$dados=mysqli_fetch_array($result);
+$sql2="select * from dicionarios where dicionarioId=".$id;
+$result2=mysqli_query($con,$sql2);
+$dados2=mysqli_fetch_array($result2);
 
 ?>
 
@@ -14,10 +14,10 @@ $dados=mysqli_fetch_array($result);
     <input type="hidden" name="id" value="<?php echo $id?>">
 
     <label>Nome:</label>
-    <input type="text" name="nomeDicionario" value="<?php echo $dados['dicionarioNome']?>">
+    <input type="text" name="nomeDicionario" value="<?php echo $dados2['dicionarioNome']?>">
     <br>
     <label>Ficheiro</label><br>
-    <src="../<?php echo $dados['dicionarioFicheiroURL']?>"><br>
+    <src="../<?php echo $dados2['dicionarioFicheiroURL']?>"><br>
 
     <input type="submit" value="Edita">
 </form>

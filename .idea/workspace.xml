@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="backoffice, infinito funciona">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="modais not working">
+      <change afterPath="$PROJECT_DIR$/admin/js/adicionaLingua.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/confirmaEliminaDicionario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/confirmaEliminaLingua.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/editaLingua.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/eliminaLingua.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dicionario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editaDicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaDicionario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/eliminaDicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/eliminaDicionario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lingua.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lingua.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../M18" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -86,6 +94,8 @@
       <workItem from="1615973533094" duration="1151000" />
       <workItem from="1616005717722" duration="6839000" />
       <workItem from="1616085024880" duration="5569000" />
+      <workItem from="1616102482151" duration="899000" />
+      <workItem from="1616348408716" duration="2198000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -122,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616040982801</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modais not working">
+      <created>1616102698810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616102698811</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +163,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="update diario" />
     <MESSAGE value="backoffice, infinito funciona" />
-    <option name="LAST_COMMIT_MESSAGE" value="backoffice, infinito funciona" />
+    <MESSAGE value="modais not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="modais not working" />
   </component>
 </project>

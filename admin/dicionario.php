@@ -38,7 +38,7 @@ $result2=mysqli_query($con,$sql2);
 
     <tr>
         <td colspan="3" style="margin-bottom: 30px">
-            <a href="adicionaDicionario.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Adicionar</button></a>
+            <a href="adicionaDicionario.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Adicionar Dicionario</button></a>
         </td>
 
     </tr>
@@ -61,11 +61,17 @@ $result2=mysqli_query($con,$sql2);
         <td> <?php echo $dadosDicionario["dicionarioLinguaId"]?> </td>
         <td> <?php echo $dadosDicionario["dicionarioFicheiroURL"]?> </td>
         <td><a href="editaDicionario.php"> Editar </a></td>
-        <td><a href="eliminaDicionario.php"> Eliminar </a></td>
+        <td><a href="#" onclick="confirmaElimina(<?php echo $dadosDicionario['dicionarioId'] ?>)"><button type='button' class='btn btn-danger'>Eliminar</button></a></td>;
     </tr>
 <?php } ?>
 
     </tr>
 </table>
 </body>
+<script>
+    function confirmaElimina(id) {
+        if(confirm('Confirma que deseja eliminar o registo com o ID #'+id+"?"))
+            window.location="eliminaDicionario?id=" + id;
+    }
+</script>
 </html>
