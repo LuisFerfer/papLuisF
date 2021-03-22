@@ -6,9 +6,9 @@ $linguaNome=addslashes($_POST["linguaNome"]);
 $linguaBandeiraURl=$_FILES["linguaBandeiraURl"]["name"];
 
 
-echo $sql="insert into linguas (linguaNome,linguaBandeiraURl) 
+ $sql="insert into linguas (linguaNome,linguaBandeiraURl) 
 values('".$linguaNome."','".$linguaBandeiraURl."')";
 
 mysqli_query($con,$sql);
-header("location: backoffice.php");
+header("location: lingua.php");
 ?>

@@ -1,7 +1,7 @@
 <?php
 $con = mysqli_connect("localhost", "root", "","pap2021vermo");
-$sql3="select * from linguas";
-$result3=mysqli_query($con,$sql3);
+$sql="select * from linguas";
+$result3=mysqli_query($con,$sql);
 
 ?>
 <!DOCTYPE html>
@@ -35,13 +35,14 @@ $result3=mysqli_query($con,$sql3);
 <body class="landing">
 
 <table class="table-striped" style=" color: #000000; font-weight: bold; font-size: 20px; width: 100%; height: 100%; margin-left: 20px; margin-bottom: 30px; margin-right: 20px">
-<h1>Backoffice das Linguas</h1>
-    <tr>
-        <td colspan="3" style="margin-bottom: 30px">
+<h1 align="center">Linguas</h1>
+    <a  class="button small" href="index.php" > <- Backoffice</a>
+
+        <td colspan="1" style="margin-bottom: 30px">
             <a href="adicionaLingua.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Adicionar Lingua</button></a>
         </td>
 
-    </tr>
+
 
     <tr>
         <th>Id</th>
@@ -60,11 +61,17 @@ $result3=mysqli_query($con,$sql3);
         <td> <?php echo $dadosLingua["linguaBandeiraURL"]?> </td>
 
         <td><a href="editaLingua.php"> Editar </a></td>
-        <td><a href="eliminaLingua.php"> Eliminar </a></td>
+        <td><a href="#" onclick="confirmaElimina(<?php echo $dadosLingua['linguaId'] ?>)"><button type='button' class='btn btn-danger'>Eliminar</button></a></td>
     </tr>
     <?php } ?>
 
     </tr>
 </table>
 </body>
+<script>
+    function confirmaElimina(id) {
+        if(confirm('Confirma que deseja eliminar o registo com o ID #'+id+"?"))
+            window.location="eliminaLingua?id=" + id;
+    }
+</script>
 </html>

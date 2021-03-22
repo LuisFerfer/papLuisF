@@ -35,13 +35,14 @@ $result2=mysqli_query($con,$sql2);
 <body class="landing">
 
 <table class="table-striped" style=" color: #000000; font-weight: bold; font-size: 20px; width: 100%; height: 100%; margin-left: 20px; margin-bottom: 30px; margin-right: 20px">
+    <h1 align="center"> Dicionarios</h1>
+    <a  class="button small" href="index.php" ><- Backoffice</a>
 
-    <tr>
-        <td colspan="3" style="margin-bottom: 30px">
+        <td colspan="1" style="margin-bottom: 30px">
             <a href="adicionaDicionario.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Adicionar Dicionario</button></a>
         </td>
 
-    </tr>
+
 
     <tr>
         <th>Id</th>
@@ -49,7 +50,7 @@ $result2=mysqli_query($con,$sql2);
         <th>Nivel</th>
         <th>Lingua ID</th>
         <th>URL txt</th>
-        <th colspan="2">Opções</th>
+        <th colspan="2">OpÃ§Ãµes</th>
     </tr>
 
     <tr >
@@ -61,7 +62,7 @@ $result2=mysqli_query($con,$sql2);
         <td> <?php echo $dadosDicionario["dicionarioLinguaId"]?> </td>
         <td> <?php echo $dadosDicionario["dicionarioFicheiroURL"]?> </td>
         <td><a href="editaDicionario.php?id=<?php $dadosDicionario['dicionarioId']?>">Editar </a></td>
-        <td><a href="#" onclick="confirmaElimina(<?php echo $dadosDicionario['dicionarioId'] ?>)"><button type='button' class='btn btn-danger'>Eliminar</button></a></td>;
+        <td><a href="#" onclick="confirmaElimina(<?php echo $dadosDicionario['dicionarioId'] ?>)"><button type='button' class='btn btn-danger'>Eliminar</button></a></td>
     </tr>
 <?php } ?>
 

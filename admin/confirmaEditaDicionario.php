@@ -13,6 +13,6 @@ if($ficheiro!=''){
 
 $sql.=" where dicionarioId=".$id;
 mysqli_query($con,$sql);
-//header("location:../admin/dicionario.php");
+header("location:dicionario.php");
 mysqli_error($con);
 ?>
