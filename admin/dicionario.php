@@ -36,7 +36,7 @@ $result2=mysqli_query($con,$sql2);
 
 <table class="table-striped" style=" color: #000000; font-weight: bold; font-size: 20px; width: 100%; height: 100%; margin-left: 20px; margin-bottom: 30px; margin-right: 20px">
     <h1 align="center"> Dicionarios</h1>
-    <a  class="button small" href="index.php" ><- Backoffice</a>
+    <a  class="button small" href="index.php" >Backoffice</a>
 
         <td colspan="1" style="margin-bottom: 30px">
             <a href="adicionaDicionario.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Adicionar Dicionario</button></a>

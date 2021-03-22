@@ -36,7 +36,7 @@ $result3=mysqli_query($con,$sql);
 
 <table class="table-striped" style=" color: #000000; font-weight: bold; font-size: 20px; width: 100%; height: 100%; margin-left: 20px; margin-bottom: 30px; margin-right: 20px">
 <h1 align="center">Linguas</h1>
-    <a  class="button small" href="index.php" > <- Backoffice</a>
+    <a  class="button small" href="index.php" > <-  Backoffice</a>
 
         <td colspan="1" style="margin-bottom: 30px">
             <a href="adicionaLingua.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Adicionar Lingua</button></a>
@@ -58,9 +58,9 @@ $result3=mysqli_query($con,$sql);
     <tr>
         <td> <?php echo $dadosLingua["linguaId"]?>  </td>
         <td> <?php echo $dadosLingua["linguaNome"]?> </td>
-        <td> <?php echo $dadosLingua["linguaBandeiraURL"]?> </td>
+        <td> <img style="width: 600px; height: 350px" src="../images/<?php echo $dadosLingua["linguaBandeiraURL"]?>"></td>
 
-        <td><a href="editaLingua.php"> Editar </a></td>
+        <td><a href="editaLingua.php?id=<?php echo $dadosLingua["linguaId"]?>"> Editar </a></td>
         <td><a href="#" onclick="confirmaElimina(<?php echo $dadosLingua['linguaId'] ?>)"><button type='button' class='btn btn-danger'>Eliminar</button></a></td>
     </tr>
     <?php } ?>

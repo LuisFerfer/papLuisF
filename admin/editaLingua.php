@@ -1,6 +1,7 @@
 <?php
-$id=intval($_GET["id"]);
+
 $con = mysqli_connect("localhost", "root", "","pap2021vermo");
+$id=intval($_GET["id"]);
 $sql="select * from linguas where linguaId=".$id;
 $resultlinguas=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($resultlinguas);
