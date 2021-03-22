@@ -1,7 +1,6 @@
 <?php
-
-$con = mysqli_connect("localhost", "root", "","pap2021vermo");
 $id=intval($_GET["id"]);
+$con = mysqli_connect("localhost", "root", "","pap2021vermo");
 $sql="select * from linguas where linguaId=".$id;
 $resultlinguas=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($resultlinguas);
@@ -52,7 +51,7 @@ $dados=mysqli_fetch_array($resultlinguas);
     <br>
 
     <label style="color:white; font-size: 15px" class="badge badge-dark">Bandeira:</label>
-    <input type="file" name="linguaBandeiraURl" value="<?php echo $dados['linguaBandeiraURL']?>"  style="color: darkgray">
+    <input type="file" name="linguaBandeiraURL"  style="color: darkgray">
     <hr>
 
 

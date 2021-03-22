@@ -2,12 +2,12 @@
 $con=mysqli_connect("localhost","root","","pap2021vermo");
 $nome=addslashes($_POST['nomeLingua']);
 $id=intval($_POST['id']);
-$img=$_FILES["linguaBandeiraURL"]["name"];
-$novoNome="../images/".$img;
+$ficheiro=($_FILES['linguaBandeiraURL']['name']);
+$novoNome="../".$ficheiro;
 
 $sql="Update linguas set linguaNome='".$nome."'";
-if($img!=''){
-    $sql.=", linguaBandeiraURL='".$novoNome."'";
+if($ficheiro!=''){
+    $sql.=", linguaBandeiraURL='".$ficheiro."'";
 
 }
 

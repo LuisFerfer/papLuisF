@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="domingo 1">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="edit erro">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaDicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaDicionario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaDicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaDicionario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaLingua.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaLingua.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dicionario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/editaLingua.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaLingua.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lingua.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lingua.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PAPGuilherme-Simao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../M18" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -86,6 +92,7 @@
       <workItem from="1616085024880" duration="5569000" />
       <workItem from="1616102482151" duration="899000" />
       <workItem from="1616348408716" duration="2198000" />
+      <workItem from="1616407010905" duration="4278000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -129,12 +136,12 @@
       <option name="project" value="LOCAL" />
       <updated>1616102698811</updated>
     </task>
-    <task id="LOCAL-00007" summary="Guilherme-Coisas">
-      <created>1616418682310</created>
+    <task id="LOCAL-00007" summary="edit erro">
+      <created>1616398601408</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1616418682310</updated>
+      <updated>1616398601409</updated>
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
@@ -161,7 +168,7 @@
     <MESSAGE value="update diario" />
     <MESSAGE value="backoffice, infinito funciona" />
     <MESSAGE value="modais not working" />
-    <MESSAGE value="Guilherme-Coisas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guilherme-Coisas" />
+    <MESSAGE value="edit erro" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit erro" />
   </component>
 </project>
