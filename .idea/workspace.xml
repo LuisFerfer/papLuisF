@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="edit erro">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaDicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaDicionario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/confirmaEditaDicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaDicionario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaLingua.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaLingua.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dicionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dicionario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaLingua.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaLingua.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lingua.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lingua.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +87,7 @@
       <workItem from="1616085024880" duration="5569000" />
       <workItem from="1616102482151" duration="899000" />
       <workItem from="1616348408716" duration="2198000" />
-      <workItem from="1616407010905" duration="4278000" />
+      <workItem from="1616407010905" duration="6363000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -143,11 +138,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616398601409</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="edit">
+      <created>1616418867508</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616418867508</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -169,6 +181,7 @@
     <MESSAGE value="backoffice, infinito funciona" />
     <MESSAGE value="modais not working" />
     <MESSAGE value="edit erro" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit erro" />
+    <MESSAGE value="edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit" />
   </component>
 </project>
