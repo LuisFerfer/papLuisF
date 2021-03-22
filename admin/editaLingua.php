@@ -52,7 +52,7 @@ $dados=mysqli_fetch_array($resultlinguas);
     <br>
 
     <label style="color:white; font-size: 15px" class="badge badge-dark">Bandeira:</label>
-    <input type="file" name="linguaBandeiraURl"  style="color: darkgray">
+    <input type="file" name="linguaBandeiraURl" value="<?php echo $dados['linguaBandeiraURL']?>"  style="color: darkgray">
     <hr>
 
 
