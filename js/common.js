@@ -50,25 +50,25 @@ function repetidaPalavra(palavra){
     }
     else{
         if(!palavrasSaidas.includes(palavra)){
-            return(score);
-            $('#perdemo').modal('toggle');
-            setTimeout(atualiza(-1),3000);
+
+            $('#perdemo').modal('show');
+
+            $("#perdemoMsg").html('Perdeste com score de:'  + (score) + '');
+
+            $("#perdemo").modal("toggle");
 
         }
     }
-
 }
 
 
-function DeleteUtilizador(result) {  // abre o modal e injecta o ID
-    var result = score
-    $("#PerfilID").html(id);
-
-    $("#perdemoMsg").html('Confirma que deseja eliminar o Utilizador: ' + result + '?');
-
-    $("#perdemo").modal("toggle");
-
+/*function debug(t){
+    n=t.length;
+    document.getElementById('debug').innerHTML="";
+    for(i=0;i<n;i++)
+        document.getElementById('debug').innerHTML+=t[i]+" ";
 }
+*/
 
 
                                                 //   infinito   //

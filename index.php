@@ -51,13 +51,12 @@ top();
                             <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">Fechar</button>
                         </div>
                         <div class="col-lg-5 meio">
-                            <button onclick="DeleteTableUtilizador();" type="button" id="eliminar"
-                                    class="btn btn-danger pull-right ">Eliminar
+                            <button onclick="setTimeout(atualiza(-1),3000) " type="button" id="eliminar"
+                                    class="btn btn-danger pull-right ">Voltar a Jogar
                             </button>
                         </div>
                     </div>
             </div>
-            <input type="hidden" id="PerfilID">
             </form >
         </div>
     </div>
