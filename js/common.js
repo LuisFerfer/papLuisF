@@ -19,9 +19,9 @@ function swap(number){
     $('#banner').load('html'+number+'.php');
 }
 
-function atualiza(fator) {
+function atualiza(id) {
 
-    stage+=fator;
+    stage+=id;
     swap(stage);
 
 }
@@ -42,34 +42,27 @@ function novaPalavra(palavra){
     }
 
 }
+
+
 function repetidaPalavra(palavra){
+
     if(palavrasSaidas.includes(palavra)){ // ele diz que é repetida e ela existe na lista de palavras saídas
         score++;
         $('#scorePts').html(score);
-
     }
+
     else{
-        if(!palavrasSaidas.includes(palavra)){
+        if(!(palavrasSaidas.includes(palavra))){
 
-            $('#perdemo').modal('show');
+            $("#perdemo").modal("show");
 
-            $("#perdemoMsg").html('Perdeste com score de:'  + (score) + '');
+            $("#perdemoMsg").html("Perdeste com score de:"  + (score) + '.');
 
-            $("#perdemo").modal("toggle");
+            $("#perdemo").modal("show");
 
         }
     }
 }
-
-
-/*function debug(t){
-    n=t.length;
-    document.getElementById('debug').innerHTML="";
-    for(i=0;i<n;i++)
-        document.getElementById('debug').innerHTML+=t[i]+" ";
-}
-*/
-
 
                                                 //   infinito   //
 
@@ -80,6 +73,7 @@ function geraPalavrainf(){
     return(sorteiaPalavrainf(n));
 
 }
+
 
 function sorteiaPalavrainf(){
     document.getElementById("palavra").innerHTML=geraPalavrainf();

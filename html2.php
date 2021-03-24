@@ -31,7 +31,8 @@ if ($handle) {
 
 <script>
     var nPalavras=<?php echo $i-100?>;
-    var palavras=[<?php
+    var palavras=[
+        <?php
         $j=1;
         foreach ($arr as $palavra){
 
@@ -42,7 +43,8 @@ if ($handle) {
                 echo "'$palavra'"; // a �ltima palavra n�o tem o \n
             $j++;
         }
-        ?>];
+        ?>
+    ];
 
 
     function geraPalavra(nPalavras){
@@ -51,6 +53,7 @@ if ($handle) {
         return(palavras[n]);
 
     }
+
     function sorteiaPalavra(n){
         document.getElementById("palavra").innerHTML=geraPalavra(n);
     }
@@ -58,7 +61,7 @@ if ($handle) {
 </script>
 
 <body >
-<h1> <span id="palavra" style="color:navajowhite">cassete</span></h1>
+<h1> <span id="palavra" style="color:navajowhite" >cassete</span></h1>
 
 
 </body>
@@ -95,7 +98,7 @@ if ($handle) {
                         <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">Fechar</button>
                     </div>
                     <div class="col-lg-5 meio">
-                        <button onclick="setTimeout(atualiza(-1),3000) " type="button" id="eliminar"
+                        <button onclick="setTimeout(atualiza(-1),3000)" type="button" id="eliminar"
                                 class="btn btn-danger pull-right ">Voltar a Jogar
                         </button>
                     </div>
