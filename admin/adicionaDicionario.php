@@ -1,6 +1,6 @@
 <?php
 $con = mysqli_connect("localhost", "root", "","pap2021vermo");
-$sql="select * from linguas";
+$sql="select * from dicionarios";
 $result=mysqli_query($con,$sql);
 
 ?>
@@ -43,7 +43,6 @@ $result=mysqli_query($con,$sql);
 
     <label style="color:white; font-size: 15px" class="badge badge-dark">Nivel: </label>
     <input type="text" style="width:  300px" name="dicionarioNivel"><hr>
-    <!--  Ideia: Criar Tabela com niveis -->
 
     <label style="color:white; font-size: 15px" class="badge badge-dark">Ficheiro:</label>
     <input type="file" name="dicionarioFicheiroURl"  style="color: darkgray">

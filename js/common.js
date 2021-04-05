@@ -53,12 +53,12 @@ function repetidaPalavra(palavra){
 
     else{
         if(!(palavrasSaidas.includes(palavra))){
+
+            $("#perdemo").modal("show");
+
             $("#perdemoMsg").html("Perdeste com score de:"  + (score) + '.');
-            $("#perdemo").show();
 
-
-
-         //   $("#perdemo").modal("show");
+            $("#perdemo").modal("show");
 
         }
     }

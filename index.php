@@ -38,6 +38,7 @@ top();
         <div class="modal-dialog">
             <div class="modal-content">
                 <form class=contact-form method=post enctype=multipart/form-data>
+
                     <div class="modal-header">
                         <h5 class="modal-title" id="perdemoLabel">Perdeste</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

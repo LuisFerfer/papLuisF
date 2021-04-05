@@ -12,7 +12,7 @@ $dicionarioLinguaId=intval($_POST["dicionarioLinguaId"]);
 
 
 
-$sql="insert into dicionarios (dicionariold,dicionarioNome,dicionarioNivel,dicionarioFicheiroURl,dicionarioLinguaId)
+$sql="insert into dicionarios (dicionarioNome,dicionarioNivel,dicionarioFicheiroURl,dicionarioLinguaId)
 values('".$dicionarioNome."','".$dicionarioNivel."','".$dicionarioFicheiroURl."','".$dicionarioLinguaId."')";
 
 mysqli_query($con,$sql);
