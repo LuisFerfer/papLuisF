@@ -26,6 +26,12 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-xlarge.css" />
     </noscript>
+    <script>
+        var stage=1;
+        $('document').ready(function (){
+            swap(stage);
+        });
+    </script>
 </head>
 <body class="landing">
 <!-- Header -->

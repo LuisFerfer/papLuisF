@@ -1,10 +1,5 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<script src="js/jquery.min.js"></script>
-<script src="js/common.js"></script>
-<script>
 
-
-</script>
 
 <div class="score" style="color: #FFFFFF">
     <span style="font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
@@ -71,13 +66,13 @@ if ($handle) {
 <div style="padding-top: 60px">
     <a  class="button big" onclick="novaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas)" id="novo">NOVO</a>
     <a  class="button big" onclick="repetidaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas);" id="velho">VISTO</a>
+    <a  class="button big"data-toggle="modal" data-target="#perdemo">teste</a>
 </div>
 
 <div id="debug"></div>
 
 
-<div class="modal fade" id="perdemo" data-backdrop="static" data-keyboard="false" tabindex="-1"
-     aria-labelledby="perdemoLabel" aria-hidden="true">
+<div class="modal" id="perdemo" >
     <div class="modal-dialog">
         <div class="modal-content">
             <form class=contact-form method=post enctype=multipart/form-data>
@@ -95,7 +90,7 @@ if ($handle) {
                 </div>
                 <div class="modal-footer">
                     <div class="col-lg-7 meio">
-                        <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-secondary pull-left" onclick="$('#perdemo').hide();">Fechar</button>
                     </div>
                     <div class="col-lg-5 meio">
                         <button onclick="setTimeout(atualiza(-1),3000)" type="button" id="eliminar"

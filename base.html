@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--
+    Transit by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foca-te no jogo!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <!--
+    <script src="js/html5shiv.js"></script><![endif]-->
+    <!--   <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+
+<!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ -->   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/common.js"></script>
+
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+
+    <!--teste-->
+</head>
+
+<body class="landing" id="teste001">
+<!-- Header -->
+<header id="header">
+    <h1><a href="index.php"><img src="images/vermo"></a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="generic.php">Outros Modos de Jogo</a></li>
+            <!--<li><a href="elements.html">Elements</a></li>-->
+            <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
+            <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
+
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<script>
+    // Get the modal
+    var modal1 = document.getElementById('id01');
+    var modal2 = document.getElementById('id02');
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+            document.getElementById('teste001').style.overflow='visible';
+        } else if (event.target == modal2){
+            modal2.style.display = "none";
+            document.getElementById('teste001').style.overflow='visible';
+        }
+    }
+</script>
+
+
+
+<script>
+    var stage=1;
+    $('document').ready(function (){
+        // swap(stage);
+        alert('aaa');
+    });
+
+
+</script>
+<script>
+    function testeModal(){
+
+     //   $("#perdemo").css('display','block');
+        $("#perdemoMsg").html("Perdeste com score de:"  + (score) + '.');
+        $('#perdemo').show();
+
+
+
+    }
+</script>
+
+<!-- Banner -->
+<section id="banner">
+
+
+</section>
+
+<!-- Two -->
+<section id="two" class="wrapper style2 special">
+    <div class="container">
+        <header class="major">
+            <h2>Vermo!</h2>
+            <p>Treine o seu cérebro.</p>
+        </header>
+        <div>
+            <button type="button" class="btn btn-primary" onclick="testeModal()">
+                Launch demo modal
+            </button>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+<div class="modal" id="perdemo" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form class=contact-form method=post enctype=multipart/form-data>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="perdemoLabel">Perdeste</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <span id="perdemoMsg"></span>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="col-lg-7 meio">
+                        <button type="button" class="btn btn-secondary pull-left" onclick="$('#perdemo').hide();">Fechar</button>
+                    </div>
+                    <div class="col-lg-5 meio">
+                        <button onclick="setTimeout(atualiza(-1),3000) " type="button" id="eliminar"
+                                class="btn btn-danger pull-right ">Voltar a Jogar
+                        </button>
+                    </div>
+                </div>
+            </form >
+        </div>
+
+
+    </div>
+</div>
+    <!-- Button trigger modal -->
+<div id="id01" class="modal">
+    <!--
+     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     -->
+    <form class='modal-content' action="../adicionaNovoUtilizador.php?id= ">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Username" name="utilizadorNome" required style="width: auto;">
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="utilizadorEmail" required style="width: auto;">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="utilizadorPassword" required style="width: auto;">
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required style="width: auto;">
+
+            <label>
+                <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn" style="width: auto;">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="id02" class="modal">
+    <span onclick="documentgetElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/ConfirmaUtilizador.php">
+        <div class="container">
+            <h1>Log In</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required  style="width: auto;">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required  style="width: auto;">
+            <label>
+                <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn"  style="width: auto;">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalTeste" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <section class="links">
+                <div class="align-center">
+                    <h3>Disclaimer</h3>
+                    <li>Vermo! é apenas uma ideia para a minha PAP, não está perfeito nem pronto para o mercado.</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="row">
+                <div class="8u 12u$(medium)">
+                    <ul class="copyright">
+                        <li>&copy; Untitled. All rights reserved.</li>
+                        <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+</html>
