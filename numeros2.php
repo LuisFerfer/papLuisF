@@ -8,7 +8,7 @@
 
 <div class="score" style="color: #FFFFFF">
 
-    <span style="padding-left:10px; font-size: 40px">Tempo Restante&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
+    <span style="padding-left:10px; font-size: 40px">Tempo Restante:&nbsp;</span><span id="scorePts" class="ml-1 display-4">----</span>
 
 </div>
 <!-- <h1 style="color: navajowhite" ><br>vaca2<p><br></p></h1> -->
@@ -59,6 +59,7 @@ if ($handle) {
 </script>
 
 <body >
+<br>
 <h1> <span id="palavra" style="color:navajowhite">23</span></h1>
 
 
@@ -66,9 +67,8 @@ if ($handle) {
 
 <!--******************************-->
 
-<div style="padding-top: 60px">
-    <a  class="button big" onclick="novaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);debug(palavrasSaidas)" id="novo">NOVO</a>
-    <a  class="button big" onclick="repetidaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);debug(palavrasSaidas);" id="velho">VISTO</a>
+<div align="center" style="padding-top: 60px">
+    <input type="text" style="width:  300px" name="numeroInput"><hr>
 </div>
 
 <div id="debug"></div>

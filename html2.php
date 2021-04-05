@@ -83,11 +83,13 @@ if ($handle) {
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+
                 <div class="modal-body">
 
                     <span id="perdemoMsg"></span>
 
                 </div>
+
                 <div class="modal-footer">
                     <div class="col-lg-7 meio">
                         <button type="button" class="btn btn-secondary pull-left" onclick="$('#perdemo').hide();">Fechar</button>

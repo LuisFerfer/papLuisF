@@ -10,7 +10,7 @@
     <div class="centered">
         <h1 style="color: white">Jogador 1</h1>
         <p>timer</p>
-        <p style="color: palegreen">i love grillers</p>
+        <p style="color: palegreen">?????????</p>
         <div style="padding-top: 60px">
             <a  class="button" id="novo">NOVO</a>
             <a  class="button" id="velho">VISTO</a>
@@ -22,7 +22,7 @@
     <div class="centered">
         <h1 style="color: white">Jogador 2</h1>
         <p>timer </p>
-        <p style="color: orange">they like big monky</p>
+        <p style="color: orange">?????????</p>
         <div style="padding-top: 60px">
             <a  class="button" id="novo">NOVO</a>
             <a  class="button" id="velho">VISTO</a>
