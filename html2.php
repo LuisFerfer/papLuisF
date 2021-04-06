@@ -52,11 +52,11 @@ if ($handle) {
     function sorteiaPalavra(n){
         document.getElementById("palavra").innerHTML=geraPalavra(n);
     }
-
+    sorteiaPalavra(nPalavras);
 </script>
 
 <body >
-<h1> <span id="palavra" style="color:navajowhite" >cassete</span></h1>
+<h1> <span id="palavra" style="color:navajowhite" ></span></h1>
 
 
 </body>
