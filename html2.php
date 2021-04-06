@@ -26,7 +26,8 @@ if ($handle) {
 
 <script>
     var nPalavras=<?php echo $i-100?>;
-    var palavras=[<?php
+    var palavras=[
+        <?php
         $j=1;
         foreach ($arr as $palavra){
 
@@ -37,7 +38,8 @@ if ($handle) {
                 echo "'$palavra'"; // a �ltima palavra n�o tem o \n
             $j++;
         }
-        ?>];
+        ?>
+    ];
 
 
     function geraPalavra(nPalavras){
@@ -46,6 +48,7 @@ if ($handle) {
         return(palavras[n]);
 
     }
+
     function sorteiaPalavra(n){
         document.getElementById("palavra").innerHTML=geraPalavra(n);
     }
@@ -53,7 +56,7 @@ if ($handle) {
 </script>
 
 <body >
-<h1> <span id="palavra" style="color:navajowhite">cassete</span></h1>
+<h1> <span id="palavra" style="color:navajowhite" >cassete</span></h1>
 
 
 </body>
@@ -61,9 +64,9 @@ if ($handle) {
 <!--******************************-->
 
 <div style="padding-top: 60px">
-    <a  class="button big" onclick="novaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas)" id="novo">NOVO</a>
-    <a  class="button big" onclick="repetidaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);debug(palavrasSaidas);" id="velho">VISTO</a>
-    <a  class="button big"data-toggle="modal" data-target="#perdemo">teste</a>
+    <a  class="button big" onclick="novaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);" id="novo">NOVO</a>
+    <a  class="button big" onclick="repetidaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);" id="velho">VISTO</a>
+
 </div>
 
 <div id="debug"></div>
@@ -75,29 +78,27 @@ if ($handle) {
             <form class=contact-form method=post enctype=multipart/form-data>
 
                 <div class="modal-header">
-                    <h5 class="modal-title" id="perdemoLabel">Perdeste</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h4 class="modal-title" id="perdemoLabel">Perdeste</h4>
+                   <!--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-
+                </div> --></div>
                 <div class="modal-body">
 
-                    <span id="perdemoMsg"></span>
+                    <span style="color: black" id="perdemoMsg"></span>
 
                 </div>
+                <div class="modal-footer ">
 
-                <div class="modal-footer">
-                    <div class="col-lg-7 meio">
-                        <button type="button" class="btn btn-secondary pull-left" onclick="$('#perdemo').hide();">Fechar</button>
-                    </div>
-                    <div class="col-lg-5 meio">
-                        <button onclick="setTimeout(atualiza(-1),3000) " type="button" id="eliminar"
+
+
+
+                        <button onclick="setTimeout(atualiza(-1),3000)" type="button" id="eliminar"
                                 class="btn btn-danger pull-right ">Voltar a Jogar
                         </button>
-                    </div>
+
                 </div>
-        </div>
+
         </form >
     </div>
 </div>

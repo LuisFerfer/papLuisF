@@ -34,9 +34,10 @@ function novaPalavra(palavra){
     }
     else{
         if(palavrasSaidas.includes(palavra)){
-            alert("PERDESTE");
-            setTimeout(atualiza(-1),3000);
-
+            $("#perdemoMsg").html("Perdeste com score de: "  + (score) + '.');
+            $("#perdemo").show();
+score=0;
+            palavrasSaidas=[];
         }
 
     }
@@ -49,17 +50,16 @@ function repetidaPalavra(palavra){
     if(palavrasSaidas.includes(palavra)){ // ele diz que é repetida e ela existe na lista de palavras saídas
         score++;
         $('#scorePts').html(score);
+
     }
 
     else{
         if(!(palavrasSaidas.includes(palavra))){
 
-            $("#perdemo").modal("show");
-
-            $("#perdemoMsg").html("Perdeste com score de:"  + (score) + '.');
-
-            $("#perdemo").modal("show");
-
+                $("#perdemoMsg").html("Perdeste com score de: "  + (score) + '.');
+            $("#perdemo").show();
+            score=0;
+            palavrasSaidas=[];
         }
     }
 }
