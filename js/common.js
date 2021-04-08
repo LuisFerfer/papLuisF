@@ -221,4 +221,8 @@ function atualizaduelo(fator) {
 
                                             // SCOREBOARD? //
 
-
+                                            // random numbers //
+function numerorng() {
+    $digits=3;
+    rand(pow(10,$digits-1),pow(10,$digits)-1);
+}
