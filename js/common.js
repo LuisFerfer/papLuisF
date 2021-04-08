@@ -34,9 +34,9 @@ function novaPalavra(palavra){
     }
     else{
         if(palavrasSaidas.includes(palavra)){
-            $("#perdemoMsg").html("Perdeste com score de: "  + (score) + '.');
+            $("#perdemoMsg").html("Ja tinha visto essa palavra! Terminou com: "  + (score) + ' pontos.');
             $("#perdemo").show();
-score=0;
+            score=0;
             palavrasSaidas=[];
         }
 
@@ -56,7 +56,7 @@ function repetidaPalavra(palavra){
     else{
         if(!(palavrasSaidas.includes(palavra))){
 
-                $("#perdemoMsg").html("Perdeste com score de: "  + (score) + '.');
+                $("#perdemoMsg").html("Essa palavra nunca tinha aparecido! Terminou com: "  + (score) + ' pontos.');
             $("#perdemo").show();
             score=0;
             palavrasSaidas=[];
@@ -170,6 +170,23 @@ async function repetidaPalavrainf(palavra){
 function swapnum(number){
     $('#bannernum').load('numeros'+number+'.php');
 }
+
+function getnum(id=0){
+
+    $.ajax({
+        url:"AJAX/AJAXnum3.php",
+        type: "post",
+        data: {
+            id: id,
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    })
+}
+
+
+
 
 function atualizanum(fator) {
 

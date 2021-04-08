@@ -1,3 +1,6 @@
+<?php include_once("includes/bodybase.inc.php");
+top();
+?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 
@@ -78,7 +81,7 @@ if ($handle) {
             <form class=contact-form method=post enctype=multipart/form-data>
 
                 <div class="modal-header">
-                    <h4 class="modal-title" id="perdemoLabel">Perdeste</h4>
+                    <h4 class="modal-title" id="perdemoLabel">Oops!</h4>
                    <!--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -102,3 +105,4 @@ if ($handle) {
         </form >
     </div>
 </div>
+<?php bottom(); ?>

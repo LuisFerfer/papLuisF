@@ -61,10 +61,12 @@ $jogar=true;
 
     <h1>
         <span  style="color:navajowhite">
+
             <?php if($jogar==true){
             $numero=rand(pow(10,$digits-1),pow(10,$digits)-1);
              echo $numero; }
              ?>
+            <input type="hidden" name="id" value="<?php echo $numero?>">
         </span>
     </h1>
 
