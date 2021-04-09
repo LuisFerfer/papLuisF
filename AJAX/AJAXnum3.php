@@ -7,14 +7,17 @@
 <!-- <h1 style="color: navajowhite" ><br>vaca2<p><br></p></h1> -->
 
 
-<?php
-$id=intval($_POST['id']);
-echo $id;
-?>
+
+
+<script>
+    var numerorandom = document.getElementById("id").value;
+
+
+</script>
 
 
 <body >
-<!--******************************--> <span  style="padding-left:10px; font-size: 40px">Qual era o número?&nbsp;</span>
+<!--******************************--> <span  style="padding-left:10px; font-size: 40px">Qual era o nÃºmero?&nbsp;</span>
 <div align="center" style="padding-top: 60px">
 
     <input type="text" style="width:  300px" name="numeroInput">

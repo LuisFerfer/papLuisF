@@ -66,7 +66,7 @@ $jogar=true;
             $numero=rand(pow(10,$digits-1),pow(10,$digits)-1);
              echo $numero; }
              ?>
-            <input type="hidden" name="id" value="<?php echo $numero?>">
+            <input type="hidden" name="id" value="<?php echo $numero;?>">
         </span>
     </h1>
 
