@@ -28,6 +28,9 @@ $jogar=true;
 
 
 <script>
+    $(document).ready(function (){
+        $("#magiadenovo").hide();
+    })
     function move() {
         var elem = document.getElementById("myBar");
         var width = 100;
@@ -35,40 +38,56 @@ $jogar=true;
         function frame() {
             if (width == 0) {
                 clearInterval(id);
-                atualizanum(1);
+                $("#magia").hide();
+                $("#magiadenovo").show();
             } else {
                 width--;
                 elem.style.width = width + '%';
             }
         }
     }
+
+    $(document).on("keypress","input",function (e) {
+        if (e.which === 13) {
+
+          alert("work");
+
+        }
+    });
+
+
 </script><body >
-<div  class="score" style="color: #FFFFFF">
+<div  class="score" id="magia" style="color: #FFFFFF">
 
     <span  style="padding-left:10px; font-size: 40px">Tempo Restante:&nbsp;</span><div style="margin-left: 40%" id="myProgress">
         <div id="myBar"></div>
     </div>
+    <br>
 
+    <h1>
+        <span  style="color:navajowhite">
+
+            <?php if($jogar==true){
+                $numero=rand(pow(10,$digits-1),pow(10,$digits)-1);
+                echo $numero; }
+            ?>
+
+        </span>
+    </h1>
 </div>
 <!-- <h1 style="color: navajowhite" ><br>vaca2<p><br></p></h1> -->
 
 
 
 
+                                            <!--******************************-->
+<div id="magiadenovo">
+<span  style="padding-left:10px; font-size: 40px">Qual era o número?&nbsp;</span>
+<div align="center" style="padding-top: 60px">
 
-
-<br>
-
-    <h1>
-        <span  style="color:navajowhite">
-
-            <?php if($jogar==true){
-            $numero=rand(pow(10,$digits-1),pow(10,$digits)-1);
-             echo $numero; }
-             ?>
-            <input type="hidden" name="id" value="<?php echo $numero;?>">
-        </span>
-    </h1>
+    <input type="text" style="width:  300px" id="input" name="numeroInput">
+</div>
+</div>
 
 
 </body>

@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="numeros 1">
-      <change afterPath="$PROJECT_DIR$/AJAX/AJAXnum3.php" afterDir="false" />
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="testes">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html1.php" beforeDir="false" afterPath="$PROJECT_DIR$/html1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numeros1.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/AJAXnum3.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/numeros2.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numeros3.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeros3.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,12 @@
       <workItem from="1617868968927" duration="902000" />
       <workItem from="1617894612607" duration="2117000" />
       <workItem from="1617897804642" duration="1214000" />
-      <workItem from="1617904571849" duration="4411000" />
+      <workItem from="1617904571849" duration="4445000" />
+      <workItem from="1617995536188" duration="3314000" />
+      <workItem from="1618249501859" duration="598000" />
+      <workItem from="1618329337328" duration="79000" />
+      <workItem from="1618335863775" duration="1374000" />
+      <workItem from="1618345305484" duration="2966000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -148,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617869276563</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="numeros 2">
+      <created>1617909729312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617909729313</updated>
+    </task>
+    <task id="LOCAL-00008" summary="testes">
+      <created>1618000159959</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618000159960</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +187,8 @@
     <MESSAGE value="update diario" />
     <MESSAGE value="commit diario" />
     <MESSAGE value="numeros 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="numeros 1" />
+    <MESSAGE value="numeros 2" />
+    <MESSAGE value="testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="testes" />
   </component>
 </project>
