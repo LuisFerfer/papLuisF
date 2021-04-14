@@ -37,7 +37,7 @@ $jogar=true;
         var id = setInterval(frame, 10);
         function frame() {
             if (width == 0) {
-                clearInterval(id);
+
                 $("#magia").hide();
                 $("#magiadenovo").show();
             } else {
@@ -50,8 +50,14 @@ $jogar=true;
     $(document).on("keypress","input",function (e) {
         if (e.which === 13) {
 
-          alert("work");
 
+            if(document.getElementById("input")==document.getElementById("numb")){
+                move();
+                alert("work");
+
+            document.getElementById("numb").innerHTML=$numero;
+
+            }
         }
     });
 
@@ -65,7 +71,7 @@ $jogar=true;
     <br>
 
     <h1>
-        <span  style="color:navajowhite">
+        <span id="numb" style="color:navajowhite">
 
             <?php if($jogar==true){
                 $numero=rand(pow(10,$digits-1),pow(10,$digits)-1);
