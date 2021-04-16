@@ -1500,6 +1500,10 @@ body.landing #header nav a {
 
 
 
+.boxed {
 
-
-
+    width: 300px;
+    border: 5px solid gray;
+    padding: 30px;
+    margin: 50px;
+}
