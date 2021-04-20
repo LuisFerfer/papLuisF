@@ -45,6 +45,7 @@ if ($handle) {
     ];
 
 
+
     function geraPalavra(nPalavras){
 
         n=(Math.floor(Math.random()*nPalavras));

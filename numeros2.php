@@ -32,12 +32,12 @@ $jogar=true;
         $("#magiadenovo").hide();
     })
     function move() {
-        var elem = document.getElementById("myBar");
-        var width = 100;
+        let elem = document.getElementById("myBar");
+        let width = 100;
         var id = setInterval(frame, 10);
         function frame() {
             if (width == 0) {
-
+                clearInterval(id);
                 $("#magia").hide();
                 $("#magiadenovo").show();
             } else {
@@ -49,18 +49,13 @@ $jogar=true;
 
 
     $(document).on("keypress","input",function (e) {
-
-        $numb = parseInt(document.getElementById("numb").innerHTML);
-        $input = parseInt(document.getElementById("input").innerHTML);
-        console.log($numb);
-        console.log($input);
         if (e.which === 13) {
-            if($numb === $input){
-                alert("work");
-
-
-
+            $numb = parseInt(document.getElementById("numb").innerHTML);
+            $input = parseInt(document.getElementById("input").value);
+            if($numb == $input){
+                alert("work"); // a magia acontece aqui!
             }
+
         }
     });
 
