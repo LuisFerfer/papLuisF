@@ -30,6 +30,8 @@ $jogar=true;
 <script>
     $(document).ready(function (){
         $("#magiadenovo").hide();
+        $("#magiaagain").hide();
+        $("#magiaagainperdeu").hide();
     })
     function move() {
         let elem = document.getElementById("myBar");
@@ -53,7 +55,13 @@ $jogar=true;
             $numb = parseInt(document.getElementById("numb").innerHTML);
             $input = parseInt(document.getElementById("input").value);
             if($numb == $input){
-                alert("work"); // a magia acontece aqui!
+                $("#magiadenovo").hide();
+                $("#magiaagain").show();
+
+                $digits= $digits+1;
+            }else {
+                $("#magiadenovo").hide();
+                $("#magiaagainperdeu").show();
             }
 
         }
@@ -92,6 +100,20 @@ $jogar=true;
 </div>
 </div>
 
+
+
+
+
+<div id="magiaagain">
+    <p  style="padding-left:10px; font-size: 40px">O numero que apareceu foi : <?php echo $numero; ?></p>
+    <p  style="padding-left:10px; font-size: 40px">O seu numero foi : <?php echo $numero; ?></p>
+    <a  class="button big" onclick="atualizanum(0)">Continuar</a>
+</div>
+
+<div id="magiaagainperdeu">
+    <b><p  style="color: indianred;padding-left:10px; font-size: 40px">Perdeu!</p></b>
+    <p  style="padding-left:10px; font-size: 40px">O numero era : <?php echo $numero; ?></p>
+</div>
 
 </body>
 
