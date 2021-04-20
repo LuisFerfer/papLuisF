@@ -47,20 +47,22 @@ $jogar=true;
         }
     }
 
+
     $(document).on("keypress","input",function (e) {
+
+        $numb = parseInt(document.getElementById("numb").innerHTML);
+        $input = parseInt(document.getElementById("input").innerHTML);
+        console.log($numb);
+        console.log($input);
         if (e.which === 13) {
-
-
-            if(document.getElementById("input")==document.getElementById("numb")){
-                move();
+            if($numb === $input){
                 alert("work");
 
-            document.getElementById("numb").innerHTML=$numero;
+
 
             }
         }
     });
-
 
 </script><body >
 <div  class="score" id="magia" style="color: #FFFFFF">
@@ -91,7 +93,7 @@ $jogar=true;
 <span  style="padding-left:10px; font-size: 40px">Qual era o número?&nbsp;</span>
 <div align="center" style="padding-top: 60px">
 
-    <input type="text" style="width:  300px" id="input" name="numeroInput">
+    <input type="text" style="width:  300px" id="input">
 </div>
 </div>
 

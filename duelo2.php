@@ -52,7 +52,6 @@ width=100;
 
 
 
-
     <div align="center" class="boxed">
         This text is enclosed in a box.
     </div>
