@@ -27,7 +27,7 @@
         function duelotimer() {
         var elem = document.getElementById("myBar");
         var width = 100;
-        var id = setInterval(frame, 75);
+        var id = setInterval(frame, 90);
         function frame() {
         if (width == 0) {
 width=100;

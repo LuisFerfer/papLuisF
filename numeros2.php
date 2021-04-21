@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<script src="js/jquery.min.js"></script>
-<script src="js/common.js"></script>
+
 <?php
 $digits=1;
 $jogar=true;
@@ -36,9 +34,10 @@ $jogar=true;
     function move() {
         let elem = document.getElementById("myBar");
         let width = 100;
-        var id = setInterval(frame, 10);
+        var id = setInterval(frame, 70);
         function frame() {
             if (width == 0) {
+
                 clearInterval(id);
                 $("#magia").hide();
                 $("#magiadenovo").show();
@@ -57,8 +56,6 @@ $jogar=true;
             if($numb == $input){
                 $("#magiadenovo").hide();
                 $("#magiaagain").show();
-
-                $digits= $digits+1;
             }else {
                 $("#magiadenovo").hide();
                 $("#magiaagainperdeu").show();
@@ -67,7 +64,7 @@ $jogar=true;
         }
     });
 
-</script><body >
+</script><body>
 <div  class="score" id="magia" style="color: #FFFFFF">
 
     <span  style="padding-left:10px; font-size: 40px">Tempo Restante:&nbsp;</span><div style="margin-left: 40%" id="myProgress">
@@ -75,16 +72,17 @@ $jogar=true;
     </div>
     <br>
 
-    <h1>
+    <p style="font-size: 50px">
         <span id="numb" style="color:navajowhite">
 
             <?php if($jogar==true){
                 $numero=rand(pow(10,$digits-1),pow(10,$digits)-1);
-                echo $numero; }
+                echo $numero;
+            }
             ?>
 
         </span>
-    </h1>
+    </p>
 </div>
 <!-- <h1 style="color: navajowhite" ><br>vaca2<p><br></p></h1> -->
 
@@ -107,7 +105,7 @@ $jogar=true;
 <div id="magiaagain">
     <p  style="padding-left:10px; font-size: 40px">O numero que apareceu foi : <?php echo $numero; ?></p>
     <p  style="padding-left:10px; font-size: 40px">O seu numero foi : <?php echo $numero; ?></p>
-    <a  class="button big" onclick="atualizanum(0)">Continuar</a>
+    <a  class="button big" onclick="atualizanum(0);">Continuar</a>
 </div>
 
 <div id="magiaagainperdeu">
@@ -122,4 +120,4 @@ $jogar=true;
 
 
 <div id="debug"></div>
-<script>document.onload(move())</script>
+<script>$(document).ready(move())</script>
