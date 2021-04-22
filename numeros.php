@@ -2,6 +2,9 @@
 top();
 ?>
     <script>
+        var nDigitos=1;
+        var nEscondido;
+        var nCertos=0;
         var stage=1;
         $('document').ready(function (){
             swapnum(stage);

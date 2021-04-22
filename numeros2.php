@@ -1,6 +1,6 @@
 
 <?php
-$digits=1;
+
 $jogar=true;
 ?>
 <style>
@@ -26,15 +26,21 @@ $jogar=true;
 
 
 <script>
+
     $(document).ready(function (){
         $("#magiadenovo").hide();
         $("#magiaagain").hide();
         $("#magiaagainperdeu").hide();
+        nEscondido=Math.pow(10,nDigitos-1)+parseInt(Math.random()*(Math.pow(10,nDigitos)-Math.pow(10,nDigitos-1)));
+        console.log("digitos: " + nDigitos++);
+        console.log("escondido: " + nEscondido);
+        console.log("Certos: " + nCertos);
+        $('#numb').html(nEscondido);
     })
     function move() {
         let elem = document.getElementById("myBar");
         let width = 100;
-        var id = setInterval(frame, 70);
+        var id = setInterval(frame, 10);
         function frame() {
             if (width == 0) {
 
@@ -53,10 +59,16 @@ $jogar=true;
         if (e.which === 13) {
             $numb = parseInt(document.getElementById("numb").innerHTML);
             $input = parseInt(document.getElementById("input").value);
+
+
             if($numb == $input){
+                $('#nEscondidoG').html(nEscondido);
+                $('#nTentado').html($input);
                 $("#magiadenovo").hide();
                 $("#magiaagain").show();
+                nCertos++;
             }else {
+                $('#nEscondidoP').html(nEscondido);
                 $("#magiadenovo").hide();
                 $("#magiaagainperdeu").show();
             }
@@ -75,11 +87,7 @@ $jogar=true;
     <p style="font-size: 50px">
         <span id="numb" style="color:navajowhite">
 
-            <?php if($jogar==true){
-                $numero=rand(pow(10,$digits-1),pow(10,$digits)-1);
-                echo $numero;
-            }
-            ?>
+
 
         </span>
     </p>
@@ -103,14 +111,14 @@ $jogar=true;
 
 
 <div id="magiaagain">
-    <p  style="padding-left:10px; font-size: 40px">O numero que apareceu foi : <?php echo $numero; ?></p>
-    <p  style="padding-left:10px; font-size: 40px">O seu numero foi : <?php echo $numero; ?></p>
+    <p  style="padding-left:10px; font-size: 40px">O numero que apareceu foi : <span id="nEscondidoG"></span></p>
+    <p  style="padding-left:10px; font-size: 40px">O seu numero foi : <span id="nTentado"></span></p>
     <a  class="button big" onclick="atualizanum(0);">Continuar</a>
 </div>
 
 <div id="magiaagainperdeu">
     <b><p  style="color: indianred;padding-left:10px; font-size: 40px">Perdeu!</p></b>
-    <p  style="padding-left:10px; font-size: 40px">O numero era : <?php echo $numero; ?></p>
+    <p  style="padding-left:10px; font-size: 40px">O numero era : <span id="nEscondidoP"></span></p>
 </div>
 
 </body>
