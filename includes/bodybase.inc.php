@@ -74,7 +74,7 @@ function top(){
         echo "<form class='modal-content' action=\"../adicionaNovoUtilizador.php?id=".$dados['utilizadorId']." \">  ";
         ?>
 
-            <div class="container">
+            <div class="container" style="width: 700px">
                 <h1>Sign Up</h1>
                 <label for="name"><b>Name</b></label>
                 <input type="text" placeholder="Enter Username" name="utilizadorNome" required style="width: auto;">
