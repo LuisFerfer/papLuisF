@@ -4,6 +4,7 @@
     <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="[leandro] - Modo Números, Javascript.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numeros.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeros1.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numeros2.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,6 +109,7 @@
       <workItem from="1618911158373" duration="2033000" />
       <workItem from="1618993963941" duration="7805000" />
       <workItem from="1619079140718" duration="7628000" />
+      <workItem from="1619183856530" duration="4252000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>

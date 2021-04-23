@@ -1,4 +1,3 @@
-
 <?php
 
 $jogar=true;
@@ -32,15 +31,17 @@ $jogar=true;
         $("#magiaagain").hide();
         $("#magiaagainperdeu").hide();
         nEscondido=Math.pow(10,nDigitos-1)+parseInt(Math.random()*(Math.pow(10,nDigitos)-Math.pow(10,nDigitos-1)));
-        console.log("digitos: " + nDigitos++);
-        console.log("escondido: " + nEscondido);
-        console.log("Certos: " + nCertos);
+          //  console.log("digitos: " + nDigitos++);
+         // console.log("escondido: " + nEscondido);
+          // console.log("Certos: " + nCertos);
+        nDigitos++;
+        tempo = tempo + 5;
         $('#numb').html(nEscondido);
     })
     function move() {
         let elem = document.getElementById("myBar");
         let width = 100;
-        var id = setInterval(frame, 10);
+        var id = setInterval(frame, tempo);
         function frame() {
             if (width == 0) {
 
@@ -54,6 +55,9 @@ $jogar=true;
         }
     }
 
+    $(document).ready(function (){
+        nCertos++;
+    })
 
     $(document).on("keypress","input",function (e) {
         if (e.which === 13) {
@@ -66,11 +70,12 @@ $jogar=true;
                 $('#nTentado').html($input);
                 $("#magiadenovo").hide();
                 $("#magiaagain").show();
-                nCertos++;
+
             }else {
                 $('#nEscondidoP').html(nEscondido);
                 $("#magiadenovo").hide();
                 $("#magiaagainperdeu").show();
+                $('#nCertos').html(nCertos);
             }
 
         }
@@ -85,7 +90,7 @@ $jogar=true;
     <br>
 
     <p style="font-size: 50px">
-        <span id="numb" style="color:navajowhite">
+        <span id="numb" style="color:navajowhite; user-select: none">
 
 
 
@@ -96,14 +101,13 @@ $jogar=true;
 
 
 
+<!--******************************-->
+<div id="magiadenovo" >
+    <span  style="padding-left:10px; font-size: 40px">Qual era o número?&nbsp;</span>
+    <div align="center" style="padding-top: 60px">
 
-                                            <!--******************************-->
-<div id="magiadenovo">
-<span  style="padding-left:10px; font-size: 40px">Qual era o número?&nbsp;</span>
-<div align="center" style="padding-top: 60px">
-
-    <input type="text" style="width:  300px" id="input">
-</div>
+        <input type="text" style="width:  300px" id="input" autofocus>
+    </div>
 </div>
 
 
@@ -117,8 +121,10 @@ $jogar=true;
 </div>
 
 <div id="magiaagainperdeu">
-    <b><p  style="color: indianred;padding-left:10px; font-size: 40px">Perdeu!</p></b>
+    <b><p  style="color: indianred;padding-left:10px; font-size: 40px">Perdeu!</p></b><br>
     <p  style="padding-left:10px; font-size: 40px">O numero era : <span id="nEscondidoP"></span></p>
+    <p  style="padding-left:10px; font-size: 40px">Acertou <span id="nCertos"></span> número(s) seguidos</p>
+    <a  class="button big" style="background-color: indianred" onclick="location.reload()">Recomeçar</a>
 </div>
 
 </body>
