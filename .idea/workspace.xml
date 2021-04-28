@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="[leandro] - Modo Números, Javascript.">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="numeros funciona!!!!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numeros.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numeros1.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numeros2.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +107,8 @@
       <workItem from="1618911158373" duration="2033000" />
       <workItem from="1618993963941" duration="7805000" />
       <workItem from="1619079140718" duration="7628000" />
-      <workItem from="1619183856530" duration="4252000" />
+      <workItem from="1619183856530" duration="4508000" />
+      <workItem from="1619424690912" duration="951000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -188,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619019936129</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="numeros funciona!!!!!!">
+      <created>1619191105064</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1619191105064</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +224,7 @@
     <MESSAGE value="[leandro] - Modo Números, Javascript." />
     <MESSAGE value="numeros verificaçao" />
     <MESSAGE value="digitos ++ not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="digitos ++ not working" />
+    <MESSAGE value="numeros funciona!!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="numeros funciona!!!!!!" />
   </component>
 </project>

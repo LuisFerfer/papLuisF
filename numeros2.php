@@ -123,7 +123,7 @@ $jogar=true;
 <div id="magiaagainperdeu">
     <b><p  style="color: indianred;padding-left:10px; font-size: 40px">Perdeu!</p></b><br>
     <p  style="padding-left:10px; font-size: 40px">O numero era : <span id="nEscondidoP"></span></p>
-    <p  style="padding-left:10px; font-size: 40px">Acertou <span id="nCertos"></span> número(s) seguidos</p>
+    <p  style="padding-left:10px; font-size: 40px">Acertou <span id="nCertos"></span> número(s) seguido(s)</p>
     <a  class="button big" style="background-color: indianred" onclick="location.reload()">Recomeçar</a>
 </div>
 
