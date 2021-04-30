@@ -60,16 +60,17 @@
 					<div class="courses-thumb courses-thumb-secondary">
 
 						<div class="courses-detail">
-							<h3><a href="infinito.php">Modo Infinito</a></h3>
+							<h3><a href="infinito.php">Modo Competitivo</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
-									<a href="infinito.php"><img src="images/infinito.png" alt=""></a>
+									<a href="infinito.php"><img src="images/trophy.png" alt=""></a>
 								</div>
 							</div>
 							<br><p></p>
 						</div>
 					</div>
 				</div>
+
 
 
 
@@ -80,7 +81,7 @@
 							<h3><a href="duelo.php">Modo Duelo</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
-									<a href="duelo.php"><img src="images/duelo.png" alt=""></a>
+									<a href="duelo.php"><img src="images/ooga.jpg" alt=""></a>
 								</div>
 							</div>
 							<br><p></p>
@@ -96,7 +97,7 @@
 							<h3><a href="numeros.php">Modo Números</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
-									<a href="numeros.php" ><img src="images/numb.png" alt=""></a>
+									<a href="numeros.php" ><img src="images/number.png" alt=""></a>
 								</div>
 							</div>
 							<br><p></p>
@@ -106,6 +107,7 @@
 			</div>
 		</div>
 	</section>
+<br style="margin-bottom: 20px">
 
 		<!-- Footer -->
 	<footer id="footer">

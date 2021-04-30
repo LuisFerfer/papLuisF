@@ -36,7 +36,7 @@ if ($handle) {
 
 
             if($j<$i)
-                echo "'".substr($palavra,0,strlen($palavra)-2)."',"; // retira o \n das palavras
+                echo "'".substr($palavra,0,strlen($palavra)-1)."',"; // retira o \n das palavras
             else
                 echo "'$palavra'"; // a �ltima palavra n�o tem o \n
             $j++;
@@ -106,4 +106,3 @@ if ($handle) {
         </form >
     </div>
 </div>
-<?php bottom(); ?>

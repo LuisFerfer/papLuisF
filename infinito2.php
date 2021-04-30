@@ -32,18 +32,20 @@ if ($handle) {
 
 <script>
     var nPalavras=<?php echo $i?>;
-    var palavras=[<?php
+    var palavras=[
+        <?php
         $j=1;
         foreach ($arr as $palavra){
 
 
             if($j<$i)
-                echo "'".substr($palavra,0,strlen($palavra)-2)."',"; // retira o \n das palavras
+                echo "'".substr($palavra,0,strlen($palavra)-1)."',"; // retira o \n das palavras
             else
                 echo "'$palavra'"; // a ?ltima palavra n?o tem o \n
             $j++;
         }
-        ?>];
+        ?>
+    ];
 
 
     function geraPalavrainf(nPalavras){
@@ -55,11 +57,11 @@ if ($handle) {
     function sorteiaPalavrainf(n){
         document.getElementById("palavra").innerHTML=geraPalavrainf(n);
     }
-
+    sorteiaPalavrainf(nPalavras);
 </script>
 
 <body >
-<h1> <span id="palavra" style="color:navajowhite">estrela</span></h1>
+<h1> <span id="palavra" style="color:navajowhite"></span></h1>
 
 
 </body>
@@ -73,3 +75,34 @@ if ($handle) {
 </div>
 
 <div id="debug"></div>
+
+<div class="modal" id="perdemo" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form class=contact-form method=post enctype=multipart/form-data>
+
+                <div class="modal-header">
+                    <h4 class="modal-title" id="perdemoLabel">Oops!</h4>
+                    <!--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                 </div> --></div>
+                <div class="modal-body">
+
+                    <span style="color: black" id="perdemoMsg"></span>
+
+                </div>
+                <div class="modal-footer ">
+
+
+
+
+                    <button onclick="setTimeout(atualizainf(-1),3000)" type="button" id="eliminar"
+                            class="btn btn-danger pull-right ">Voltar a Jogar
+                    </button>
+
+                </div>
+
+            </form >
+        </div>
+    </div>

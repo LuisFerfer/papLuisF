@@ -1,8 +1,8 @@
 <meta charset="UTF-8">
 
-<h2>Modo Infinito</h2>
+<h2>Modo Competitivo</h2>
 <p>Pode utilizar este modo para bater recordes pessoais ou de amigos.</p>
-<p>Mesma forma de utilização do modo normal mas com 3 vidas.</p>
+<p>Junte-se aos melhores na tabela de recordes!</p>
 <p>Treine o seu cérebro.</p>
 
 <ul class="actions">
