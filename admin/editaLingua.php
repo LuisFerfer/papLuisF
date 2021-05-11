@@ -57,4 +57,5 @@ $dados=mysqli_fetch_array($resultlinguas);
 
         <br><br><br>
         <input type="submit" value="Edita">
+    <a href=lingua.php ><button style="width: 86px" type='button'  class='btn btn-danger'>Cancelar</button></a></td>
 </form>

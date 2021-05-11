@@ -1,4 +1,4 @@
-Ferrovia
+ferrovia
 bombear
 cassete
 levantar
@@ -109,7 +109,7 @@ tubo
 armadilha
 punir
 atual
-contorcer-se
+contorcer
 conglomerado
 integridade
 protesto
@@ -138,7 +138,7 @@ ativo
 macaco
 detetive
 índice
-metrô
+metro
 profissional
 tijolo
 crueldade

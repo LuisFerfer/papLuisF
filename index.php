@@ -1,5 +1,5 @@
-<?php include_once("includes/bodybase.inc.php");
-top();
+<?php include_once("includes/bodybaseing.inc.php");
+toping();
 
 
 ?>
@@ -12,6 +12,7 @@ top();
         });
 
 
+     d
     </script>
 
 
@@ -34,4 +35,4 @@ top();
     </section>
 
 
-<?php bottom(); ?>
+<?php bottoming(); ?>

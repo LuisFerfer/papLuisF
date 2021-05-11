@@ -1,5 +1,4 @@
 <?php
-session_start();
 $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
 $sql="select * from utilizadores";
 $result=mysqli_query($con,$sql);
@@ -7,8 +6,8 @@ $dados=mysqli_fetch_array($result);
 
 
 
-function top(){
-?>
+function toping(){
+    ?>
     <!DOCTYPE html>
     <!--
         Transit by TEMPLATED
@@ -18,13 +17,13 @@ function top(){
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Foca-te no jogo!</title>
+        <title>Focus on the game!</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <!--[if lte IE 8]>
         <script src="js/html5shiv.js"></script><![endif]-->
-     <!--   <script src="js/jquery.min.js"></script> -->
+        <!--   <script src="js/jquery.min.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/skel.min.js"></script>
         <script src="js/skel-layers.min.js"></script>
@@ -51,7 +50,7 @@ function top(){
         <nav id="nav">
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="generic.php">Outros Modos de Jogo</a></li>
+                <li><a href="generic.php">Other Game Modes</a></li>
                 <!--<li><a href="elements.html">Elements</a></li>-->
                 <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
                 <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
@@ -62,9 +61,9 @@ function top(){
 
 
     <div id="id01" class="modal">
-       <!--
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        -->
+        <!--
+         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         -->
         <?php
         $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
         $sql="select * from utilizadores";
@@ -75,52 +74,52 @@ function top(){
         echo "<form class='modal-content' action=\"../adicionaNovoUtilizador.php?id=".$dados['utilizadorId']." \">  ";
         ?>
 
-            <div class="container" style="width: 700px">
-                <h1>Sign Up</h1>
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter Username" name="utilizadorNome" required style="width: auto;">
+        <div class="container" style="width: 700px">
+            <h1>Sign Up</h1>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Username" name="utilizadorNome" required style="width: auto;">
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="utilizadorEmail" required style="width: auto;">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="utilizadorEmail" required style="width: auto;">
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="utilizadorPassword" required style="width: auto;">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="utilizadorPassword" required style="width: auto;">
 
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required style="width: auto;">
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required style="width: auto;">
 
-                <label>
-                    <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
+            <label>
+                <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
 
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-                <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn" style="width: auto;">Sign Up</button>
-                </div>
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn" style="width: auto;">Sign Up</button>
             </div>
+        </div>
         </form>
     </div>
-<!--
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        var modal2 = document.getElementById('teste002');
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal2) {
-                alert('entrou')
-                modal.style.display = "none";
-                document.getElementById('teste001').style.overflow='visible';
-                modal.style.display = "none";
-            }else {
+    <!--
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            var modal2 = document.getElementById('teste002');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal2) {
+                    alert('entrou')
+                    modal.style.display = "none";
+                    document.getElementById('teste001').style.overflow='visible';
+                    modal.style.display = "none";
+                }else {
 
-                alert('N entrou')
+                    alert('N entrou')
+                }
             }
-        }
-    </script>
--->
+        </script>
+    -->
 
 
     <div id="id02" class="modal">
@@ -166,16 +165,16 @@ function top(){
 
 
 <?php }
-function bottom(){
+function bottoming(){
 
-?>
+    ?>
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
             <section class="links">
                 <div class="align-center">
                     <h3>Disclaimer</h3>
-                    <li>Vermo! √© apenas uma ideia para a minha PAP, n√£o est√° perfeito nem pronto para o mercado.</li>
+                    <li>Vermo! È apenas uma ideia para a minha PAP, n„o est· perfeito nem pronto para o mercado.</li>
                     </ul>
                 </div>
             </section>

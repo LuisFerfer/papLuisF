@@ -53,13 +53,13 @@
 <table>
 <tr>
     <td colspan="3" style="margin-bottom: 30px">
-        <a href="dicionario.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Dicionário</button></a>
+        <a href="dicionario.php" style="color: #FFFFFF"><button style="width: 150px; position: center" type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Dicionário</button></a>
     </td>
 
 </tr>
 <tr>
     <td colspan="3" style="margin-bottom: 30px">
-        <a href="lingua.php" style="color: #FFFFFF"><button type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Lingua</button></a>
+        <a href="lingua.php" style="color: #FFFFFF"><button style="width: 150px; margin-right: auto" type="button" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp;Linguas</button></a>
     </td>
 </tr>
 </table>

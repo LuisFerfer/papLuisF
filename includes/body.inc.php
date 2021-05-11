@@ -1,4 +1,5 @@
 <?php
+session_start();
 $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
 $sql="select * from utilizadores";
 $result=mysqli_query($con,$sql);

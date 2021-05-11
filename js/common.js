@@ -64,6 +64,89 @@ function repetidaPalavra(palavra){
     }
 }
 
+                                                //ingler
+
+function atualizaingles(fator) {
+    stage+=fator;
+    swapingles(stage);
+}
+
+function swapingles(number){
+    $('#banner').load('ingles'+number+'.php');
+}
+
+
+
+function geraPalavraingles(){
+    var n;
+    n=(Math.floor(Math.random()*nPalavras));
+    return(sorteiaPalavraingles(n));
+
+}
+
+function sorteiaPalavraingles(){
+    document.getElementById("palavra").innerHTML=geraPalavraingles();
+}
+
+
+function novaPalavraingles(palavra){
+    if(!palavrasSaidas.includes(palavra)){ // se dizes que é nova e não existe na lista de palavras que saíram
+        score++;
+        $('#scorePts').html(score);
+        palavrasSaidas.push(palavra);  // adiciona à lista e deixa de ser nova
+    }
+    else{
+        if(palavrasSaidas.includes(palavra)){
+            $("#perdemoMsg").html("You've seen that word before! You finished with a score of: "  + (score) + ".");
+            $("#perdemoingles").show();
+            score=0;
+            palavrasSaidas=[];
+        }
+
+    }
+
+}
+
+
+function repetidaPalavraingles(palavra){
+
+    if(palavrasSaidas.includes(palavra)){ // ele diz que é repetida e ela existe na lista de palavras saídas
+        score++;
+        $('#scorePts').html(score);
+
+    }
+
+    else{
+        if(!(palavrasSaidas.includes(palavra))){
+
+            $("#perdemoMsg").html("That word has never appeared! You finished with a score of: "  + (score) + ' .');
+            $("#perdemoingles").show();
+            score=0;
+            palavrasSaidas=[];
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                                 //   infinito   //
 
 
