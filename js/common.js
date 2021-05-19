@@ -64,11 +64,12 @@ function repetidaPalavra(palavra){
     }
 }
 
-                                                //ingler
+                                                //ingler treino
 
 function atualizaingles(fator) {
     stage+=fator;
     swapingles(stage);
+
 }
 
 function swapingles(number){
@@ -244,6 +245,101 @@ async function repetidaPalavrainf(palavra){
 
 }
 
+                                            //ingler infinito
+
+function geraPalavrainfing(){
+    var n;
+    n=(Math.floor(Math.random()*nPalavras));
+    return(sorteiaPalavrainfing(n));
+
+}
+
+
+function sorteiaPalavrainfing(){
+    document.getElementById("palavra").innerHTML=geraPalavrainfing();
+}
+
+//kikkkik
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function demo() {
+    console.log('Taking a break...');
+    await sleep(2000);
+    console.log('Two seconds later, showing sleep in a loop...');
+
+    // Sleep in loop
+    for (let i = 0; i < 5; i++) {
+        if (i === 3)
+            await sleep(2000);
+        console.log(i);
+    }
+}
+
+demo();
+
+//kokokoko
+
+function swapinfing(number){
+    $('#bannerinf').load('infinitoing'+number+'.php');
+}
+
+function atualizainfing(fator) {
+
+    stage+=fator;
+    swapinf(stage);
+}
+
+
+async function novaPalavrainfing(palavra){
+    if(!palavrasSaidas.includes(palavra)){ // se dizes que é nova e não existe na lista de palavras que saíram
+        score++;
+        $('#scorePts').html(score);
+        palavrasSaidas.push(palavra);  // adiciona à lista e deixa de ser nova
+    }
+    else{
+        if(palavrasSaidas.includes(palavra)) {
+            lives--;
+            $('#livestext').html(lives);
+            if(lives==0){
+
+                $('#livestext').html(lives);
+                await sleep(100);
+                alert("PERDESTE");
+                setTimeout(atualizainfing(-1),3000);
+
+
+            }
+        }
+    }
+
+}
+async function repetidaPalavrainfing(palavra){
+    if(palavrasSaidas.includes(palavra)){ // ele diz que é repetida e ela existe na lista de palavras saídas
+        score++;
+        $('#scorePts').html(score);
+
+    }
+    else{
+        if(!palavrasSaidas.includes(palavra)) {
+            lives--;
+            $('#livestext').html(lives);
+            if(lives==0){
+
+                $('#livestext').html(lives);
+                await sleep(100);
+                alert("PERDESTE");
+                setTimeout(atualizainfing(-1),3000);
+
+
+            }
+        }
+
+    }
+
+}
 
 
 

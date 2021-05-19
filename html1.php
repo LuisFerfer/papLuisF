@@ -1,11 +1,9 @@
+
 <script>
 var stage=1;
 </script>
 
-<ul class="actions">
 
-    <a onclick="atualizaingles(0)" ><img src="images/pt.png" style="width: 120px; height: 75px"></a>
-</ul>
 
 
 <h2>Memória Verbal</h2>
@@ -17,4 +15,5 @@ var stage=1;
 <ul class="actions">
     <a  class="button big" onclick="atualiza(1)" >Começar</a>
 </ul>
+
 

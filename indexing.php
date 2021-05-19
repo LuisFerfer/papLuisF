@@ -1,12 +1,12 @@
-<?php include_once("includes/body.inc.php");
-top();
+<?php include_once("includes/bodybase.inc.php");
+toping();
 
 ?>
 
     <script>
         var stage=1;
         $('document').ready(function (){
-          swap(stage);
+            swapingles(stage);
             //alert('aaa');
         });
 
@@ -26,7 +26,7 @@ top();
         <div class="container">
             <header class="major">
                 <h2>Vermo!</h2>
-                <p>Treine o seu cérebro.</p>
+                <p>Train your brain.</p>
             </header>
 
         </div>
@@ -34,4 +34,4 @@ top();
     </section>
 
 
-<?php bottom(); ?>
+<?php bottoming(); ?>

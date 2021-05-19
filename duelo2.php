@@ -8,7 +8,7 @@
 </noscript>
 <style>
     #scorebar {
-        width: 20%;
+        width: 65%;
         height: 20px;
         position: relative;
         background-color: #ddd;
@@ -24,7 +24,7 @@
 
     #player1 {
         width: 20px;
-        height: 100%;
+        height: 250px;
         position: relative;
         background-color: #ddd;
     }
@@ -32,7 +32,7 @@
     #score1 {
         background-color: #00a2e8;
         width: 20px;
-        height: 10px;
+        height: 0px;
         position: absolute;
     }
 
@@ -40,7 +40,7 @@
 
     #player2 {
         width: 20px;
-        height: 100%;
+        height: 250px;
         position: relative;
         background-color: #ddd;
     }
@@ -48,7 +48,7 @@
     #score2 {
         background-color: #ed1c23;
         width: 20px;
-        height: 10px;
+        height: 0px;
         position: absolute;
     }
 
@@ -69,7 +69,7 @@
         var id = setInterval(frame, 200);
         function frame() {
         if (width == 0) {
-width=100;
+            width=100;
 
     } else {
         width--;
@@ -86,8 +86,8 @@ width=100;
         var height = 0;
         var id = setInterval(frame, 200);
         function frame() {
-            if (height == 100) {
-                height=0;
+            if (height == 0) {
+                height=250;
 
             } else {
                 height++;
@@ -98,6 +98,7 @@ width=100;
 
 
 
+
     document.onload(scoreplayer2())
 
     function scoreplayer2() {
@@ -105,8 +106,8 @@ width=100;
         var height = 0;
         var id = setInterval(frame, 200);
         function frame() {
-            if (height == 100) {
-                height=0;
+            if (height == 0) {
+                height=250;
 
             } else {
                 height++;
@@ -118,49 +119,41 @@ width=100;
 
 </script>
 
-<div >
+<div class="row col-lg-12">
 
-
-        <h1 style="color: white; margin-left: 100px" class="float-left">Jogador 1</h1>
-
-
-
-
-        <h1 style="color: white; margin-right: 100px" class="float-right">Jogador 2</h1>
-
-
-
-
-
-    <div style="margin-left: 40%" id="scorebar">
-        <div id="myBar"></div>
-    </div>
-
-
-
-    <div align="center" class="boxed">
-        This text is enclosed in a box.
-    </div>
-    <br>
-        <p style="color: palegreen"></p>
-    <div align="center" style="padding-top: 10px">
-
-        <input type="text" style="width:  300px" id="caixa1" name="numeroInput">
-    </div>
-
-    <div class="row">
-        <div class="col-4">
-            <div  id="player1" style="margin:auto">
-                <div id="score1"></div>
+        <div class="col-lg-4">
+            <h1 style="color: white; margin-left: 215px" class="float-left">Jogador 1</h1>
+            <br>
+            <div  id="player1" class="mt-5" style="margin:auto">
+                <div  id="score1" >  </div>
             </div>
         </div>
-        <div class="col-4"></div>
-        <div class="col-4">
-            <div  id="player2" style="margin:auto">
-                <div id="score2"></div>
+
+        <div class="col-lg-4">
+            <div style="margin-left: 18%" id="scorebar">
+                <div id="myBar"></div>
+            </div>
+
+
+
+            <div align="center" class="boxed">
+                This text is enclosed in a box.
+            </div>
+            <br>
+            <p style="color: palegreen"></p>
+            <div align="center" style="padding-top: 10px">
+
+                <input type="text" style="width:  300px" id="caixa1" name="numeroInput">
             </div>
         </div>
-    </div>
+        <div class="col-lg-4">
+            <h1 style="color: white; margin-left: 215px" class="float-left">Jogador 2</h1>
+            <br>
+            <div  id="player2" class="mt-5" style="margin:auto">
+                <div  id="score2"></div>
+            </div>
+        </div>
+
 
 
 

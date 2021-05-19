@@ -1,4 +1,4 @@
-<?php include_once("includes/bodybase.inc.php");
+<?php include_once("includes/body.inc.php");
 top();
 ?>
     <script>
@@ -18,6 +18,8 @@ top();
 </section>
 
 <!-- Two -->
+
+
 <section id="two" class="wrapper style2 special">
     <div class="container">
         <header class="major">

@@ -1,9 +1,9 @@
-<?php include_once("includes/bodybase.inc.php");
-top();
-?>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-
+<script>
+    var stage=1;
+</script>
 <div class="score" style="color: #FFFFFF">
     <span style="font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
     <!-- <span style="padding-left: 50px; font-size: 40px" >Nível:&nbsp;</span><span id="nivelNum" class="ml-1 display-4">1</span>-->
@@ -97,7 +97,7 @@ if ($handle) {
 
 
 
-                        <button onclick="setTimeout(atualiza(-1),3000)" type="button" id="eliminar"
+                        <button onclick="setTimeout(atualiza(0),3000)" type="button" id="eliminar"
                                 class="btn btn-danger pull-right ">Voltar a Jogar
                         </button>
 
