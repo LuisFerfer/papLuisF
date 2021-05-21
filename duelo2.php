@@ -26,13 +26,13 @@
         width: 20px;
         height: 250px;
         position: relative;
-        background-color: #ddd;
+        background-color: #00a2e8;
     }
 
     #score1 {
-        background-color: #00a2e8;
+        background-color: #ddd;
         width: 20px;
-        height: 0px;
+        height: 10px;
         position: absolute;
     }
 
@@ -42,13 +42,13 @@
         width: 20px;
         height: 250px;
         position: relative;
-        background-color: #ddd;
+        background-color: #ed1c23;
     }
 
     #score2 {
-        background-color: #ed1c23;
+        background-color: #ddd;
         width: 20px;
-        height: 0px;
+        height: 10px;
         position: absolute;
     }
 
@@ -83,7 +83,7 @@
 
     function scoreplayer1() {
         var elem = document.getElementById("score1");
-        var height = 0;
+        var height = 250;
         var id = setInterval(frame, 200);
         function frame() {
             if (height == 0) {
@@ -98,12 +98,11 @@
 
 
 
-
     document.onload(scoreplayer2())
 
     function scoreplayer2() {
         var elem = document.getElementById("score2");
-        var height = 0;
+        var height = 250;
         var id = setInterval(frame, 200);
         function frame() {
             if (height == 0) {
@@ -129,6 +128,7 @@
             </div>
         </div>
 
+
         <div class="col-lg-4">
             <div style="margin-left: 18%" id="scorebar">
                 <div id="myBar"></div>
@@ -146,6 +146,8 @@
                 <input type="text" style="width:  300px" id="caixa1" name="numeroInput">
             </div>
         </div>
+
+
         <div class="col-lg-4">
             <h1 style="color: white; margin-left: 215px" class="float-left">Jogador 2</h1>
             <br>
