@@ -7,11 +7,11 @@
 </script>
 
 <div class="score" style="color: #FFFFFF">
-    <span style="font-size: 40px" >Vidas:&nbsp;</span><span id="livestext" class="ml-1 display-4">3</span>
+    <span style="font-size: 40px" >Vidas:&nbsp;</span><span  id="livestext" class="ml-1 display-4">3</span>
     <span style="padding-left:10px; font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
 
 </div>
-
+<br>
 
 <!--*************PALAVRA**********-->
 <?php

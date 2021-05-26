@@ -1162,7 +1162,7 @@ body.landing #header nav a {
 
 #banner {
     background-image: url(../images/dark_tint.png), url(../images/fundonormal.jpg);
-    background-position: center center                                                                     ;
+    background-position: center;
     background-size: cover;
     color: #ffffff;
     padding: 14em 0em 14em;
