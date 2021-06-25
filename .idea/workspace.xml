@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="evoluçao ingles">
-      <change afterPath="$PROJECT_DIR$/othermodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duelo2.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinito.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinito2.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeros2.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +128,16 @@
       <workItem from="1621412273168" duration="6158000" />
       <workItem from="1621605145389" duration="2480000" />
       <workItem from="1621844179823" duration="1863000" />
-      <workItem from="1622018632632" duration="6599000" />
+      <workItem from="1622018632632" duration="6616000" />
+      <workItem from="1622215296254" duration="304000" />
+      <workItem from="1622469466452" duration="664000" />
+      <workItem from="1622820949454" duration="38000" />
+      <workItem from="1623054233492" duration="3825000" />
+      <workItem from="1623148016425" duration="3179000" />
+      <workItem from="1623663218890" duration="16000" />
+      <workItem from="1623745791776" duration="599000" />
+      <workItem from="1623840506853" duration="4500000" />
+      <workItem from="1624442201866" duration="2106000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -236,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622028513715</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="evoluçao ingles">
+      <created>1622044033753</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622044033753</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

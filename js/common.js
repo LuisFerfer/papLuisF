@@ -208,11 +208,12 @@ async function novaPalavrainf(palavra){
             lives--;
             $('#livestext').html(lives);
             if(lives==0){
-
+                $("#perdemoMsg").html("! Terminou com: "  + (score) + ' pontos.');
+                $("#perdemo").show();
               $('#livestext').html(lives);
-              await sleep(100);
-                alert("PERDESTE");
-                setTimeout(atualizainf(-1),3000);
+
+
+                
 
 
             }

@@ -5,7 +5,7 @@
     var stage=1;
 </script>
 <div class="score" style="color: #FFFFFF">
-    <span style="font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
+    <span style="font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span><br><br>
     <!-- <span style="padding-left: 50px; font-size: 40px" >Nível:&nbsp;</span><span id="nivelNum" class="ml-1 display-4">1</span>-->
 </div>
 <!-- <h1 style="color: navajowhite" ><br>vaca2<p><br></p></h1> -->

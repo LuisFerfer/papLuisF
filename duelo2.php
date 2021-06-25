@@ -68,6 +68,7 @@
         var width = 100;
         var id = setInterval(frame, 200);
         function frame() {
+
         if (width == 0) {
             width=100;
 
