@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="evoluçao ingles">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duelo2.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinito.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinito2.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/novoperfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/novoperfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeros1.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numeros2.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +137,9 @@
       <workItem from="1623745791776" duration="599000" />
       <workItem from="1623840506853" duration="4500000" />
       <workItem from="1624442201866" duration="2106000" />
+      <workItem from="1624621729053" duration="86000" />
+      <workItem from="1624868318068" duration="4172000" />
+      <workItem from="1624954853829" duration="14156000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -258,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622044033753</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="evoluçao ingles">
+      <created>1624621749193</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1624621749193</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,87 +1,139 @@
-<!DOCTYPE html>
-<!--
-    Transit by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Foca-te no jogo!</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!--[if lte IE 8]>
-    <script src="js/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-layers.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/common.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<?php
+include_once("includes/body.inc.php");
+top();
 
-    <noscript>
-        <link rel="stylesheet" href="css/skel.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/style-xlarge.css" />
-    </noscript>
-</head>
-<body class="landing">
-<!-- Header -->
-<footer id="footer">
-    <header  id="header">
-        <h1 style="color: #2c2f35"><a href="index.php"><img src="images/vermo"></a></h1>
-        <nav  id="nav">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="generic.php">Outros Modos de Jogo</a></li>
-                <!--<li><a href="elements.html">Elements</a></li>-->
-                <li><a class="button special">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header></footer>
-<!-- PERFIL  -->
+?>
 
-<section class="section-background">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <div class="courses-thumb courses-thumb-secondary">
+<header id="header" style="background-color: ">
+    <h1><a href="index.php"><img src="images/vermopreto.png"></a></h1>
+    <nav id="nav">
+        <ul> <a href="index.php" ><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
+                <a href="indexing.php" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
-                    <div class="courses-detail">
-                        <br>
-                        <h3>Modo Infinito</a></h3>
-                        <div>
-                            <div class="courses-image">
+                    <li><a href="index.php" style="color: black">Página Inicial</a></li>
+                    <li><a href="generic.php" style="color: black">Outros Modos de Jogo</a></li>
+                    <!--<li><a href="elements.html">Elements</a></li>-->
+                    <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
+                    <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
+        </ul>
+    </nav>
+</header>
 
-                                <img src="images/infinito.png" >
-                            </div>
-                        </div>
-                        <br><p></p>
+<style>
+    .strokeme
+    {
+        color: white;
+        text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+    }
+
+    #custom-button{
+        padding: 10px;
+        color: white;
+        background-color: white;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 70%;
+
+    }
+    #custom-button: hover {
+        background-color: #8d93a0;
+    }
+
+
+
+</style>
+
+
+<div class="hero-listing set-bg" data-setbg="img/lisboa.jpg">
+</div>
+<!-- Hero Section End -->
+<?php
+$id = intval($_GET['id']);
+$sql = "select * from utilizadores where utilizadorId=" . $id;
+$resultPerfis = mysqli_query($con, $sql);
+$dadosPerfis = mysqli_fetch_array($resultPerfis)
+?>
+<!-- About Secton Begin -->
+<br><br><br><br>
+<section class="about-section">
+    <div class="intro-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div  class="about-intro" style="width: 1370px;height: 200px; background-image: url('<?php echo $dadosPerfis['utilizadorBannerURL']?>')" >
+                        <input type="file" id="real-file" hidden="hidden" />
+                        <button type="button" id="custom-button" style="width: 120px; position: absolute; top: 270px; left: 1509px; ">Editar Fundo</button>
+                    <div class="about-intro" style="position: absolute;top: 240px; left: 300px" <?php echo $dadosPerfis['utilizadorId'] ?>>
+                        <img src="<?php echo $dadosPerfis['utilizadorAvatar'] ?>" class="normal" style="z-index: 3;height: 80px;width: 70px">
                     </div>
+                </div>
+                <div class="about-intro col-lg-6">
+                    <div class="intro-text">
+                        <h2 class="strokeme" style="position: absolute; top: 256px; left: 375px"><?php echo $dadosPerfis['utilizadorNome'] ?></h2>
+                        <h4 class="strokeme" style="position: absolute; top: 290px; left: 378px"><?php echo $dadosPerfis['utilizadorEmail'] ?></h4>
+                    </div>
+                </div>
+<img style="position: absolute; top: 360px" src="images/handshake.png"><br><span></span>
+<img style="position: absolute; top: 360px; left: 330px" src="images/dislike.png">
+
+
                 </div>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <td style="font-size: 25px;font-weight: bold">Recordes Pessoais</td>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>#</td>
+                    <td>Pontuações</td>
+                </tr>
+                <!-- A partir daqui fazer o ciclo que mostra os 10 melhores scores -->
+
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- ------------------------------------------------------------ -->
+                </tbody>
+
+            </table>
+    </div>
+
 </section>
 
 
 
 
-
-
-
-<!-- PERFIL  -->
-
-
-
-
+<!-- Footer -->
 <footer id="footer">
     <div class="container">
         <section class="links">
             <div class="align-center">
                 <h3>Disclaimer</h3>
-                <li>Vermo! � apenas uma ideia para a minha PAP, n�o est� perfeito nem pronto para o mercado.</li>
+                <li>Vermo! É apenas uma ideia para a minha PAP, não está perfeito nem pronto para o mercado.</li>
                 </ul>
             </div>
         </section>
@@ -94,8 +146,6 @@
             </div>
         </div>
     </div>
+
 </footer>
-
-
-</body>
-</html>
+<?php bottom(); ?>

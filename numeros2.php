@@ -61,13 +61,13 @@ $jogar=true;
 
     $(document).on("keypress","input",function (e) {
         if (e.which === 13) {
-            $numb = parseInt(document.getElementById("numb").innerHTML);
-            $input = parseInt(document.getElementById("input").value);
+            numb = parseInt(document.getElementById("numb").innerHTML);
+            input = parseInt(document.getElementById("input").value);
 
 
-            if($numb == $input){
+            if(numb == input){
                 $('#nEscondidoG').html(nEscondido);
-                $('#nTentado').html($input);
+                $('#nTentado').html(input);
                 $("#magiadenovo").hide();
                 $("#magiaagain").show();
 
@@ -76,6 +76,7 @@ $jogar=true;
                 $("#magiadenovo").hide();
                 $("#magiaagainperdeu").show();
                 $('#nCertos').html(nCertos);
+                $('#nTentado').html(input);
             }
 
         }
@@ -115,8 +116,8 @@ $jogar=true;
 
 
 <div id="magiaagain">
+    <p  style="padding-left:10px; font-size: 40px">Acertou! </p>
     <p  style="padding-left:10px; font-size: 40px">O numero que apareceu foi : <span id="nEscondidoG"></span></p>
-    <p  style="padding-left:10px; font-size: 40px">O seu numero foi : <span id="nTentado"></span></p>
     <a  class="button big" onclick="atualizanum(0);">Continuar</a>
 </div>
 
