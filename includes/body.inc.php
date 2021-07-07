@@ -70,33 +70,28 @@ function top(){
         $result=mysqli_query($con,$sql);
         $dados=mysqli_fetch_array($result);
 
-
-        echo "<form class='modal-content' action=\"../adicionaNovoUtilizador.php?id=".$dados['utilizadorId']." \">  ";
         ?>
-
+        <form class='modal-content' action="confirmarRegistar.php?id='<?php echo $dados['utilizadorId']?>'">
         <div class="container" style="width: 700px">
-            <h1>Sign Up</h1>
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Enter Username" name="utilizadorNome" required style="width: auto;">
+            <h2>Registar</h2>
+            <label for="name"><b>Nome do Utilizador</b></label>
+            <input type="text" placeholder="Insira o nome do Utilizador" name="utilizadorNome" required style="width: auto;">
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="utilizadorEmail" required style="width: auto;">
+            <input type="text" placeholder="Insira o seu Email" name="utilizadorEmail" required style="width: auto;">
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="utilizadorPassword" required style="width: auto;">
+            <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
 
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required style="width: auto;">
 
-            <label>
-                <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
-            </label>
 
-            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+
+
 
             <div class="clearfix">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn" style="width: auto;">Sign Up</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                <button type="submit" class="cancelbtn"  style="background-color: #4CAF50">Registar</button>
             </div>
         </div>
         </form>
@@ -123,25 +118,24 @@ function top(){
 
 
     <div id="id02" class="modal">
-        <span onclick="documentgetElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content" action="/ConfirmaUtilizador.php">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="ConfirmaUtilizador.php">
             <div class="container">
                 <h1>Log In</h1>
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required  style="width: auto;">
+                <label for="name"><b>Nome do Utilizador</b></label>
+                <input type="text" placeholder="Insira o nome do Utilizador" name="utilizadorNome" required style="width: auto;">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required  style="width: auto;">
-                <label>
-                    <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
+                <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
 
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+
+
 
                 <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn"  style="width: auto;">Sign Up</button>
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+                    <button type="submit" class="cancelbtn" style="background-color: #4CAF50">Entrar</button>
                 </div>
             </div>
         </form>

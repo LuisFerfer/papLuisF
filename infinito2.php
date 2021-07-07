@@ -11,8 +11,8 @@
     <!--*************METER IMAGEM, DO CORAÇAOP!!!!!!!!!!!!!!!!!!!!!**********-->
 
 
-    <span style="font-size: 40px" ><img src="images/sssss.png" style="height: 70px; width: 70px">x</span><span  id="livestext" class="ml-1 display-4">3</span>
-    <span style="padding-left:10px; font-size: 40px">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
+    <span style="font-size: 40px; user-select: none" ><img src="images/sssss.png" style="height: 70px; width: 70px">x</span><span  id="livestext" class="ml-1 display-4">3</span>
+    <span style="padding-left:10px; font-size: 40px;user-select: none">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
 
 </div>
 <br>
@@ -65,14 +65,14 @@ if ($handle) {
 </script>
 
 <body >
-<h1> <span id="palavra" style="color:navajowhite"></span></h1>
+<h1> <span id="palavra" style="color:navajowhite; user-select: none"></span></h1>
 
 
 </body>
 
 <!--******************************-->
 
-<div style="padding-top: 60px">
+<div style="padding-top: 60px; user-select: none">
     <a  class="button big" onclick="novaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);" id="novo">NOVO</a>
     <a  class="button big" onclick="repetidaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);" id="velho">VISTO</a>
 

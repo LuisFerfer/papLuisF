@@ -33,17 +33,22 @@ top();
     #custom-button{
         padding: 10px;
         color: white;
-        background-color: white;
+        background-color: #8d93a0;
         border: 1px solid #000000;
         border-radius: 5px;
         cursor: pointer;
         opacity: 70%;
 
     }
-    #custom-button: hover {
-        background-color: #8d93a0;
+    #custom-button:hover {
+        text-decoration: underline;
     }
 
+    #custom-text {
+        margin-left: 10px;
+        font-family: sans-serif;
+        color: #aaa;
+    }
 
 
 </style>
@@ -54,8 +59,9 @@ top();
 <!-- Hero Section End -->
 <?php
 $id = intval($_GET['id']);
-$sql = "select * from utilizadores where utilizadorId=" . $id;
+$sql = "select * from perfis inner join utilizadores on perfilUtilizadorId=utilizadorId  where perfilId=".$_GET["id"];
 $resultPerfis = mysqli_query($con, $sql);
+
 $dadosPerfis = mysqli_fetch_array($resultPerfis)
 ?>
 <!-- About Secton Begin -->
@@ -65,20 +71,29 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    <div  class="about-intro" style="width: 1370px;height: 200px; background-image: url('<?php echo $dadosPerfis['utilizadorBannerURL']?>')" >
+                    <div  class="about-intro" style="width: 1370px;height: 200px; background-image: url('<?php echo $dadosPerfis['perfilBanner']?>')" >
                         <input type="file" id="real-file" hidden="hidden" />
                         <button type="button" id="custom-button" style="width: 120px; position: absolute; top: 270px; left: 1509px; ">Editar Fundo</button>
-                    <div class="about-intro" style="position: absolute;top: 240px; left: 300px" <?php echo $dadosPerfis['utilizadorId'] ?>>
-                        <img src="<?php echo $dadosPerfis['utilizadorAvatar'] ?>" class="normal" style="z-index: 3;height: 80px;width: 70px">
+                    <div class="about-intro" style="position: absolute;top: 230px; left: 280px" <?php echo $dadosPerfis['perfilId'] ?>>
+                        <img src="<?php echo $dadosPerfis['perfilAvatar'] ?>" class="normal" style="z-index: 3;height: 90px;width: 85px">
                     </div>
                 </div>
+                    <script type="text/javascript">
+                    const realFileBtn = document.getElementById("real-file");
+                    const customBtn = document.getElementById("custom-button");
+                    const customTxt = document.getElementById("custom-text");
+
+                    customBtn.addEventListener("click", function () {
+                    realFileBtn.click();
+                    });
+                    </script>
                 <div class="about-intro col-lg-6">
                     <div class="intro-text">
-                        <h2 class="strokeme" style="position: absolute; top: 256px; left: 375px"><?php echo $dadosPerfis['utilizadorNome'] ?></h2>
-                        <h4 class="strokeme" style="position: absolute; top: 290px; left: 378px"><?php echo $dadosPerfis['utilizadorEmail'] ?></h4>
+                        <h2 class="strokeme" style="position: absolute; top: 256px; left: 375px"><?php echo $dadosPerfis['perfilNome'] ?></h2>
+                        <h4 class="strokeme" style="position: absolute; top: 290px; left: 378px"><?php echo $dadosPerfis['perfilEmail'] ?></h4>
                     </div>
                 </div>
-<img style="position: absolute; top: 360px" src="images/handshake.png"><br><span></span>
+<img style="position: absolute; top: 360px; left: 270px" src="images/handshake.png"><br><span></span>
 <img style="position: absolute; top: 360px; left: 330px" src="images/dislike.png">
 
 

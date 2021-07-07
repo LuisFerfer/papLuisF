@@ -1,66 +1,42 @@
-<!DOCTYPE html>
-<!--
-    Transit by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Foca-te no jogo!</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!--[if lte IE 8]>
-    <script src="js/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-layers.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/common.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<?php
+include_once("includes/body.inc.php");
+top();
 
-    <noscript>
-        <link rel="stylesheet" href="css/skel.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/style-xlarge.css" />
-    </noscript>
-</head>
-<body class="landing">
-<!-- Header -->
-<footer id="footer">
-<header  id="header">
-    <h1 style="color: #2c2f35"><a href="index.php"><img src="images/vermo"></a></h1>
-    <nav  id="nav">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="generic.php">Outros Modos de Jogo</a></li>
-            <!--<li><a href="elements.html">Elements</a></li>-->
-            <li><a class="button special">Sign Up</a></li>
+?>
+<header id="header" style="background-color: ">
+    <h1><a href="index.php"><img src="images/vermopreto.png"></a></h1>
+    <nav id="nav">
+        <ul> <a href="index.php" ><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
+                <a href="indexing.php" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
+
+                    <li><a href="index.php" style="color: black">Página Inicial</a></li>
+                    <li><a href="generic.php" style="color: black">Outros Modos de Jogo</a></li>
+                    <!--<li><a href="elements.html">Elements</a></li>-->
+                    <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
+                    <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
         </ul>
     </nav>
-</header></footer>
-	<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="container">
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-					<header class="major">
-						<h2>Outros Modos de Jogo</h2>
-						<p></p>
-					</header>
-
-
-				</div>
-			</section>
-
+<h2 style="margin-left: 780px;">Outros Modos de jogo</h2>
+<br>
 	<section class="section-background">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-4">
 					<div class="courses-thumb courses-thumb-secondary">
 
-						<div class="courses-detail">
-							<h3><a href="infinito.php">Modo Competitivo</a></h3>
+						<div style="margin-left: 130px;" class="courses-detail">
+							<h3 style="margin-left: 27px;"><a href="infinito.php">Modo Competitivo</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
 									<a href="infinito.php"><img src="images/trophy.png" alt=""></a>
@@ -77,8 +53,8 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="courses-thumb courses-thumb-secondary">
 
-						<div class="courses-detail">
-							<h3><a href="duelo.php">Modo Duelo</a></h3>
+						<div style="margin-left: 140px;" class="courses-detail">
+							<h3 style="margin-left: 50px;""><a href="duelo.php">Modo Duelo</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
 									<a href="duelo.php"><img src="images/ooga.jpg" alt=""></a>
@@ -93,8 +69,8 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="courses-thumb courses-thumb-secondary">
 
-						<div class="courses-detail">
-							<h3><a href="numeros.php">Modo Números</a></h3>
+						<div style="margin-left: 140px;" class="courses-detail">
+							<h3 style="margin-left: 30px;"><a href="numeros.php">Modo Números</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
 									<a href="numeros.php" ><img src="images/number.png" alt=""></a>

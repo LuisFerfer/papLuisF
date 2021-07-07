@@ -60,14 +60,14 @@ if ($handle) {
 </script>
 
 <body >
-<h1> <span id="palavra" style="color:navajowhite" ></span></h1>
+<h1> <span id="palavra" style="color:navajowhite; user-select: none" ></span></h1>
 
 
 </body>
 
 <!--******************************-->
 
-<div style="padding-top: 60px">
+<div style="padding-top: 60px; user-select: none">
     <a  class="button big" onclick="novaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);" id="novo">NOVO</a>
     <a  class="button big" onclick="repetidaPalavra(document.getElementById('palavra').innerHTML);sorteiaPalavra(nPalavras);" id="velho">VISTO</a>
 

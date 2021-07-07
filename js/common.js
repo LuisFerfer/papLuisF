@@ -208,7 +208,7 @@ async function novaPalavrainf(palavra){
             lives--;
             $('#livestext').html(lives);
             if(lives==0){
-                $("#perdemoMsg").html("! Terminou com: "  + (score) + ' pontos.');
+                $("#perdemoMsg").html("Oops! Terminou com: "  + (score) + ' pontos.');
                 $("#perdemo").show();
               $('#livestext').html(lives);
 
@@ -233,10 +233,10 @@ async function repetidaPalavrainf(palavra){
             $('#livestext').html(lives);
             if(lives==0){
 
+                $("#perdemoMsg").html("Oops! Terminou com: "  + (score) + ' pontos.');
+                $("#perdemo").show();
                 $('#livestext').html(lives);
-                await sleep(100);
-                alert("PERDESTE");
-              setTimeout(atualizainf(-1),3000);
+
 
 
             }
@@ -422,4 +422,20 @@ function atualizaduelo(fator) {
 function numerorng() {
     $digits=3;
     rand(pow(10,$digits-1),pow(10,$digits)-1);
+}
+
+
+
+
+
+
+function preview_image(event)
+{
+    var reader = new FileReader();
+    reader.onload = function()
+    {
+        var output = document.getElementById('output_image');
+        output.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
 }
