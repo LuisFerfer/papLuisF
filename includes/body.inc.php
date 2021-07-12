@@ -55,7 +55,7 @@ function top(){
         <!--teste-->
     </head>
 
-    <body class="landing" id="teste001">
+    <body  class="landing" id="teste001">
     <!-- Header -->
 
 
@@ -71,14 +71,14 @@ function top(){
         $dados=mysqli_fetch_array($result);
 
         ?>
-        <form class='modal-content' action="confirmarRegistar.php?id='<?php echo $dados['utilizadorId']?>'">
+        <form class='modal-content' action="confirmarRegistar.php" method="post">
         <div class="container" style="width: 700px">
             <h2>Registar</h2>
             <label for="name"><b>Nome do Utilizador</b></label>
-            <input type="text" placeholder="Insira o nome do Utilizador" name="utilizadorNome" required style="width: auto;">
+            <input type="text" placeholder="Insira o nome do Utilizador" name="perfilNome" required style="width: auto;">
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Insira o seu Email" name="utilizadorEmail" required style="width: auto;">
+            <input type="text" placeholder="Insira o seu Email" name="utilizadorLogin" required style="width: auto;">
 
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
@@ -158,7 +158,8 @@ function top(){
     </script>
 
 
-<?php }
+<?php
+}
 function bottom(){
 
     ?>

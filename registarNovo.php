@@ -2,6 +2,7 @@
 include_once ("includes/config.inc.php");
 $con=mysqli_connect(HOST,USER,PASSWORD,DATABASE);
 
+
 $nome=addslashes($_POST['nome']);
 $email=addslashes($_POST['email']);
 $password=addslashes($_POST['password']);
@@ -19,6 +20,6 @@ $lastId2=mysqli_insert_id($con);
 session_start();
 $_SESSION['id']=$lastId2;
 $_SESSION['nome']=$nome;
-
+die();
 header("location:index.php");
 ?>

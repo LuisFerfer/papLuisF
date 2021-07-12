@@ -6,8 +6,20 @@ top();
     <script>
         var stage=1;
         $('document').ready(function (){
+            <?php
+                if(isset($_GET['msg']) && $_GET['msg']=='err'){
+            ?>
+                    alert("Utilizador duplicado!");
+           <?php
+                }
+                if(isset($_GET['msg'])&&$_GET['msg']=='ok'){
+            ?>
+                    alert("Registado com sucesso!");
+            <?php
+                }
+            ?>
+
           swap(stage);
-            //alert('aaa');
         });
 
 
