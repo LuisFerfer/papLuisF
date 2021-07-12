@@ -1,5 +1,5 @@
-<?php include_once("includes/body.inc.php");
-top();
+<?php include_once("includes/bodybase.inc.php");
+toping();
 ?>
     <header id="header">
         <h1><a href="index.php"><img src="images/vermo"></a></h1>
@@ -7,11 +7,11 @@ top();
             <ul> <a href="index.php" ><img onclick="atualizanum(0)" src="images/pt.png" style="  width:50px; height: 20px " >
                     <a href="indexing.php" ><img onclick="atualizanuming(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
-                        <li><a href="index.php">Página Inicial</a></li>
-                        <li><a href="generic.php">Outros Modos de Jogo</a></li>
+                        <li><a href="indexing.php">Home</a></li>
+                        <li><a href="generic.php">Other Game Modes</a></li>
                         <!--<li><a href="elements.html">Elements</a></li>-->
-                        <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Registar</button></a></li>
-                        <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Entrar</button></a></li>
+                        <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
+                        <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +22,7 @@ top();
         var stage=1;
         var tempo = 10;
         $('document').ready(function (){
-            swapnum(stage);
+            swapnuming(stage);
         });
     </script>
 
@@ -39,7 +39,7 @@ top();
             <header class="major">
                 <h2>Vermo!</h2>
 
-                <p>Treine o seu cérebro.</p>
+                <p>Train your brain.</p>
             </header>
 
         </div>
@@ -50,7 +50,7 @@ top();
             <section class="links">
                 <div class="align-center">
                     <h3>Disclaimer</h3>
-                    <li>Vermo! é apenas uma ideia para a minha PAP, não está perfeito nem pronto para o mercado.</li>
+                    <li>Vermo! is just an idea I had, it is not ready for professional use.</li>
                     </ul>
                 </div>
             </section>
@@ -65,4 +65,4 @@ top();
         </div>
 
     </footer>
-<?php bottom(); ?>
+<?php bottoming(); ?>

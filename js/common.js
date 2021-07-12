@@ -290,7 +290,7 @@ function swapinfing(number){
 function atualizainfing(fator) {
 
     stage+=fator;
-    swapinf(stage);
+    swapinfing(stage);
 }
 
 
@@ -305,11 +305,9 @@ async function novaPalavrainfing(palavra){
             lives--;
             $('#livestext').html(lives);
             if(lives==0){
-
+                $("#perdemoMsg").html("You have no more lives left. Final score: "  + (score) + ' points.');
+                $("#perdemo").show();
                 $('#livestext').html(lives);
-                await sleep(100);
-                alert("PERDESTE");
-                setTimeout(atualizainfing(-1),3000);
 
 
             }
@@ -329,10 +327,9 @@ async function repetidaPalavrainfing(palavra){
             $('#livestext').html(lives);
             if(lives==0){
 
+                $("#perdemoMsg").html("You have no more lives left. Final score: "  + (score) + ' points.');
+                $("#perdemo").show();
                 $('#livestext').html(lives);
-                await sleep(100);
-                alert("PERDESTE");
-                setTimeout(atualizainfing(-1),3000);
 
 
             }
@@ -381,12 +378,18 @@ function geraNumero(){
 }
 
 
+                                                    //    numeros  ingles  //
 
 
+function swapnuming(number){
+    $('#bannernum').load('numeroingles'+number+'.php');
+}
 
+function atualizanuming(fator) {
 
-
-
+    stage+=fator;
+    swapnuming(stage);
+}
 
 
 

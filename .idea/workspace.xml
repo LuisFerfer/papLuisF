@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="evoluçao perfil">
-      <change afterPath="$PROJECT_DIR$/butao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confirmarLogin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confirmarRegistar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/config.inc.php" afterDir="false" />
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="evoluçao perfil e infinito, login nao funciona">
+      <change afterPath="$PROJECT_DIR$/infinitoing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infinitoing2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numeroingles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numeroingles1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numeroingles2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generic.php" beforeDir="false" afterPath="$PROJECT_DIR$/generic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html2.php" beforeDir="false" afterPath="$PROJECT_DIR$/html2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinito2.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexing.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinito.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinitoing1.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinitoing1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeros.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PAPGuilherme-Simao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -157,7 +160,8 @@
       <workItem from="1625473638633" duration="6084000" />
       <workItem from="1625559679519" duration="3270000" />
       <workItem from="1625646153217" duration="592000" />
-      <workItem from="1625668318349" duration="2361000" />
+      <workItem from="1625668318349" duration="2715000" />
+      <workItem from="1626085971355" duration="5367000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -292,7 +296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624980976101</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="evoluçao perfil e infinito, login nao funciona">
+      <created>1625671770143</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1625671770143</updated>
+    </task>
+    <task id="LOCAL-00021" summary="evoluçao perfil e infinito, login nao funciona">
+      <created>1625671910075</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1625671910075</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +345,8 @@
     <MESSAGE value="evoluçao duelo" />
     <MESSAGE value="evoluçao ingles" />
     <MESSAGE value="evoluçao perfil" />
-    <option name="LAST_COMMIT_MESSAGE" value="evoluçao perfil" />
+    <MESSAGE value="evoluçao perfil e infinito, login nao funciona" />
+    <option name="LAST_COMMIT_MESSAGE" value="evoluçao perfil e infinito, login nao funciona" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
