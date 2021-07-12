@@ -1,27 +1,24 @@
 <?php include_once("includes/body.inc.php");
 top();
-
 ?>
 
     <script>
         var stage=1;
         $('document').ready(function (){
             <?php
-                if(isset($_GET['msg']) && $_GET['msg']=='err'){
-            ?>
-                    alert("Utilizador duplicado!");
-           <?php
-                }
-                if(isset($_GET['msg'])&&$_GET['msg']=='ok'){
-            ?>
-                    alert("Registado com sucesso!");
+            if (isset($_SESSION['msg'])) {
+                if ($_SESSION['msg'] = 1){
+                    ?>
+                    alert("Registado com sucesso");
             <?php
+            unset($_SESSION['msg']);
                 }
+            }
+
             ?>
 
           swap(stage);
         });
-
 
 
     </script>
@@ -34,6 +31,9 @@ top();
                         <li><a href="index.php">Página Inicial</a></li>
                         <li><a href="generic.php">Outros Modos de Jogo</a></li>
                         <!--<li><a href="elements.html">Elements</a></li>-->
+                        <?php if (isset($_SESSION['id'])){ ?>
+                            <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>">Perfil</a></li>
+                        <?php }  ?>
                         <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Registar</button></a></li>
                         <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Entrar</button></a></li>
             </ul>

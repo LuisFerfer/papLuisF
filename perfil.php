@@ -59,7 +59,7 @@ top();
 <!-- Hero Section End -->
 <?php
 $id = intval($_GET['id']);
-$sql = "select * from perfis inner join utilizadores on perfilUtilizadorId=utilizadorId  where perfilId=".$_GET["id"];
+$sql = "select * from perfis inner join utilizadores on perfilId=utilizadorId  where perfilId=".$_GET["id"];
 $resultPerfis = mysqli_query($con, $sql);
 
 $dadosPerfis = mysqli_fetch_array($resultPerfis)

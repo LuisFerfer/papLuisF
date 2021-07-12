@@ -23,13 +23,13 @@ mysqli_query($con,$sql);
 
 $errorNum=mysqli_errno($con);
 $lastId=mysqli_insert_id($con);
-
+$_SESSION['id'] = $lastId;
 $sql2="insert into perfis(perfilNome,perfilEmail,perfilId)
                     values ('".$perfilNome."','".$utilizadorLogin."','".$lastId."')";
 mysqli_query($con,$sql2);
-
-
-header("location: index.php?msg=".($errorNum==1062?'err':'ok'));
+session_start();
+$_SESSION['msg'] = 1;
+header("location: index.php");
 
 
 ?>
