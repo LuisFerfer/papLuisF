@@ -31,5 +31,4 @@ session_start();
 $_SESSION['msg'] = 1;
 header("location: index.php");
 
-
 ?>

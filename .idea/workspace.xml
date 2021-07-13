@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="ingles,inf,num">
+      <change afterPath="$PROJECT_DIR$/AJAX/AJAXlogin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados/modeloVermo_v3.0.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloVermo_v3.0.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confirmarLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/confirmarLogin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/confirmarRegistar.php" beforeDir="false" afterPath="$PROJECT_DIR$/confirmarRegistar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generic.php" beforeDir="false" afterPath="$PROJECT_DIR$/generic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexing.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infinito.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinitoing.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinitoing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeroingles.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeroingles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeros.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PAPGuilherme-Simao" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -153,7 +164,8 @@
       <workItem from="1625559679519" duration="3270000" />
       <workItem from="1625646153217" duration="592000" />
       <workItem from="1625668318349" duration="2715000" />
-      <workItem from="1626085971355" duration="11909000" />
+      <workItem from="1626085971355" duration="12112000" />
+      <workItem from="1626165695171" duration="11090000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -309,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626096264667</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ingles,inf,num">
+      <created>1626105565485</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1626105565485</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

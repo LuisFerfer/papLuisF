@@ -33,16 +33,45 @@ function top(){
         <script src="js/init.js"></script>
         <script src="js/common.js"></script>
         <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
---><script>
-            var stage=1;
-            $('document').ready(function (){
+-->
+        <script>
+
+                var stage=1;
+                $('document').ready(function(){
+                <?php
+                if (isset($_SESSION['msg'])) {
+                if ($_SESSION['msg'] == 1){
+                ?>
+                alert("Registado com sucesso");
+                <?php
+
+
+                }elseif($_SESSION['msg'] == 2){
+                ?>
+
+                <?php
+                }elseif($_SESSION['msg'] == 3){
+                ?>
+                alert("A sua conta foi suspensa.");
+                <?php
+                }elseif($_SESSION['msg'] == 4){
+                ?>
+                alert("Nome de utilizador e/ou password errados.");
+
+                <?php
+                }
+                unset($_SESSION['msg']);
+                }
+                ?>
                 swap(stage);
-                //alert('aaa');
             });
 
 
 
+
+
         </script>
+
         <noscript>
             <link rel="stylesheet" href="css/skel.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -119,12 +148,12 @@ function top(){
 
     <div id="id02" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content" action="ConfirmaUtilizador.php">
+        <form class="modal-content" action="confirmarLogin.php" method="post">
             <div class="container">
                 <h1>Log In</h1>
 
-                <label for="name"><b>Nome do Utilizador</b></label>
-                <input type="text" placeholder="Insira o nome do Utilizador" name="utilizadorNome" required style="width: auto;">
+                <label for="name"><b>Utilizador</b></label>
+                <input type="text" placeholder="Insira o seu nome de Utilizador" name="perfilNome" required style="width: auto;">
 
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
@@ -135,98 +164,12 @@ function top(){
 
                 <div class="clearfix">
                     <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
-                    <button type="submit" class="cancelbtn" style="background-color: #4CAF50">Entrar</button>
+                    <button onclick="entrar()" type="submit" class="cancelbtn" style="background-color: #4CAF50">Entrar</button>
                 </div>
             </div>
         </form>
     </div>
 
-                                <!-- mambo -->
-
-
-    <div id="sucesso" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <script>

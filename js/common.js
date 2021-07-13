@@ -3,6 +3,56 @@ var palavrasSaidas=[]; // array de palavras/strings
 var lives=3;
 var id;
 
+ // login //
+
+
+
+
+function entrar() {
+    let utilizador = $('#nome').val();
+    let password = $('#password').val();
+    let erro = false;
+
+    if ($('#utilizador').val() == '') {
+        erro = true;
+        $('#NoName').html('Introduza o seu nome');
+    }
+    if ($('#password').val() == '') {
+        erro = true;
+        $('#NoPass').html('Introduza a sua Password');
+
+    } else {
+        $.ajax({
+            url: "AJAX/AJAXlogin.php",
+            type: "post",
+            data: {
+                nome: utilizador,
+                password: password
+            },
+            success: function (result) {
+                if ((result) == 1) {
+                    erro = true;
+                    $('#frmConfirma').submit();
+
+                } else if (!erro) {
+                    alert('Dados Mal Inseridos');
+                }
+            }
+        });
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
                                             //    treino    //
 function geraPalavra(){
     var n;

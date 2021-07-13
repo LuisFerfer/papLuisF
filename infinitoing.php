@@ -15,15 +15,23 @@ toping();
     </script>
 
     <header id="header">
-        <h1><a href="indexing.php"><img src="images/vermo"></a></h1>
+        <h1><a href="index.php"><img src="images/vermo"></a></h1>
         <nav id="nav">
-            <ul><a href="infinito.php" ><img onclick="swapinf(0)" src="images/pt.png" style="  width:50px; height: 20px " >
-                    <a href="infinitoing.php" ><img onclick="swapinfing(0)" src="images/eng.png" style="width: 50px; height: 20px">
+            <ul> <a href="infinito.php" ><img onclick="atualizainf(0)" src="images/pt.png" style="  width:50px; height: 20px " >
+                    <a href="infinitoing.php" ><img onclick="atualizainfing(0)" src="images/eng.png" style="width: 50px; height: 20px">
+
                         <li><a href="indexing.php">Home</a></li>
                         <li><a href="generic.php">Other Game Modes</a></li>
                         <!--<li><a href="elements.html">Elements</a></li>-->
-                        <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
-                        <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
+                        <?php if(isset($_SESSION['id'])){ ?>
+                            <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>"><?php echo $_SESSION['nome'] ?></a></li>
+                            <li><button class="button small" onclick="window.location.href='logout.php'">Logout</button> </li>
+                        <?php } else{ ?>
+                            <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign up</button></a></li>
+                            <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log in</button></a></li>
+                            <?php
+                        }
+                        ?>
             </ul>
         </nav>
     </header>

@@ -2,26 +2,6 @@
 top();
 ?>
 
-    <script>
-        var stage=1;
-        $('document').ready(function (){
-            <?php
-            if (isset($_SESSION['msg'])) {
-                if ($_SESSION['msg'] = 1){
-                    ?>
-                    alert("Registado com sucesso");
-            <?php
-            unset($_SESSION['msg']);
-                }
-            }
-
-            ?>
-
-          swap(stage);
-        });
-
-
-    </script>
     <header id="header">
         <h1><a href="index.php"><img src="images/vermo"></a></h1>
         <nav id="nav">
@@ -31,11 +11,15 @@ top();
                         <li><a href="index.php">Página Inicial</a></li>
                         <li><a href="generic.php">Outros Modos de Jogo</a></li>
                         <!--<li><a href="elements.html">Elements</a></li>-->
-                        <?php if (isset($_SESSION['id'])){ ?>
-                            <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>">Perfil</a></li>
-                        <?php }  ?>
+                        <?php if(isset($_SESSION['id'])){ ?>
+                            <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>"><?php echo $_SESSION['nome'] ?></a></li>
+                            <li><button class="button small" onclick="window.location.href='logout.php'">Sair</button> </li>
+                        <?php } else{ ?>
                         <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Registar</button></a></li>
                         <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Entrar</button></a></li>
+                        <?php
+                        }
+                        ?>
             </ul>
         </nav>
     </header>

@@ -3,7 +3,7 @@ include_once("includes/body.inc.php");
 top();
 
 ?>
-<header id="header" style="background-color: ">
+<header id="header">
     <h1><a href="index.php"><img src="images/vermopreto.png"></a></h1>
     <nav id="nav">
         <ul> <a href="index.php" ><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
@@ -12,8 +12,15 @@ top();
                     <li><a href="index.php" style="color: black">Página Inicial</a></li>
                     <li><a href="generic.php" style="color: black">Outros Modos de Jogo</a></li>
                     <!--<li><a href="elements.html">Elements</a></li>-->
-                    <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign Up</button></a></li>
-                    <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Log In</button></a></li>
+                    <?php if(isset($_SESSION['id'])){ ?>
+                        <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>" style="color: black"><?php echo $_SESSION['nome'] ?></a></li>
+                        <li><button class="button small" style="background-color: #aaaaaa; color: #8d93a0 ; " onclick="window.location.href='logout.php'">Sair</button> </li>
+                    <?php } else{ ?>
+                        <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style=" background-color: #aaaaaa; width:auto;">Registar</button></a></li>
+                        <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="  background-color: #aaaaaa;  width:auto;">Entrar</button></a></li>
+                        <?php
+                    }
+                    ?>
         </ul>
     </nav>
 </header>
