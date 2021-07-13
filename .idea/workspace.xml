@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="ingles,inf,num">
-      <change afterPath="$PROJECT_DIR$/AJAX/AJAXlogin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="tudo">
+      <change afterPath="$PROJECT_DIR$/confirmaeditaperfil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editarperfil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericingles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perfilingles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/modeloVermo_v3.0.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloVermo_v3.0.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confirmarLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/confirmarLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confirmarRegistar.php" beforeDir="false" afterPath="$PROJECT_DIR$/confirmarRegistar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generic.php" beforeDir="false" afterPath="$PROJECT_DIR$/generic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/bodybase.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/bodybase.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indexing.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinito.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infinitoing.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinitoing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numeroingles.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeroingles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeroingles1.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeroingles1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numeroingles2.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeroingles2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numeros.php" beforeDir="false" afterPath="$PROJECT_DIR$/numeros.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/othermodes.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +47,15 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="15" />
+      <option value="100" />
+      <option value="200" />
+      <option value="300" />
+    </hideBySeverity>
+    <option name="sortBySeverity" value="false" />
   </component>
   <component name="ProjectId" id="1oMWN3JEAaAxiAWDEen0XGsCOEt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -165,7 +175,7 @@
       <workItem from="1625646153217" duration="592000" />
       <workItem from="1625668318349" duration="2715000" />
       <workItem from="1626085971355" duration="12112000" />
-      <workItem from="1626165695171" duration="11090000" />
+      <workItem from="1626165695171" duration="18100000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -328,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626105565485</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="tudo">
+      <created>1626177073608</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1626177073608</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,16 +382,7 @@
     <MESSAGE value="evoluçao perfil" />
     <MESSAGE value="evoluçao perfil e infinito, login nao funciona" />
     <MESSAGE value="ingles,inf,num" />
-    <option name="LAST_COMMIT_MESSAGE" value="ingles,inf,num" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/generic.php</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="tudo" />
+    <option name="LAST_COMMIT_MESSAGE" value="tudo" />
   </component>
 </project>

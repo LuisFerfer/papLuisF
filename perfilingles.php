@@ -1,24 +1,24 @@
 <?php
-include_once("includes/body.inc.php");
-top();
+include_once("includes/bodybase.inc.php");
+toping();
 
 ?>
 
 <header id="header">
-    <h1><a href="index.php"><img src="images/vermopreto.png"></a></h1>
+    <h1><a href="indexing.php"><img src="images/vermopreto.png"></a></h1>
     <nav id="nav">
-        <ul> <a href="perfil.php?id=<?php echo $_SESSION['id'] ?>"><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
-                <a href="perfilingles.php?id=<?php echo $_SESSION['id'] ?>"><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
+        <ul> <a href="perfil.php?id=<?php echo $_SESSION['id'] ?>" ><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
+                <a href="perfilingles.php?id=<?php echo $_SESSION['id'] ?>" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
-                    <li><a href="index.php" style="color: black">Página Inicial</a></li>
-                    <li><a href="generic.php" style="color: black">Outros Modos de Jogo</a></li>
+                    <li><a href="indexing.php" style="color: black">Home</a></li>
+                    <li><a href="genericingles.php" style="color: black">Other Game Modes</a></li>
                     <!--<li><a href="elements.html">Elements</a></li>-->
                     <?php if(isset($_SESSION['id'])){ ?>
                         <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>" style="color: black"><?php echo $_SESSION['nome'] ?></a></li>
-                        <li><button class="button small" style="background-color: #aaaaaa; color: #8d93a0 ; " onclick="window.location.href='logout.php'">Sair</button> </li>
+                        <li><button class="button small" style="background-color: #aaaaaa; color: #8d93a0 ; " onclick="window.location.href='logout.php'">Logout</button> </li>
                     <?php } else{ ?>
-                        <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Registar</button></a></li>
-                        <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Entrar</button></a></li>
+                        <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign up</button></a></li>
+                        <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Login</button></a></li>
                         <?php
                     }
                     ?>
@@ -98,29 +98,29 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
             <div class="row">
                 <div class="col-lg-2">
                     <div  class="about-intro" style="width: 1370px;height: 200px; background-image: url('<?php echo $dadosPerfis['perfilBanner']?>')" >
+                        <input type="file" id="real-file" hidden="hidden" />
+                        <button type="button" id="custom-button" style="width: 120px; position: absolute; top: 270px; left: 1509px; ">Edit banner</button>
+                        <div class="about-intro" style="position: absolute;top: 230px; left: 280px" <?php echo $dadosPerfis['perfilId'] ?>>
+                            <img src="<?php echo $dadosPerfis['perfilAvatar'] ?>" class="normal" style="z-index: 3;height: 90px;width: 85px">
+                            <button type="button" id="custom-button2" style="height: 1px;   width: 1px; position: absolute; top: 67px; left: 4px; ">.</button>
 
-                        <button type="button" id="custom-button" onclick="window.location.href='editarperfil.php?id=<?php echo $_SESSION['id'] ?>'" style="width: 120px; position: absolute; top: 270px; left: 1509px; ">Editar Perfil</button>
-                    <div class="about-intro" style="position: absolute;top: 230px; left: 280px" <?php echo $dadosPerfis['perfilId'] ?>>
-                        <img src="<?php echo $dadosPerfis['perfilAvatar'] ?>" class="normal" style="z-index: 3;height: 90px;width: 85px">
-
-
+                        </div>
                     </div>
-                </div>
                     <script type="text/javascript">
-                    const realFileBtn = document.getElementById("real-file");
-                    const customBtn = document.getElementById("custom-button");
-                    const customTxt = document.getElementById("custom-text");
+                        const realFileBtn = document.getElementById("real-file");
+                        const customBtn = document.getElementById("custom-button");
+                        const customTxt = document.getElementById("custom-text");
 
-                    customBtn.addEventListener("click", function () {
-                    realFileBtn.click();
-                    });
+                        customBtn.addEventListener("click", function () {
+                            realFileBtn.click();
+                        });
                     </script>
-                <div class="about-intro col-lg-6">
-                    <div class="intro-text">
-                        <h2 class="strokeme" style="position: absolute; top: 256px; left: 375px"><?php echo $dadosPerfis['perfilNome'] ?></h2>
-                        <h4 class="strokeme" style="position: absolute; top: 290px; left: 378px"><?php echo $dadosPerfis['perfilEmail'] ?></h4>
+                    <div class="about-intro col-lg-6">
+                        <div class="intro-text">
+                            <h2 class="strokeme" style="position: absolute; top: 256px; left: 375px"><?php echo $dadosPerfis['perfilNome'] ?></h2>
+                            <h4 class="strokeme" style="position: absolute; top: 290px; left: 378px"><?php echo $dadosPerfis['perfilEmail'] ?></h4>
+                        </div>
                     </div>
-                </div>
 
                 </div>
             </div>
@@ -130,14 +130,14 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
         <div class="table-wrapper">
             <table>
                 <thead>
-                <td style="font-size: 25px;font-weight: bold">Recordes Pessoais</td>
+                <td style="font-size: 25px;font-weight: bold">Personal Highscores</td>
                 </thead>
                 <tbody>
                 <tr>
                     <td>#</td>
-                    <td>Pontuações</td>
+                    <td>Scores</td>
                 </tr>
-                <!-- A partir daqui fazer o ciclo que mostra os 10 melhores scores -->
+                <!-- A partir daqui fazer o ciclo que mostra os 5 melhores scores -->
 
                 <tr>
                     <td>1</td>
@@ -164,7 +164,7 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
                 </tbody>
 
             </table>
-    </div>
+        </div>
 
 </section>
 
@@ -177,7 +177,7 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
         <section class="links">
             <div class="align-center">
                 <h3>Disclaimer</h3>
-                <li>Vermo! É apenas uma ideia para a minha PAP, não está perfeito nem pronto para o mercado.</li>
+                <li>Vermo! is just an idea I had, it is not ready for professional use.</li>
                 </ul>
             </div>
         </section>
@@ -192,4 +192,4 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
     </div>
 
 </footer>
-<?php bottom(); ?>
+<?php bottoming(); ?>

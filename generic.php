@@ -6,8 +6,8 @@ top();
 <header id="header">
     <h1><a href="index.php"><img src="images/vermopreto.png"></a></h1>
     <nav id="nav">
-        <ul> <a href="index.php" ><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
-                <a href="indexing.php" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
+        <ul> <a href="generic.php" ><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
+                <a href="genericingles.php" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
                     <li><a href="index.php" style="color: black">Página Inicial</a></li>
                     <li><a href="generic.php" style="color: black">Outros Modos de Jogo</a></li>

@@ -17,6 +17,7 @@ function toping(){
         Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
     -->
     <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <title>Vermo!</title>
@@ -32,16 +33,45 @@ function toping(){
         <script src="js/init.js"></script>
         <script src="js/common.js"></script>
         <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
---><script>
+-->
+        <script>
+
             var stage=1;
-            $('document').ready(function (){
+            $('document').ready(function(){
+                <?php
+                if (isset($_SESSION['msg'])) {
+                if ($_SESSION['msg'] == 1){
+                ?>
+                alert("Successfully registered");
+                <?php
+
+
+                }elseif($_SESSION['msg'] == 2){
+                ?>
+
+                <?php
+                }elseif($_SESSION['msg'] == 3){
+                ?>
+                alert("A sua conta foi suspensa.");
+                <?php
+                }elseif($_SESSION['msg'] == 4){
+                ?>
+                alert("Wrong Username and/or Password.");
+
+                <?php
+                }
+                unset($_SESSION['msg']);
+                }
+                ?>
                 swapingles(stage);
-                //alert('aaa');
             });
 
 
 
+
+
         </script>
+
         <noscript>
             <link rel="stylesheet" href="css/skel.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -54,16 +84,9 @@ function toping(){
         <!--teste-->
     </head>
 
-    <body class="landing" id="teste001">
+    <body  class="landing" id="teste001">
     <!-- Header -->
-    <header id="header">
-        <h1><a href="index.php"><img src="images/vermo"></a></h1>
 
-        <nav id="nav" >
-
-
-        </nav>
-    </header>
 
 
     <div id="id01" class="modal">
@@ -76,35 +99,30 @@ function toping(){
         $result=mysqli_query($con,$sql);
         $dados=mysqli_fetch_array($result);
 
-
-        echo "<form class='modal-content' action=\"../adicionaNovoUtilizador.php?id=".$dados['utilizadorId']." \">  ";
         ?>
+        <form class='modal-content' action="confirmarRegistar.php" method="post">
+            <div class="container" style="width: 700px">
+                <h2>Signup</h2>
+                <label for="name"><b>Username</b></label>
+                <input type="text" placeholder="Insert your Username" name="perfilNome" required style="width: auto;">
 
-        <div class="container" style="width: 700px">
-            <h1>Sign Up</h1>
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Enter Username" name="utilizadorNome" required style="width: auto;">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Insert your Email" name="utilizadorLogin" required style="width: auto;">
 
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="utilizadorEmail" required style="width: auto;">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Insert a Password" name="utilizadorPassword" required style="width: auto;">
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="utilizadorPassword" required style="width: auto;">
 
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required style="width: auto;">
 
-            <label>
-                <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
-            </label>
 
-            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-            <div class="clearfix">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn" style="width: auto;">Sign Up</button>
+
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cance</button>
+                    <button type="submit" class="cancelbtn"  style="background-color: #4CAF50">Sign up</button>
+                </div>
             </div>
-        </div>
         </form>
     </div>
     <!--
@@ -129,29 +147,30 @@ function toping(){
 
 
     <div id="id02" class="modal">
-        <span onclick="documentgetElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content" action="/ConfirmaUtilizador.php">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="confirmarLogin.php" method="post">
             <div class="container">
                 <h1>Log In</h1>
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required  style="width: auto;">
+                <label for="name"><b>Username</b></label>
+                <input type="text" placeholder="Insert your Username" name="perfilNome" required style="width: auto;">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required  style="width: auto;">
-                <label>
-                    <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
+                <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
 
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+
+
 
                 <div class="clearfix">
                     <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn"  style="width: auto;">Sign Up</button>
+                    <button onclick="entrar()" type="submit" class="cancelbtn" style="background-color: #4CAF50">Log in</button>
                 </div>
             </div>
         </form>
     </div>
+
+
 
     <script>
         // Get the modal
@@ -170,7 +189,8 @@ function toping(){
     </script>
 
 
-<?php }
+    <?php
+}
 function bottoming(){
 
     ?>

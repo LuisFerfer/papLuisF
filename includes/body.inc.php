@@ -150,10 +150,10 @@ function top(){
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content" action="confirmarLogin.php" method="post">
             <div class="container">
-                <h1>Log In</h1>
+                <h2>Log In</h2>
 
                 <label for="name"><b>Utilizador</b></label>
-                <input type="text" placeholder="Insira o seu nome de Utilizador" name="perfilNome" required style="width: auto;">
+                <input type="text" placeholder="Insirao nome do Utilizador" name="perfilNome" required style="width: auto;">
 
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
