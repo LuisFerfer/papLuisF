@@ -104,13 +104,13 @@ function top(){
         <div class="container" style="width: 700px">
             <h2>Registar</h2>
             <label for="name"><b>Nome do Utilizador</b></label>
-            <input type="text" placeholder="Insira o nome do Utilizador" name="perfilNome" required style="width: auto;">
+            <input type="text" placeholder="Insira o Utilizador" name="perfilNome" required style="width: auto;">
 
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Insira o seu Email" name="utilizadorLogin" required style="width: auto;">
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
+            <input type="password" placeholder="Insira a Password" name="utilizadorPassword" required style="width: auto;">
 
 
 
@@ -153,10 +153,10 @@ function top(){
                 <h2>Log In</h2>
 
                 <label for="name"><b>Utilizador</b></label>
-                <input type="text" placeholder="Insirao nome do Utilizador" name="perfilNome" required style="width: auto;">
+                <input type="text" placeholder="Insira o Utilizador" name="perfilNome" required style="width: auto;">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
+                <input type="password" placeholder="Insira a Password" name="utilizadorPassword" required style="width: auto;">
 
 
 

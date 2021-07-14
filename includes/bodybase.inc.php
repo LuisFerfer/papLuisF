@@ -156,7 +156,7 @@ function toping(){
                 <input type="text" placeholder="Insert your Username" name="perfilNome" required style="width: auto;">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Insira a sua Password" name="utilizadorPassword" required style="width: auto;">
+                <input type="password" placeholder="Insert a Password" name="utilizadorPassword" required style="width: auto;">
 
 
 

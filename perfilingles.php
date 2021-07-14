@@ -17,8 +17,8 @@ toping();
                         <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>" style="color: black"><?php echo $_SESSION['nome'] ?></a></li>
                         <li><button class="button small" style="background-color: #aaaaaa; color: #8d93a0 ; " onclick="window.location.href='logout.php'">Logout</button> </li>
                     <?php } else{ ?>
-                        <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Sign up</button></a></li>
-                        <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="width:auto;">Login</button></a></li>
+                        <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="background-color: #aaaaaa; width:auto;">Sign up</button></a></li>
+                        <li><a  ><button class="button special" onclick="document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="background-color: #aaaaaa; width:auto;">Login</button></a></li>
                         <?php
                     }
                     ?>
@@ -98,11 +98,11 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
             <div class="row">
                 <div class="col-lg-2">
                     <div  class="about-intro" style="width: 1370px;height: 200px; background-image: url('<?php echo $dadosPerfis['perfilBanner']?>')" >
-                        <input type="file" id="real-file" hidden="hidden" />
-                        <button type="button" id="custom-button" style="width: 120px; position: absolute; top: 270px; left: 1509px; ">Edit banner</button>
+
+                        <button type="button" id="custom-button" onclick="window.location.href='editarperfil.php?id=<?php echo $_SESSION['id'] ?>'" style="width: 120px; position: absolute; top: 270px; left: 1509px; ">Edit Profile</button>
                         <div class="about-intro" style="position: absolute;top: 230px; left: 280px" <?php echo $dadosPerfis['perfilId'] ?>>
                             <img src="<?php echo $dadosPerfis['perfilAvatar'] ?>" class="normal" style="z-index: 3;height: 90px;width: 85px">
-                            <button type="button" id="custom-button2" style="height: 1px;   width: 1px; position: absolute; top: 67px; left: 4px; ">.</button>
+
 
                         </div>
                     </div>
