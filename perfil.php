@@ -15,6 +15,17 @@ top();
                     <!--<li><a href="elements.html">Elements</a></li>-->
                     <?php if(isset($_SESSION['id'])){ ?>
                         <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>" style="color: black"><?php echo $_SESSION['nome'] ?></a></li>
+                        <?php
+                        $id = $_SESSION['id'];
+                        $sql = "select utilizadorTipo from utilizadores where utilizadorId = ".$id;
+                        $nibbas = mysqli_query($con, $sql);
+                        $dados = mysqli_fetch_array($nibbas);
+                        if ($dados['utilizadorTipo'] == "admin"){
+                            ?>
+                            <li><a href="backoffice.php" style="color: black">Backoffice</a></li>
+                                <?php
+                        }
+                        ?>
                         <li><button class="button small" style="background-color: #aaaaaa; color: #8d93a0 ; " onclick="window.location.href='logout.php'">Sair</button> </li>
                     <?php } else{ ?>
                         <li><a  ><button class="button special" onclick="document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'" style="background-color: #aaaaaa; width:auto;">Registar</button></a></li>

@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/admin/dicionario.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/index.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/lingua.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backoffice.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/confirmaeditaperfil.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/duelo/duelo1.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/editarperfil.php" charset="UTF-8" />
@@ -16,6 +17,8 @@
     <file url="file://$PROJECT_DIR$/numeros2.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/numeros3.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/perfil.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/treinofile.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usersBackoffice.php" charset="UTF-8" />
     <file url="PROJECT" charset="ISO-8859-1" />
   </component>
 </project>

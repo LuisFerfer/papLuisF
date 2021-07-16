@@ -66,7 +66,7 @@
         function duelotimer() {
         var elem = document.getElementById("myBar");
         var width = 100;
-        var id = setInterval(frame, 200);
+        var id = setInterval(frame, 300);
         function frame() {
 
         if (width == 0) {
@@ -122,7 +122,7 @@
 <div class="row col-lg-12">
 
         <div class="col-lg-4">
-            <h1 style="color: white; margin-left: 215px" class="float-left">Jogador 1</h1>
+            <h1 style="color: white; margin-left: 215px" class="float-left" <?php echo $_SESSION['nome'] ?>></h1>
             <br>
             <div  id="player1" class="mt-5" style="margin:auto">
                 <div  id="score1" >  </div>
@@ -143,8 +143,8 @@
             <br>
             <p style="color: palegreen"></p>
             <div align="center" style="padding-top: 10px">
+                <input type="text" style="width:  300px" id="caixa1" autocomplete="off" name="wordInput" autocapitalize="none" spellcheck="false" autocorrect="off" placeholder="type the words here">
 
-                <input type="text" style="width:  300px" id="caixa1" name="numeroInput">
             </div>
         </div>
 
