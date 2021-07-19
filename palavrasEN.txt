@@ -12,7 +12,7 @@ monk
 perfume
 occupy
 ruin
-econobox
+economy
 friendly
 rocket
 attractive

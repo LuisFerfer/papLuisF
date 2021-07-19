@@ -3,7 +3,7 @@ var palavrasSaidas=[]; // array de palavras/strings
 var lives=3;
 var id;
 
- // login //
+                                                     // login //
 
 
 
@@ -45,7 +45,7 @@ function entrar() {
 
 
 
- //              perfil  //
+                                                        //  perfil  //
 
 function preview_image(event)
 {
@@ -62,7 +62,7 @@ function preview_image(event)
 
 
 
-                                            //    treino    //
+                                                  //    treino    //
 function geraPalavra(){
     var n;
     n=(Math.floor(Math.random()*nPalavras));
@@ -123,7 +123,7 @@ function repetidaPalavra(palavra){
     }
 }
 
-                                                //ingler treino
+                                                        //ingles treino
 
 function atualizaingles(fator) {
     stage+=fator;
@@ -188,26 +188,7 @@ function repetidaPalavraingles(palavra){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                //   infinito   //
+                                                  //   infinito   //
 
 
 function geraPalavrainf(){
@@ -221,8 +202,6 @@ function geraPalavrainf(){
 function sorteiaPalavrainf(){
     document.getElementById("palavra").innerHTML=geraPalavrainf();
 }
-
-                                //kikkkik
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -242,8 +221,6 @@ async function demo() {
 }
 
 demo();
-
-//kokokoko
 
 function swapinf(number){
     $('#bannerinf').load('infinito'+number+'.php');
@@ -332,7 +309,7 @@ async function repetidaPalavrainf(palavra,pessoa,pontuacao){
 
 }
 
-                                            //ingler infinito
+                                                      // ingles infinito //
 
 function geraPalavrainfing(){
     var n;
@@ -346,7 +323,6 @@ function sorteiaPalavrainfing(){
     document.getElementById("palavra").innerHTML=geraPalavrainfing();
 }
 
-//kikkkik
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -367,7 +343,6 @@ async function demo() {
 
 demo();
 
-//kokokoko
 
 function swapinfing(number){
     $('#bannerinf').load('infinitoing'+number+'.php');
@@ -458,7 +433,7 @@ async function repetidaPalavrainfing(palavra,pessoa,pontuacao){
 
 
 
-                                            //    numeros    //
+                                                                 //   numeros   //
 
 
 function swapnum(number){
@@ -495,7 +470,7 @@ function geraNumero(){
 }
 
 
-                                                    //    numeros  ingles  //
+                                                               //  numeros  ingles  //
 
 
 function swapnuming(number){
@@ -510,15 +485,7 @@ function atualizanuming(fator) {
 
 
 
-
-
-
-
-
-
-
-
-                                            // duelo //
+                                                     // duelo //
 
 
 function swapduelo(number){
@@ -534,20 +501,11 @@ function atualizaduelo(fator) {
 
 
 
-
-
-                                            // SCOREBOARD? //
-
                                             // random numbers //
 function numerorng() {
     $digits=3;
     rand(pow(10,$digits-1),pow(10,$digits)-1);
 }
-
-
-
-
-
 
 function preview_image(event)
 {

@@ -45,7 +45,7 @@ toping();
         <div class="container">
             <header class="major">
                 <h2>Leaderboard</h2>
-                <p>Here you will find the mode's highest scores.</p>
+                <p>Join the best.</p>
             </header>
             <section>
                 <?php $sql="select perfilNome, topPontuacao

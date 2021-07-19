@@ -16,7 +16,7 @@ if($dados['utilizadorTipo']=='admin'){
         <nav id="nav">
             <!--  <ul> <a href="perfil.php?id=<?php echo $_SESSION['id'] ?>"><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
                 <a href="perfilingles.php?id=<?php echo $_SESSION['id'] ?>"><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
--->         <a href="backoffice.php" style="color: black">Backoffice</a>
+-->
             <a href="index.php" style="color: black">FrontOffice</a>
 
             <!--<li><a href="elements.html">Elements</a></li>-->
@@ -43,12 +43,14 @@ if($dados['utilizadorTipo']=='admin'){
             </ul>
         </nav>
     </header>
+
     <br>
     <br>
     <br>
     <br>
     <br>
     <br>
+    <button class="button small" onclick="window.location.href='backoffice.php'" style="width: 100px; background-color: #f44336">Voltar</button>
     <table class="table" style="color: #FFFFFF; font-weight: bold; font-size: 20px; text-align: center">
         <tr>
             <th>User Id</th>
@@ -107,7 +109,7 @@ if($dados['utilizadorTipo']=='admin'){
 
 
                         </select><label style="color:#FFF;" id="textChange2"></label></td>
-                    <td><button type="submit" class="btn btn-primary">Guardar</button></td>
+                    <td><button style="width: 100px;" type="submit" class="btn btn-primary">Guardar</button></td>
                 </form>
             </tr>
             <?php

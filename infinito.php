@@ -40,7 +40,7 @@ top();
     <div class="container">
         <header class="major">
             <h2>Recordes</h2>
-            <p>Aqui poderá ver os seus últimos melhores resultados.</p>
+            <p>Junta-te aos melhores.</p>
         </header>
         <section>
 <?php $sql="select perfilNome, topPontuacao

@@ -1,3 +1,8 @@
+<?php include_once("includes/body.inc.php");
+top();
+?>
+
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
@@ -122,7 +127,7 @@
 <div class="row col-lg-12">
 
         <div class="col-lg-4">
-            <h1 style="color: white; margin-left: 215px" class="float-left" <?php echo $_SESSION['nome'] ?>></h1>
+            <h1 style="color: white;" class="float-left" ><?php echo $_SESSION['nome'] ?></h1>
             <br>
             <div  id="player1" class="mt-5" style="margin:auto">
                 <div  id="score1" >  </div>

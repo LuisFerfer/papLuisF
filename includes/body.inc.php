@@ -88,11 +88,9 @@ function top(){
     <!-- Header -->
 
 
-
+                                      <!-- REGISTAR -->
     <div id="id01" class="modal">
-        <!--
-         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-         -->
+
         <?php
         $con = mysqli_connect("localhost", "root", "", "pap2021vermo");
         $sql="select * from utilizadores";
@@ -100,8 +98,9 @@ function top(){
         $dados=mysqli_fetch_array($result);
 
         ?>
+
         <form class='modal-content' action="confirmarRegistar.php" method="post">
-        <div class="container" style="width: 700px">
+        <div class="container" style="margin-left: 10px;width: 700px">
             <h2>Registar</h2>
             <label for="name"><b>Nome do Utilizador</b></label>
             <input type="text" placeholder="Insira o Utilizador" name="perfilNome" required style="width: auto;">
@@ -114,6 +113,8 @@ function top(){
 
 
 
+                <span class="password">Já tem conta? <a onclick="document.getElementById('id01').style.visibility='hidden';document.getElementById('id02').style.display='block'; document.getElementById('teste001').style.overflow='hidden'; " style="color: #00aff1">Entrar </a></span>
+
 
 
 
@@ -125,27 +126,8 @@ function top(){
         </div>
         </form>
     </div>
-    <!--
-        <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
-            var modal2 = document.getElementById('teste002');
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal2) {
-                    alert('entrou')
-                    modal.style.display = "none";
-                    document.getElementById('teste001').style.overflow='visible';
-                    modal.style.display = "none";
-                }else {
 
-                    alert('N entrou')
-                }
-            }
-        </script>
-    -->
-
-
+                                          <!-- LOGIN -->
     <div id="id02" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content" action="confirmarLogin.php" method="post">
@@ -159,6 +141,7 @@ function top(){
                 <input type="password" placeholder="Insira a Password" name="utilizadorPassword" required style="width: auto;">
 
 
+                <span class="password">Ainda não tem conta? <a onclick="document.getElementById('id02').style.visibility='hidden';document.getElementById('id01').style.display='block'; document.getElementById('teste001').style.overflow='hidden'; " style="color: #00aff1">Registar </a></span>
 
 
 

@@ -45,13 +45,13 @@ top();
 
 
 
-<h1>Palavras em português</h1>
+<h1 style="margin-left: 30px;">Palavras em português</h1>
 <?php
 $myfile = fopen("palavras.txt", "r+") or die("Unable to open file!");
 ?>
 <form action="confirmaEditaFile.php" method="post">
-    <textarea name="texto"><?php echo fread($myfile,filesize("palavras.txt"));?></textarea> <br>
-    <input type="submit" value="Alterar ficheiro">
+    <textarea style="width: 300px;margin-left: 30px;" name="texto"><?php echo fread($myfile,filesize("palavras.txt"));?></textarea> <br>
+    <input style="margin-left: 30px;" type="submit" value="Alterar ficheiro">
 </form>
 
 <?php
@@ -61,20 +61,20 @@ fclose($myfile);
 
 
 
-<h1>Palavras em inglês</h1>
+<h1 style="margin-left: 30px;">Palavras em inglês</h1>
 <?php
 $myfile = fopen("palavrasEN.txt", "r+") or die("Unable to open file!");
 ?>
 <form action="confirmaEditaFileEN.php" method="post">
-    <textarea name="texto"><?php echo fread($myfile,filesize("palavrasEN.txt"));?></textarea> <br>
-    <input type="submit" value="Alterar ficheiro">
+    <textarea  style="width: 300px;margin-left: 30px;" name="texto"><?php echo fread($myfile,filesize("palavrasEN.txt"));?></textarea> <br>
+    <input style="margin-left: 30px;" type="submit" value="Alterar ficheiro">
 </form>
 
 <?php
 fclose($myfile);
 ?>
 
-
+<button class="button small" onclick="window.location.href='backoffice.php'" style="width: 100px; background-color: #f44336">Voltar</button>
 
 <!-- Footer -->
 <footer id="footer">
