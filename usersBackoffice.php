@@ -107,7 +107,7 @@ if($dados['utilizadorTipo']=='admin'){
 
 
                         </select><label style="color:#FFF;" id="textChange2"></label></td>
-                    <td><button type="submit" class="btn btn-primary">Update</button></td>
+                    <td><button type="submit" class="btn btn-primary">Guardar</button></td>
                 </form>
             </tr>
             <?php

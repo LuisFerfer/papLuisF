@@ -99,7 +99,7 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
                 <div class="col-lg-2">
                     <div  class="about-intro" style="width: 1370px;height: 200px; background-image: url('<?php echo $dadosPerfis['perfilBanner']?>')" >
 
-                        <button type="button" id="custom-button" onclick="window.location.href='editarperfil.php?id=<?php echo $_SESSION['id'] ?>'" style="width: 120px; position: absolute; top: 270px; left: 1509px; ">Edit Profile</button>
+                        <button type="button" id="custom-button" onclick="window.location.href='editarperfilingles.php?id=<?php echo $_SESSION['id'] ?>'" style="width: 120px; position: absolute; top: 270px; left: 1509px; ">Edit Profile</button>
                         <div class="about-intro" style="position: absolute;top: 230px; left: 280px" <?php echo $dadosPerfis['perfilId'] ?>>
                             <img src="<?php echo $dadosPerfis['perfilAvatar'] ?>" class="normal" style="z-index: 3;height: 90px;width: 85px">
 
@@ -136,33 +136,32 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
                 <tr>
                     <td>#</td>
                     <td>Scores</td>
-                </tr>
-                <!-- A partir daqui fazer o ciclo que mostra os 5 melhores scores -->
+                    <?php $sql="select perfilNome, topPontuacao
+from tops inner join utilizadores on utilizadorId=topUtilizadorId
+INNER JOIN perfis on perfilId=utilizadorId
+where perfilId=".$id."
+order by topPontuacao desc
+limit 5";
+                    $result=mysqli_query($con,$sql);
+                    ?>
 
+                    <?php
+                    $pontos=0;
+                    while ($dados=mysqli_fetch_array($result)){
+                    $pontos+=1;
+                    ?>
                 <tr>
-                    <td>1</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>0</td>
-                </tr>
+                    <td><?php echo $pontos?></td>
 
-                <!-- ------------------------------------------------------------ -->
+                    <td><?php echo $dados['topPontuacao']?></td>
+                </tr>
+                <?php
+                }
+                ?>
+
+
+
                 </tbody>
-
             </table>
         </div>
 

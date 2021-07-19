@@ -1,3 +1,9 @@
+<?php
+include_once ("includes/body.inc.php");
+
+$id=$_SESSION['id'];
+?>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
@@ -74,8 +80,12 @@ if ($handle) {
 <!--******************************-->
 
 <div style="padding-top: 60px; user-select: none">
-    <a  class="button big" onclick="novaPalavrainfing(document.getElementById('palavra').innerHTML);sorteiaPalavraingles(nPalavras);" id="novo">NEW</a>
-    <a  class="button big" onclick="repetidaPalavrainfing(document.getElementById('palavra').innerHTML);sorteiaPalavraingles(nPalavras);" id="velho">SEEN</a>
+
+    <script>
+        let pessoa = <?php echo $id;?>;
+    </script>
+    <a  class="button big" onclick="novaPalavrainfing(document.getElementById('palavra').innerHTML, pessoa);sorteiaPalavraingles(nPalavras);" id="novo">NEW</a>
+    <a  class="button big" onclick="repetidaPalavrainfing(document.getElementById('palavra').innerHTML, pessoa);sorteiaPalavraingles(nPalavras);" id="velho">SEEN</a>
 
 </div>
 

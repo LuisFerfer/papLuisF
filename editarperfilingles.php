@@ -152,8 +152,9 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
             <input  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="perfilEmail" value="<?php echo $dadosPerfis['perfilEmail'] ?>">
 
         </div>
-        <button type="submit" class="cancelbtn">Cancel</button>
-        <button type="submit" class="btn btn-success">Save Changes</button>
+        <br>
+        <button type="submit" class="cancelbtn" style="width: 250px;">Cancel</button>
+        <button type="submit" class="cancelbtn" style="width: 250px; background-color: #4CAF50;">Save Changes</button>
     </form>
 
 
@@ -165,7 +166,7 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
             <section class="links">
                 <div class="align-center">
                     <h3>Disclaimer</h3>
-                    <li>Vermo! ? apenas uma ideia para a minha PAP, n?o est? perfeito nem pronto para o mercado.</li>
+                    <li>Vermo! is just an idea I had, it is not ready for professional use.</li>
                     </ul>
                 </div>
             </section>

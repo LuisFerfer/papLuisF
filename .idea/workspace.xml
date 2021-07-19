@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="perfil">
-      <change afterPath="$PROJECT_DIR$/AJAX/AJAXUpdateState.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backoffice.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confirmaEditaFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confirmaEditaFileEN.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treinofile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usersBackoffice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="baackoffice">
+      <change afterPath="$PROJECT_DIR$/AJAX/AJAXinfinito.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duelo2.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palavras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/palavras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editarperfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/editarperfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinito2.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinitoing.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinitoing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinitoing2.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinitoing2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfilingles.php" beforeDir="false" afterPath="$PROJECT_DIR$/perfilingles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usersBackoffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/usersBackoffice.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PAPGuilherme-Simao" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -171,6 +170,8 @@
       <workItem from="1626165695171" duration="18353000" />
       <workItem from="1626262488200" duration="46000" />
       <workItem from="1626425129662" duration="10063000" />
+      <workItem from="1626436661627" duration="70000" />
+      <workItem from="1626683373838" duration="6693000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -354,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626190544503</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="baackoffice">
+      <created>1626436685313</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1626436685313</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,6 +401,7 @@
     <MESSAGE value="ingles,inf,num" />
     <MESSAGE value="tudo" />
     <MESSAGE value="perfil" />
-    <option name="LAST_COMMIT_MESSAGE" value="perfil" />
+    <MESSAGE value="baackoffice" />
+    <option name="LAST_COMMIT_MESSAGE" value="baackoffice" />
   </component>
 </project>

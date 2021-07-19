@@ -144,37 +144,36 @@ $dadosPerfis = mysqli_fetch_array($resultPerfis)
                 <td style="font-size: 25px;font-weight: bold">Recordes Pessoais</td>
                 </thead>
                 <tbody>
-                <tr>
                     <td>#</td>
                     <td>Pontuações</td>
-                </tr>
-                <!-- A partir daqui fazer o ciclo que mostra os 10 melhores scores -->
+                    <?php $sql="select perfilNome, topPontuacao
+from tops inner join utilizadores on utilizadorId=topUtilizadorId
+INNER JOIN perfis on perfilId=utilizadorId
+where perfilId=".$id."
+order by topPontuacao desc
+limit 5";
+                    $result=mysqli_query($con,$sql);
+                    ?>
 
-                <tr>
-                    <td>1</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>0</td>
-                </tr>
+                            <?php
+                            $pontos=0;
+                            while ($dados=mysqli_fetch_array($result)){
+                                $pontos+=1;
+                                ?>
+                                <tr>
+                                    <td><?php echo $pontos?></td>
 
-                <!-- ------------------------------------------------------------ -->
+                                    <td><?php echo $dados['topPontuacao']?></td>
+                                </tr>
+                                <?php
+                            }
+                            ?>
+
+
+
                 </tbody>
-
             </table>
+        </div>
     </div>
 
 </section>

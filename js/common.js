@@ -256,31 +256,42 @@ function atualizainf(fator) {
 }
 
 
-async function novaPalavrainf(palavra){
+async function novaPalavrainf(palavra,pessoa,pontuacao){
     if(!palavrasSaidas.includes(palavra)){ // se dizes que é nova e não existe na lista de palavras que saíram
         score++;
         $('#scorePts').html(score);
         palavrasSaidas.push(palavra);  // adiciona à lista e deixa de ser nova
     }
-    else{
-        if(palavrasSaidas.includes(palavra)) {
+    else {
+        if (palavrasSaidas.includes(palavra)) {
             lives--;
             $('#livestext').html(lives);
-            if(lives==0){
-                $("#perdemoMsg").html("Oops! Terminou com: "  + (score) + ' pontos.');
+            if (lives == 0) {
+                $("#perdemoMsg").html("Oops! Terminou com: " + (score) + ' pontos.');
                 $("#perdemo").show();
-              $('#livestext').html(lives);
+                $('#livestext').html(lives);
+
+                pontuacao=score;
+
+                $.ajax({
+                    url: "AJAX/AJAXinfinito.php",
+                    type: "post",
+                    data: {
+                        pessoa: pessoa,
+                        pontuacao: pontuacao,
+                    },
+                    success: function () {
+                        window.location.reload();
+
+                    }
 
 
-                
-
-
+                });
             }
         }
     }
-
 }
-async function repetidaPalavrainf(palavra){
+async function repetidaPalavrainf(palavra,pessoa,pontuacao){
     if(palavrasSaidas.includes(palavra)){ // ele diz que é repetida e ela existe na lista de palavras saídas
         score++;
         $('#scorePts').html(score);
@@ -297,6 +308,22 @@ async function repetidaPalavrainf(palavra){
                 $('#livestext').html(lives);
 
 
+                pontuacao=score;
+
+                $.ajax({
+                    url: "AJAX/AJAXinfinito.php",
+                    type: "post",
+                    data: {
+                        pessoa: pessoa,
+                        pontuacao: pontuacao,
+                    },
+                    success: function () {
+                        window.location.reload();
+
+                    }
+
+
+                });
 
             }
         }
@@ -353,7 +380,7 @@ function atualizainfing(fator) {
 }
 
 
-async function novaPalavrainfing(palavra){
+async function novaPalavrainfing(palavra,pessoa,pontuacao){
     if(!palavrasSaidas.includes(palavra)){ // se dizes que é nova e não existe na lista de palavras que saíram
         score++;
         $('#scorePts').html(score);
@@ -368,13 +395,28 @@ async function novaPalavrainfing(palavra){
                 $("#perdemo").show();
                 $('#livestext').html(lives);
 
+                pontuacao=score;
 
+                $.ajax({
+                    url: "AJAX/AJAXinfinito.php",
+                    type: "post",
+                    data: {
+                        pessoa: pessoa,
+                        pontuacao: pontuacao,
+                    },
+                    success: function () {
+                        window.location.reload();
+
+                    }
+
+
+                });
             }
         }
     }
 
 }
-async function repetidaPalavrainfing(palavra){
+async function repetidaPalavrainfing(palavra,pessoa,pontuacao){
     if(palavrasSaidas.includes(palavra)){ // ele diz que é repetida e ela existe na lista de palavras saídas
         score++;
         $('#scorePts').html(score);
@@ -390,6 +432,22 @@ async function repetidaPalavrainfing(palavra){
                 $("#perdemo").show();
                 $('#livestext').html(lives);
 
+                pontuacao=score;
+
+                $.ajax({
+                    url: "AJAX/AJAXinfinito.php",
+                    type: "post",
+                    data: {
+                        pessoa: pessoa,
+                        pontuacao: pontuacao,
+                    },
+                    success: function () {
+                        window.location.reload();
+
+                    }
+
+
+                });
 
             }
         }
