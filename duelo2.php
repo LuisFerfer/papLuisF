@@ -65,6 +65,10 @@ top();
 
 
 </style>
+
+
+
+
 <script>
     document.onload(duelotimer())
 
@@ -120,9 +124,85 @@ top();
             }
         }
     }
+/*
+    $(document).on("keypress","input",function (e) {
+        if (e.which === 13) {
+            palavra= parseInt(document.getElementById("palavra").innerHTML);
+            input = parseInt(document.getElementById("input").value);
 
+
+            if(palavra == input){
+
+
+            }else {
+
+            }
+
+        }
+    }); */
+    <!-- PALAVRA -->
+    <?php
+    $i=0    ;
+    $handle = @fopen("palavras.txt", "r");
+    if ($handle) {
+        while (($buffer = fgets($handle, 4096)) !== false) {
+            $arr[$i++]=$buffer;
+        }
+        if (!feof($handle)) {
+            echo "Error: unexpected fgets() fail\n";
+        }
+        fclose($handle);
+    }
+
+
+    ?>
+
+    var nPalavras=<?php echo $i-100?>;
+    var palavras=[
+        <?php
+        $j=1;
+        foreach ($arr as $palavra){
+
+
+            if($j<$i)
+                echo "'".substr($palavra,0,strlen($palavra)-2)."',"; // retira o \n das palavras
+            else
+                echo "'$palavra'"; // a ?ltima palavra n?o tem o \n
+            $j++;
+        }
+        ?>
+    ];
+    function geraPalavraduelo(nPalavras){
+
+        n=(Math.floor(Math.random()*nPalavras));
+        return(palavras[n]);
+
+    }
+
+    function sorteiaPalavraduelo(n){
+        document.getElementById("palavra").innerHTML=geraPalavraduelo(n);
+    }
+
+    sorteiaPalavraduelo(nPalavras);
+
+    $(document).on("keypress","input",function (e) {
+        if (e.which === 13) {
+            palavra = parseInt(document.getElementById("palavra").innerHTML);
+            input = parseInt(document.getElementById("input").value);
+
+
+            if(palavra == input){
+
+
+            }else {
+
+            }
+
+        }
+    });
 
 </script>
+
 
 <div class="row col-lg-12">
 
@@ -143,12 +223,16 @@ top();
 
 
             <div align="center" class="boxed">
-                This text is enclosed in a box.
+                <p style="font-size: 50px">
+        <span id="palavra" style="color:navajowhite; user-select: none">
+
+        </span>
+                </p>
             </div>
             <br>
-            <p style="color: palegreen"></p>
+
             <div align="center" style="padding-top: 10px">
-                <input type="text" style="width:  300px" id="caixa1" autocomplete="off" name="wordInput" autocapitalize="none" spellcheck="false" autocorrect="off" placeholder="type the words here">
+                <input type="text" style="width:  300px" id="input" autocomplete="off" name="wordInput" autocapitalize="none" spellcheck="false" autocorrect="off" placeholder="type the words here">
 
             </div>
         </div>
@@ -165,4 +249,4 @@ top();
 
 
 
-</div>
+</div> <div id="debug"></div>
