@@ -1,7 +1,7 @@
 <?php
 include_once ("includes/body.inc.php");
-
-$id=$_SESSION['id'];
+if(isset($_SESSION['id'])){
+$id=$_SESSION['id'];}
 ?>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -77,7 +77,7 @@ if ($handle) {
 </body>
 
 <!--******************************-->
-
+<?php if (isset($_SESSION['id'])){ ?>
 <div style="padding-top: 60px; user-select: none">
     <script>
         let pessoa = <?php echo $id;?>;
@@ -87,7 +87,12 @@ if ($handle) {
     <a  class="button big" onclick="repetidaPalavrainf(document.getElementById('palavra').innerHTML, pessoa);sorteiaPalavrainf(nPalavras);" id="velho">VISTO</a>
 
 </div>
-
+<?php }else{?>
+<div style="padding-top: 60px; user-select: none">
+    <a  class="button big" onclick="novaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);" id="novo">NOVO</a>
+    <a  class="button big" onclick="repetidaPalavrainf(document.getElementById('palavra').innerHTML);sorteiaPalavrainf(nPalavras);" id="velho">VISTO</a>
+</div>
+<?php }?>
 <div id="debug"></div>
 
 <div class="modal" id="perdemo" >

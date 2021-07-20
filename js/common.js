@@ -234,7 +234,8 @@ function atualizainf(fator) {
 
 
 async function novaPalavrainf(palavra,pessoa,pontuacao){
-    if(!palavrasSaidas.includes(palavra)){ // se dizes que é nova e não existe na lista de palavras que saíram
+
+    if(!palavrasSaidas.includes(palavra)){
         score++;
         $('#scorePts').html(score);
         palavrasSaidas.push(palavra);  // adiciona à lista e deixa de ser nova
@@ -257,10 +258,7 @@ async function novaPalavrainf(palavra,pessoa,pontuacao){
                         pessoa: pessoa,
                         pontuacao: pontuacao,
                     },
-                    success: function () {
-                        window.location.reload();
 
-                    }
 
 
                 });
@@ -278,7 +276,7 @@ async function repetidaPalavrainf(palavra,pessoa,pontuacao){
         if(!palavrasSaidas.includes(palavra)) {
             lives--;
             $('#livestext').html(lives);
-            if(lives==0){
+            if(lives == 0){
 
                 $("#perdemoMsg").html("Oops! Terminou com: "  + (score) + ' pontos.');
                 $("#perdemo").show();
@@ -294,10 +292,7 @@ async function repetidaPalavrainf(palavra,pessoa,pontuacao){
                         pessoa: pessoa,
                         pontuacao: pontuacao,
                     },
-                    success: function () {
-                        window.location.reload();
 
-                    }
 
 
                 });
@@ -341,7 +336,7 @@ async function demo() {
     }
 }
 
-demo();
+// demo();
 
 
 function swapinfing(number){

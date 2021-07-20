@@ -13,7 +13,7 @@ $id=$_SESSION['id'];
 </script>
 <div class="score" style="color: #FFFFFF">
 
-    <!--*************METER IMAGEM, DO CORAÇAOP!!!!!!!!!!!!!!!!!!!!!**********-->
+
 
 
     <span style="font-size: 40px; user-select: none" ><img src="images/sssss.png" style="height: 70px; width: 70px">x</span><span  id="livestext" class="ml-1 display-4">3</span>

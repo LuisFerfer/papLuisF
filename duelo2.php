@@ -67,7 +67,22 @@ top();
 </style>
 
 
+<!-- PALAVRA -->
+<?php
+$i=0    ;
+$handle = @fopen("palavras.txt", "r");
+if ($handle) {
+    while (($buffer = fgets($handle, 4096)) !== false) {
+        $arr[$i++]=$buffer;
+    }
+    if (!feof($handle)) {
+        echo "Error: unexpected fgets() fail\n";
+    }
+    fclose($handle);
+}
 
+
+?>
 
 <script>
     document.onload(duelotimer())
@@ -140,22 +155,7 @@ top();
 
         }
     }); */
-    <!-- PALAVRA -->
-    <?php
-    $i=0    ;
-    $handle = @fopen("palavras.txt", "r");
-    if ($handle) {
-        while (($buffer = fgets($handle, 4096)) !== false) {
-            $arr[$i++]=$buffer;
-        }
-        if (!feof($handle)) {
-            echo "Error: unexpected fgets() fail\n";
-        }
-        fclose($handle);
-    }
 
-
-    ?>
 
     var nPalavras=<?php echo $i-100?>;
     var palavras=[
@@ -207,7 +207,7 @@ top();
 <div class="row col-lg-12">
 
         <div class="col-lg-4">
-            <h1 style="color: white;" class="float-left" ><?php echo $_SESSION['nome'] ?></h1>
+            <h1 style="color: white; margin-left: 230px; " class="float-left" ><?php echo $_SESSION['nome'] ?></h1>
             <br>
             <div  id="player1" class="mt-5" style="margin:auto">
                 <div  id="score1" >  </div>
@@ -224,7 +224,7 @@ top();
 
             <div align="center" class="boxed">
                 <p style="font-size: 50px">
-        <span id="palavra" style="color:navajowhite; user-select: none">
+                <span id="palavra" style="color:navajowhite">
 
         </span>
                 </p>
