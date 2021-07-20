@@ -85,15 +85,18 @@ if ($handle) {
 ?>
 
 <script>
-
+var velocidade=100;
+var idIntervalTimer;
 
     function duelotimer() {
         var elem = document.getElementById("myBar");
         var width = 100;
-        var id = setInterval(frame, 300);
+        idIntervalTimer = setInterval(frame, velocidade);
         function frame() {
             if (width == 0) {
-                width=100;
+               alert('fim');
+                clearInterval(idIntervalTimer);
+               //width=100;
             } else {
                 width--;
                 elem.style.width = width + '%';
@@ -187,8 +190,14 @@ if ($handle) {
 
 
             if(palavra == input){;
-                alert('acertou!')
+               velocidade-=3;
+               clearInterval(idIntervalTimer);
+                duelotimer();
+                sorteiaPalavraduelo(nPalavras);
+                $('#input').val('');
             }else {
+                alert('fim');
+                clearInterval(idIntervalTimer);
 
             }
 
@@ -199,6 +208,7 @@ if ($handle) {
         duelotimer();
         scoreplayer1();
         scoreplayer2();
+        $("input:text").focus();
 
     })
 
