@@ -85,26 +85,22 @@ if ($handle) {
 ?>
 
 <script>
-    document.onload(duelotimer())
 
-        function duelotimer() {
+
+    function duelotimer() {
         var elem = document.getElementById("myBar");
         var width = 100;
         var id = setInterval(frame, 300);
         function frame() {
-
-        if (width == 0) {
-            width=100;
-
-    } else {
-        width--;
-        elem.style.width = width + '%';
-    }
-    }
+            if (width == 0) {
+                width=100;
+            } else {
+                width--;
+                elem.style.width = width + '%';
+            }
+        }
     }
 
-
-    document.onload(scoreplayer1())
 
     function scoreplayer1() {
         var elem = document.getElementById("score1");
@@ -121,9 +117,6 @@ if ($handle) {
         }
     }
 
-
-
-    document.onload(scoreplayer2())
 
     function scoreplayer2() {
         var elem = document.getElementById("score2");
@@ -187,20 +180,27 @@ if ($handle) {
     sorteiaPalavraduelo(nPalavras);
 
     $(document).on("keypress","input",function (e) {
+
         if (e.which === 13) {
-            palavra = parseInt(document.getElementById("palavra").innerHTML);
-            input = parseInt(document.getElementById("input").value);
+            palavra =  $('#palavra').html();
+            input = this.value;
 
 
-            if(palavra == input){
-
-
+            if(palavra == input){;
+                alert('acertou!')
             }else {
 
             }
 
         }
     });
+
+    $('document').ready(function (){
+        duelotimer();
+        scoreplayer1();
+        scoreplayer2();
+
+    })
 
 </script>
 
