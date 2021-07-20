@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="alteracoes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duelo2.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +163,7 @@
       <workItem from="1626425129662" duration="10063000" />
       <workItem from="1626436661627" duration="70000" />
       <workItem from="1626683373838" duration="11412000" />
-      <workItem from="1626787140020" duration="5237000" />
+      <workItem from="1626787140020" duration="5864000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -376,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626796462738</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="alteracoes">
+      <created>1626800571957</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1626800571957</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

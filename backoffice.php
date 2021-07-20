@@ -174,7 +174,7 @@ top();
         <section class="links">
             <div class="align-center">
                 <h3>Disclaimer</h3>
-                <li>Vermo! � apenas uma ideia para a minha PAP, n�o est� perfeito nem pronto para o mercado.</li>
+                <li>Vermo! é apenas uma ideia para a minha PAP, não está perfeito nem pronto para o mercado.</li>
                 </ul>
             </div>
         </section>
