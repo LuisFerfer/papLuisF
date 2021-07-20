@@ -177,6 +177,7 @@ if ($handle) {
         n=(Math.floor(Math.random()*nPalavras));
         return(palavras[n]);
 
+
     }
 
     function sorteiaPalavraduelo(n){

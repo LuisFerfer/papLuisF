@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="backoffice, perfil, boards">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="alteracoes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/duelo2.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinito2.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinito2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinitoing2.php" beforeDir="false" afterPath="$PROJECT_DIR$/infinitoing2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +164,7 @@
       <workItem from="1626425129662" duration="10063000" />
       <workItem from="1626436661627" duration="70000" />
       <workItem from="1626683373838" duration="11412000" />
-      <workItem from="1626787140020" duration="3836000" />
+      <workItem from="1626787140020" duration="5237000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -373,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626694943487</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="alteracoes">
+      <created>1626796462738</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1626796462738</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +418,7 @@
     <MESSAGE value="baackoffice" />
     <MESSAGE value="leaderboards funcionais" />
     <MESSAGE value="backoffice, perfil, boards" />
-    <option name="LAST_COMMIT_MESSAGE" value="backoffice, perfil, boards" />
+    <MESSAGE value="alteracoes" />
+    <option name="LAST_COMMIT_MESSAGE" value="alteracoes" />
   </component>
 </project>
