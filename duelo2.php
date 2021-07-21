@@ -63,7 +63,8 @@ if ($handle) {
 ?>
 
 <script>
-var velocidade=100;
+    let width1 = 0;
+    var velocidade=100;
 var idIntervalTimer;
 
     function duelotimer() {
@@ -85,15 +86,12 @@ var idIntervalTimer;
 
     function scoreplayer1() {
         var elem = document.getElementById("score1");
-        var width = 100;
         var id = setInterval(frame, 200);
         function frame() {
             if (palavra == input) {
-                width += 5;
-                elem.style.width = width + '%';
+                width1 = width1 + 5;
+                elem.style.width = width1 + '%';
             }
-
-
         }
     }
 
