@@ -107,8 +107,8 @@ top();
             <div class="col-md-4 col-sm-4">
                 <div class="courses-thumb courses-thumb-secondary">
 
-                    <div style="margin-left: 330px;" class="courses-detail">
-                        <h3 style="margin-left: -10px"><a href="treinofile.php">Modo Treino/Competitivo</a></h3>
+                    <div style="margin-left: 520px;" class="courses-detail">
+                        <h3 style="margin-left: 10px"><a href="treinofile.php">Documentos de texto</a></h3>
                         <div class="courses-top">
                             <div class="courses-image">
                                 <a href="treinofile.php">   <img width="250px" height="230px" src="images/gonganong.png" alt=""></a>
@@ -125,20 +125,6 @@ top();
 
 
 
-            <div class="col-md-4 col-sm-4">
-                <div class="courses-thumb courses-thumb-secondary">
-
-                    <div style="margin-left: 60px;" class="courses-detail">
-                        <h3 style="margin-left: 50px;""><a href="duelo.php">Modo Duelo</a></h3>
-                        <div class="courses-top">
-                            <div class="courses-image">
-                                <a href="duelo.php"><img src="images/ooga.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <br><p></p>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>

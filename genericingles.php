@@ -61,10 +61,10 @@ top();
                 <div class="courses-thumb courses-thumb-secondary">
 
                     <div style="margin-left: 140px;" class="courses-detail">
-                        <h3 style="margin-left: 50px;""><a href="duelo.php">Duel Mode</a></h3>
+                        <h3 style="margin-left: 50px;""><a href="duelo.php">Against the clock</a></h3>
                         <div class="courses-top">
                             <div class="courses-image">
-                                <a href="duelo.php"><img src="images/ooga.jpg" alt=""></a>
+                                <a href="duelo.php"><img src="images/relogi.png" alt=""></a>
                             </div>
                         </div>
                         <br><p></p>
@@ -80,7 +80,7 @@ top();
                         <h3 style="margin-left: 30px;"><a href="numeroingles.php">Numeric Mode</a></h3>
                         <div class="courses-top">
                             <div class="courses-image">
-                                <a href="numeroingles.php" ><img src="images/number.png" alt=""></a>
+                                <a href="numeroingles.php" ><img src="images/numer.png" alt=""></a>
                             </div>
                         </div>
                         <br><p></p>

@@ -28,40 +28,18 @@ top();
 
 
     #player1 {
-        width: 20px;
-        height: 250px;
+        width: 65%;
+        height: 20px;
         position: relative;
-        background-color: #00a2e8;
+        background-color: #ddd;
     }
 
     #score1 {
-        background-color: #ddd;
-        width: 20px;
-        height: 10px;
+        background-color: #00a2e8;
+        width: 0px;
+        height: 20px;
         position: absolute;
     }
-
-
-
-    #player2 {
-        width: 20px;
-        height: 250px;
-        position: relative;
-        background-color: #ed1c23;
-    }
-
-    #score2 {
-        background-color: #ddd;
-        width: 20px;
-        height: 10px;
-        position: absolute;
-    }
-
-
-
-
-
-
 
 
 </style>
@@ -107,50 +85,20 @@ var idIntervalTimer;
 
     function scoreplayer1() {
         var elem = document.getElementById("score1");
-        var height = 250;
+        var width = 100;
         var id = setInterval(frame, 200);
         function frame() {
-            if (height == 0) {
-                height=250;
-
-            } else {
-                height++;
-                elem.style.height = height + '%';
+            if (palavra == input) {
+                width += 5;
+                elem.style.width = width + '%';
             }
+
+
         }
     }
 
 
-    function scoreplayer2() {
-        var elem = document.getElementById("score2");
-        var height = 250;
-        var id = setInterval(frame, 200);
-        function frame() {
-            if (height == 0) {
-                height=250;
 
-            } else {
-                height++;
-                elem.style.height = height + '%';
-            }
-        }
-    }
-/*
-    $(document).on("keypress","input",function (e) {
-        if (e.which === 13) {
-            palavra= parseInt(document.getElementById("palavra").innerHTML);
-            input = parseInt(document.getElementById("input").value);
-
-
-            if(palavra == input){
-
-
-            }else {
-
-            }
-
-        }
-    }); */
 
 
     var nPalavras=<?php echo $i-100?>;
@@ -190,7 +138,7 @@ var idIntervalTimer;
 
 
             if(palavra == input){;
-               velocidade-=3;
+               velocidade-=5;
                clearInterval(idIntervalTimer);
                 duelotimer();
                 sorteiaPalavraduelo(nPalavras);
@@ -207,7 +155,7 @@ var idIntervalTimer;
     $('document').ready(function (){
         duelotimer();
         scoreplayer1();
-        scoreplayer2();
+
         $("input:text").focus();
 
     })
@@ -215,22 +163,18 @@ var idIntervalTimer;
 </script>
 
 
-<div class="row col-lg-12">
+<div style="margin-left: 30%" class="row col-lg-12">
 
-        <div class="col-lg-4">
-            <h1 style="color: white; margin-left: 230px; " class="float-left" ><?php echo $_SESSION['nome'] ?></h1>
-            <br>
-            <div  id="player1" class="mt-5" style="margin:auto">
-                <div  id="score1" >  </div>
-            </div>
-        </div>
+
 
 
         <div class="col-lg-4">
             <div style="margin-left: 18%" id="scorebar">
                 <div id="myBar"></div>
             </div>
-
+            <div  id="player1" class="mt-5" style="margin-left: 18%">
+                <div  id="score1" >  </div>
+            </div>
 
 
             <div align="center" class="boxed">
@@ -243,19 +187,13 @@ var idIntervalTimer;
             <br>
 
             <div align="center" style="padding-top: 10px">
-                <input type="text" style="width:  300px" id="input" autocomplete="off" name="wordInput" autocapitalize="none" spellcheck="false" autocorrect="off" placeholder="type the words here">
+                <input type="text" style="width:  300px" id="input" autocomplete="off" name="wordInput" autocapitalize="none" spellcheck="false" autocorrect="off" placeholder="Insira aqui a palavra">
 
             </div>
         </div>
 
 
-        <div class="col-lg-4">
-            <h1 style="color: white; margin-left: 215px" class="float-left">Jogador 2</h1>
-            <br>
-            <div  id="player2" class="mt-5" style="margin:auto">
-                <div  id="score2"></div>
-            </div>
-        </div>
+
 
     <div class="modal" id="perdemo" >
         <div class="modal-dialog">
