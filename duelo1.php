@@ -4,7 +4,7 @@ top();
 <h2>Modo Contrarrelógio</h2>
 <p>Treine a sua velocidade de escrita.</p>
 <p>Escreva o mais rápido possível, o tempo está a acabar!</p>
-<p>Termina ao conseguir pontuação máxima.</p>
+<p>Termina quando errar uma palavra.</p>
 
 <ul class="actions">
 
