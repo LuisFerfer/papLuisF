@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="alteracoes">
-      <change beforePath="$PROJECT_DIR$/backoffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice.php" afterDir="false" />
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="[leandro] - Base de dados versão 3.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duelo2.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +165,8 @@
       <workItem from="1626436661627" duration="70000" />
       <workItem from="1626683373838" duration="11412000" />
       <workItem from="1626787140020" duration="5864000" />
+      <workItem from="1626821197315" duration="1573000" />
+      <workItem from="1626822848285" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -382,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626800571957</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="[leandro] - Base de dados versão 3.0">
+      <created>1626822756169</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1626822756169</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,6 +435,7 @@
     <MESSAGE value="leaderboards funcionais" />
     <MESSAGE value="backoffice, perfil, boards" />
     <MESSAGE value="alteracoes" />
-    <option name="LAST_COMMIT_MESSAGE" value="alteracoes" />
+    <MESSAGE value="[leandro] - Base de dados versão 3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="[leandro] - Base de dados versão 3.0" />
   </component>
 </project>
