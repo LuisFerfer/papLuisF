@@ -142,7 +142,7 @@ top();
                     <div style="margin-left: 510px;" class="courses-detail">
 
                         <div class="courses-top">
-                            <div class="courses-image">
+                            <div style="margin-left: 20px" class="courses-image">
                                 <a href="usersBackoffice.php"><img width="250px" height="230px" src="images/boss.png" alt=""></a>
                             </div>
                         </div>

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="relogio">
+    <list default="true" id="43269a28-5368-490b-8364-5b705b4a43d3" name="Default Changelist" comment="infinito">
+      <change afterPath="$PROJECT_DIR$/dueloing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dueloing1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dueloing2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_02_2021_18_34__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_02_2021_18_34__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/duelo2.php" beforeDir="false" afterPath="$PROJECT_DIR$/duelo2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genericingles.php" beforeDir="false" afterPath="$PROJECT_DIR$/genericingles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palavras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/palavras.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +176,6 @@
       <workItem from="1626787140020" duration="5864000" />
       <workItem from="1626821197315" duration="1573000" />
       <workItem from="1626822848285" duration="699000" />
-      <workItem from="1626865061394" duration="5638000" />
     </task>
     <task id="LOCAL-00001" summary="Guilherme-Log In">
       <created>1615135865357</created>
@@ -393,21 +401,7 @@
       <option name="project" value="LOCAL" />
       <updated>1626822756169</updated>
     </task>
-    <task id="LOCAL-00033" summary="[leandro] - Base de dados versão 3.0">
-      <created>1626863670297</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1626863670297</updated>
-    </task>
-    <task id="LOCAL-00034" summary="relogio">
-      <created>1626869477324</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1626869477324</updated>
-    </task>
-    <option name="localTasksCounter" value="35" />
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,6 +420,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Guilherme-Log In" />
     <MESSAGE value="nao adiciona?" />
     <MESSAGE value="update" />
     <MESSAGE value="update diario" />
@@ -450,7 +445,6 @@
     <MESSAGE value="backoffice, perfil, boards" />
     <MESSAGE value="alteracoes" />
     <MESSAGE value="[leandro] - Base de dados versão 3.0" />
-    <MESSAGE value="relogio" />
-    <option name="LAST_COMMIT_MESSAGE" value="relogio" />
+    <option name="LAST_COMMIT_MESSAGE" value="[leandro] - Base de dados versão 3.0" />
   </component>
 </project>

@@ -544,6 +544,69 @@ async function novaPalavraduelo(palavra){
 }
 
 
+                                                            // duelo  ingles//
+
+
+function swapdueloing(number){
+    $('#bannerdue').load('dueloing'+number+'.php');
+}
+
+function atualizadueloing(fator) {
+
+    stage+=fator;
+    swapdueloing(stage);
+}
+
+
+
+
+function geraPalavraduelo(){
+    var n;
+    n=(Math.floor(Math.random()*nPalavras));
+    return(sorteiaPalavraduelo(n));
+
+}
+
+function sorteiaPalavraduelo(){
+    document.getElementById("palavra").innerHTML=geraPalavraduelo();
+}
+
+async function novaPalavraduelo(palavra){
+    if(!palavrasSaidas.includes(palavra)){ // se dizes que é nova e não existe na lista de palavras que saíram
+        score++;
+        $('#scorePts').html(score);
+        palavrasSaidas.push(palavra);  // adiciona à lista e deixa de ser nova
+    }
+    else {
+        if (palavrasSaidas.includes(palavra)) {
+            lives--;
+            $('#livestext').html(lives);
+            if (lives == 0) {
+                $("#perdemoMsg").html("Oops! Terminou com: " + (score) + ' pontos.');
+                $("#perdemo").show();
+                $('#livestext').html(lives);
+
+                pontuacao=score;
+
+                $.ajax({
+                    url: "AJAX/AJAXinfinito.php",
+                    type: "post",
+                    data: {
+                        pessoa: pessoa,
+                        pontuacao: pontuacao,
+                    },
+                    success: function () {
+                        window.location.reload();
+
+                    }
+
+
+                });
+            }
+        }
+    }
+}
+
                                             // random numbers //
 function numerorng() {
     $digits=3;

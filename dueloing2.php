@@ -1,5 +1,5 @@
-<?php include_once("includes/body.inc.php");
-top();
+<?php include_once("includes/bodybase.inc.php");
+toping();
 ?>
 
 
@@ -48,7 +48,7 @@ top();
 <!-- PALAVRA -->
 <?php
 $i=0    ;
-$handle = @fopen("palavras.txt", "r");
+$handle = @fopen("palavrasEN.txt", "r");
 if ($handle) {
     while (($buffer = fgets($handle, 4096)) !== false) {
         $arr[$i++]=$buffer;
@@ -65,7 +65,7 @@ if ($handle) {
 <script>
     let width1 = 0;
     var velocidade=100;
-var idIntervalTimer;
+    var idIntervalTimer;
 
     function duelotimer() {
         var elem = document.getElementById("myBar");
@@ -73,12 +73,12 @@ var idIntervalTimer;
         idIntervalTimer = setInterval(frame, velocidade);
         function frame() {
             if (width == 0) {
-                $("#perdemoMsg").html("Oops! O tempo acabou, seja mais rápido.");
+                $("#perdemoMsg").html("Oops! Time's up, be faster next time.");
                 $("#perdemo").show();
                 clearInterval(idIntervalTimer);
                 clearInterval(width1);
                 clearInterval(velocidade);
-               //width=100;
+                //width=100;
             } else {
                 width--;
                 elem.style.width = width + '%';
@@ -139,15 +139,15 @@ var idIntervalTimer;
 
 
             if(palavra == input){;
-               velocidade-=5;
+                velocidade-=5;
                 score++;
                 $('#scorePts').html(score);
-               clearInterval(idIntervalTimer);
+                clearInterval(idIntervalTimer);
                 duelotimer();
                 sorteiaPalavraduelo(nPalavras);
                 $('#input').val('');
             }else {
-                $("#perdemoMsg").html("Oops! Parece que errou ao escrever a palavra.");
+                $("#perdemoMsg").html("Oops! You misspelled the word.");
                 $("#perdemo").show();
                 clearInterval(idIntervalTimer);
                 clearInterval(width1);
@@ -175,27 +175,27 @@ var idIntervalTimer;
 
 
 
-        <div class="col-lg-4">
-            <div style="margin-left: 18%" id="scorebar">
-                <div id="myBar"></div>
-            </div>
-            <span style="padding-left:10px; font-size: 40px;user-select: none">Pontos:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
+    <div class="col-lg-4">
+        <div style="margin-left: 18%" id="scorebar">
+            <div id="myBar"></div>
+        </div>
+        <span style="padding-left:10px; font-size: 40px;user-select: none">Score:&nbsp;</span><span id="scorePts" class="ml-1 display-4">0</span>
 
 
-            <div align="center" class="boxed">
-                <p style="font-size: 50px">
+        <div align="center" class="boxed">
+            <p style="font-size: 50px">
                 <span id="palavra" style="color:#ffffff">
                 </span>
-        </span>
-                </p>
-            </div>
-            <br>
-
-            <div align="center" style="padding-top: 10px">
-                <input type="text" style="width:  300px" id="input" autocomplete="off" name="wordInput" autocapitalize="none" spellcheck="false" autocorrect="off" placeholder="Insira aqui a palavra">
-
-            </div>
+                </span>
+            </p>
         </div>
+        <br>
+
+        <div align="center" style="padding-top: 10px">
+            <input type="text" style="width:  300px" id="input" autocomplete="off" name="wordInput" autocapitalize="none" spellcheck="false" autocorrect="off" placeholder="Type your word here">
+
+        </div>
+    </div>
 
 
 
@@ -222,7 +222,7 @@ var idIntervalTimer;
 
 
                         <button onclick="setTimeout(atualizaduelo(0),3000); window.location.reload()" type="button" id="eliminar"
-                                class="btn btn-danger pull-right ">Voltar a Jogar
+                                class="btn btn-danger pull-right ">Play Again
                         </button>
 
                     </div>

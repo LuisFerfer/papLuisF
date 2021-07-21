@@ -11,8 +11,8 @@ top();
     <header id="header">
         <h1><a href="index.php"><img src="images/vermo"></a></h1>
         <nav id="nav">
-            <ul> <a href="index.php" ><img onclick="atualiza(0)" src="images/pt.png" style="  width:50px; height: 20px " >
-                    <a href="indexing.php" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
+            <ul> <a href="duelo.php" ><img onclick="atualizaduelo(0)" src="images/pt.png" style="  width:50px; height: 20px " >
+                    <a href="dueloing.php" ><img onclick="atualizadueloing(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
                         <li><a href="index.php">Página Inicial</a></li>
                         <li><a href="generic.php">Outros Modos de Jogo</a></li>
