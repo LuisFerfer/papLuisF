@@ -236,7 +236,7 @@ var idIntervalTimer;
             <div align="center" class="boxed">
                 <p style="font-size: 50px">
                 <span id="palavra" style="color:navajowhite">
-
+                </span>
         </span>
                 </p>
             </div>
@@ -257,7 +257,37 @@ var idIntervalTimer;
             </div>
         </div>
 
+    <div class="modal" id="perdemo" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class=contact-form method=post enctype=multipart/form-data>
 
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="perdemoLabel">Oops!</h4>
+                        <!--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                         </button>
+                     </div> --></div>
+                    <div class="modal-body">
+
+                        <span style="color: black" id="perdemoMsg"></span>
+
+                    </div>
+                    <div class="modal-footer ">
+
+
+
+
+                        <button onclick="setTimeout(atualiza(0),3000)" type="button" id="eliminar"
+                                class="btn btn-danger pull-right ">Voltar a Jogar
+                        </button>
+
+                    </div>
+
+                </form >
+            </div>
+        </div>
+    </div>
 
 
 </div> <div id="debug"></div>
