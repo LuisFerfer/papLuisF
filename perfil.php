@@ -11,7 +11,7 @@ top();
                 <a href="perfilingles.php?id=<?php echo $_SESSION['id'] ?>"><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
                     <li><a href="index.php" style="color: black">Página Inicial</a></li>
-                    <li><a href="generic.php" style="color: black">Outros Modos de Jogo</a></li>
+                    <li><a href="generic.php" style="color: black">Modos de Jogo</a></li>
                     <!--<li><a href="elements.html">Elements</a></li>-->
                     <?php if(isset($_SESSION['id'])){ ?>
                         <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>" style="color: black"><?php echo $_SESSION['nome'] ?></a></li>

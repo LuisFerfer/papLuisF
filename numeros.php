@@ -8,7 +8,7 @@ top();
                     <a href="numeroingles.php" ><img onclick="atualizanuming(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
                         <li><a href="index.php">Página Inicial</a></li>
-                        <li><a href="generic.php">Outros Modos de Jogo</a></li>
+                        <li><a href="generic.php">Modos de Jogo</a></li>
                         <!--<li><a href="elements.html">Elements</a></li>-->
                         <?php if(isset($_SESSION['id'])){ ?>
                             <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>"><?php echo $_SESSION['nome'] ?></a></li>

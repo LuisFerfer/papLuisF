@@ -11,7 +11,7 @@ toping();
                 <a href="perfilingles.php?id=<?php echo $_SESSION['id'] ?>" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
                     <li><a href="indexing.php" style="color: black">Home</a></li>
-                    <li><a href="genericingles.php" style="color: black">Other Game Modes</a></li>
+                    <li><a href="genericingles.php" style="color: black">Game Modes</a></li>
                     <!--<li><a href="elements.html">Elements</a></li>-->
                     <?php if(isset($_SESSION['id'])){ ?>
                         <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>" style="color: black"><?php echo $_SESSION['nome'] ?></a></li>

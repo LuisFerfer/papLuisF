@@ -10,7 +10,7 @@ top();
                 <a href="genericingles.php" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
                     <li><a href="indexing.php" style="color: black">Home</a></li>
-                    <li><a href="genericingles.php" style="color: black">Other Game Modes</a></li>
+                    <li><a href="genericingles.php" style="color: black">Game Modes</a></li>
                     <!--<li><a href="elements.html">Elements</a></li>-->
                     <?php if(isset($_SESSION['id'])){ ?>
                         <li><a href="perfilingles.php?id=<?php echo $_SESSION['id'] ?>" style="color: black"><?php echo $_SESSION['nome'] ?></a></li>
@@ -34,7 +34,7 @@ top();
 <br>
 <br>
 
-<h2 style="margin-left: 780px;">Other Game Modes</h2>
+<h2 style="margin-left: 830px;">Game Modes</h2>
 <br>
 <section class="section-background">
     <div class="container">
@@ -61,7 +61,7 @@ top();
                 <div class="courses-thumb courses-thumb-secondary">
 
                     <div style="margin-left: 140px;" class="courses-detail">
-                        <h3 style="margin-left: 50px;""><a href="dueloing.php">Against the clock</a></h3>
+                        <h3 style="margin-left: 30px;""><a href="dueloing.php">Against the clock</a></h3>
                         <div class="courses-top">
                             <div class="courses-image">
                                 <a href="dueloing.php"><img src="images/relogi.png" alt=""></a>

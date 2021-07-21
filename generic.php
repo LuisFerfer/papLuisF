@@ -10,7 +10,7 @@ top();
                 <a href="genericingles.php" ><img onclick="atualizaingles(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
                     <li><a href="index.php" style="color: black">Página Inicial</a></li>
-                    <li><a href="generic.php" style="color: black">Outros Modos de Jogo</a></li>
+                    <li><a href="generic.php" style="color: black">Modos de Jogo</a></li>
                     <!--<li><a href="elements.html">Elements</a></li>-->
                     <?php if(isset($_SESSION['id'])){ ?>
                         <li><a href="perfil.php?id=<?php echo $_SESSION['id'] ?>" style="color: black"><?php echo $_SESSION['nome'] ?></a></li>
@@ -34,7 +34,7 @@ top();
 <br>
 <br>
 
-<h2 style="margin-left: 780px;">Outros Modos de jogo</h2>
+<h2 style="margin-left: 820px;">Modos de jogo</h2>
 <br>
 	<section class="section-background">
 		<div class="container">
@@ -77,7 +77,7 @@ top();
 					<div class="courses-thumb courses-thumb-secondary">
 
 						<div style="margin-left: 130px;" class="courses-detail">
-							<h3 style="margin-left: 30px;"><a href="numeros.php">Modo Números</a></h3>
+							<h3 style="margin-left: 30px;"><a href="numeros.php">Modo Numérico</a></h3>
 							<div class="courses-top">
 								<div class="courses-image">
 									<a href="numeros.php" ><img src="images/numer.png" alt=""></a>

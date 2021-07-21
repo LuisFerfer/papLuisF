@@ -21,7 +21,7 @@ toping();
                     <a href="infinitoing.php" ><img onclick="atualizainfing(0)" src="images/eng.png" style="width: 50px; height: 20px">
 
                         <li><a href="indexing.php">Home</a></li>
-                        <li><a href="genericingles.php">Other Game Modes</a></li>
+                        <li><a href="genericingles.php">Game Modes</a></li>
                         <!--<li><a href="elements.html">Elements</a></li>-->
                         <?php if(isset($_SESSION['id'])){ ?>
                             <li><a href="perfilingles.php?id=<?php echo $_SESSION['id'] ?>"><?php echo $_SESSION['nome'] ?></a></li>
